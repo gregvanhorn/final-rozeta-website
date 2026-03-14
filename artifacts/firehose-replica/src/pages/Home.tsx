@@ -350,8 +350,6 @@ function WhySection() {
       number: "1",
       badge: "Level 1",
       title: "Automation",
-      accent: "bg-[hsl(47,100%,50%)]",
-      accentText: "text-black",
       body: "Your business runs on manual processes right now. Someone has to remember to follow up. Someone has to send the confirmation. Someone has to chase the estimate. Level 1 replaces all of that with rules-based systems — when a lead comes in, this happens. When an estimate goes unanswered for 7 days, this fires. No human required.",
       callout: "This is where we start with every client because the wins are fast, the ROI is immediate, and you feel the difference within the first 30 days.",
     },
@@ -359,8 +357,6 @@ function WhySection() {
       number: "2",
       badge: "Level 2",
       title: "Intelligent Automation",
-      accent: "bg-[hsl(260,60%,75%)]",
-      accentText: "text-black",
       body: "Level 1 systems follow rules. Level 2 systems make judgments. Instead of sending the same follow-up to every cold estimate, the system reads the job type, the dollar amount, and the customer's last response — and writes a message that's actually relevant to that specific person. Instead of a generic confirmation text, the system knows it's a repeat customer and references their last job.",
       callout: "This is where AI enters the workflow and where the results start to compound.",
     },
@@ -368,8 +364,6 @@ function WhySection() {
       number: "3",
       badge: "Level 3",
       title: "Autonomous Operations",
-      accent: "bg-black",
-      accentText: "text-[hsl(47,100%,50%)]",
       body: "This is where your business stops reacting and starts running ahead of problems. AI agents monitor your pipeline, flag anomalies, identify opportunities, and take action without being asked. Your dispatcher doesn't build the schedule — the system drafts it. Your estimator doesn't start from scratch — the system builds the first version from the job photos. Your owner doesn't pull the weekly report — it's in his inbox every Monday morning before he wakes up.",
       callout: "This is the version of your business that runs without you in it.",
     },
@@ -402,13 +396,13 @@ function WhySection() {
               className="border-4 border-black bg-white shadow-neo-md"
             >
               {/* Card top accent bar */}
-              <div className={`flex items-center gap-4 border-b-4 border-black px-6 py-4 ${level.accent}`}>
-                <span className={`text-4xl font-bold leading-none tracking-tighter ${level.accentText}`}>
+              <div className="flex items-center gap-4 border-b-4 border-black bg-white px-6 py-4">
+                <span className="text-4xl font-bold leading-none tracking-tighter text-black">
                   {level.number}
                 </span>
                 <div>
-                  <p className={`text-xs font-bold tracking-widest uppercase opacity-70 ${level.accentText}`}>{level.badge}</p>
-                  <p className={`text-xl font-bold tracking-tight uppercase ${level.accentText}`}>{level.title}</p>
+                  <p className="text-xs font-bold tracking-widest uppercase opacity-50">{level.badge}</p>
+                  <p className="text-xl font-bold tracking-tight uppercase text-black">{level.title}</p>
                 </div>
               </div>
 
