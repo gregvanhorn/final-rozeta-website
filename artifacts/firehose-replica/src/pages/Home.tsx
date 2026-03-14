@@ -334,7 +334,7 @@ function StreamDemo() {
         {/* Section header */}
         <div className="mb-12">
           <div className="mb-4 inline-block border-4 border-black bg-white px-4 py-2 text-sm font-bold tracking-widest uppercase shadow-neo-sm">
-            Live Demo
+            Level One
           </div>
           <h2 className="text-4xl font-bold tracking-tighter uppercase text-white sm:text-5xl lg:text-6xl">
             Watch data{" "}
