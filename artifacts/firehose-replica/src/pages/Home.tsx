@@ -227,7 +227,18 @@ function Navbar() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
             <div className="flex h-9 w-9 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-[3px_3px_0px_0px_#000]">
-              <Bot className="h-5 w-5 stroke-black stroke-[2.5px]" />
+              <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden="true">
+                {/* Head */}
+                <rect x="2" y="3" width="16" height="14" stroke="black" strokeWidth="2" />
+                {/* Left open eye */}
+                <circle cx="7" cy="10" r="2.3" fill="black" />
+                <circle cx="7.7" cy="9.3" r="0.8" fill="white" />
+                {/* Right wink — flat dash */}
+                <rect x="10.8" y="9.1" width="4.8" height="1.8" rx="0.5" fill="black" />
+                {/* Ear bolts */}
+                <rect x="0.5" y="8" width="1.5" height="4" fill="black" />
+                <rect x="18" y="8" width="1.5" height="4" fill="black" />
+              </svg>
             </div>
             <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
           </a>
