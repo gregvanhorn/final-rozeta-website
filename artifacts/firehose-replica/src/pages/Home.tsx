@@ -784,7 +784,12 @@ function Footer() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-[3px_3px_0px_0px_#000]">
-              <Bot className="h-5 w-5 stroke-black stroke-[2.5px]" />
+              <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden="true">
+                <rect x="1" y="2.5" width="7.5" height="10" fill="black" />
+                <rect x="6.3" y="3.3" width="3" height="3" fill="white" />
+                <rect x="11.5" y="2.5" width="7.5" height="10" fill="black" />
+                <rect x="16.8" y="3.3" width="3" height="3" fill="white" />
+              </svg>
             </div>
             <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
           </a>
