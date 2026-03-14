@@ -804,7 +804,7 @@ function Footer() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[hsl(46,100%,96%)] font-sans text-[hsl(0,0%,5%)]">
+    <div className="min-h-screen overflow-x-hidden bg-[hsl(46,100%,96%)] font-sans text-[hsl(0,0%,5%)]">
       <Navbar />
       <Hero />
       <WhySection />
