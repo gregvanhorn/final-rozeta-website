@@ -227,25 +227,7 @@ function Navbar() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
             <div className="flex h-9 w-9 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-[3px_3px_0px_0px_#000]">
-              <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden="true">
-                {/* Antenna */}
-                <line x1="10" y1="4.2" x2="10" y2="2" stroke="black" strokeWidth="1.8" strokeLinecap="round" />
-                <circle cx="10" cy="1.2" r="1.2" fill="black" className="rozeta-antenna-ball" />
-                {/* Head */}
-                <rect x="2.5" y="4.2" width="15" height="12.3" stroke="black" strokeWidth="2" />
-                {/* Left eye */}
-                <circle cx="7.5" cy="9.2" r="1.9" fill="black" className="rozeta-eye" />
-                <circle cx="8.05" cy="8.65" r="0.65" fill="white" />
-                {/* Right eye */}
-                <circle cx="12.5" cy="9.2" r="1.9" fill="black" className="rozeta-eye rozeta-eye-r" />
-                <circle cx="13.05" cy="8.65" r="0.65" fill="white" />
-                {/* Mouth — three tiny speaker grille lines */}
-                <line x1="7.2" y1="12.6" x2="12.8" y2="12.6" stroke="black" strokeWidth="1.2" strokeLinecap="round" />
-                <line x1="8.2" y1="14" x2="11.8" y2="14" stroke="black" strokeWidth="1.2" strokeLinecap="round" />
-                {/* Side ear bolts */}
-                <rect x="1" y="7.8" width="1.5" height="3.5" fill="black" />
-                <rect x="17.5" y="7.8" width="1.5" height="3.5" fill="black" />
-              </svg>
+              <Bot className="h-5 w-5 stroke-black stroke-[2.5px]" />
             </div>
             <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
           </a>
