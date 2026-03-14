@@ -115,6 +115,30 @@
   }
 }
 
+/* Rozeta bot logo animations */
+.rozeta-eye {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: rozeta-blink 5s ease-in-out infinite;
+}
+.rozeta-eye-r {
+  animation-delay: 0.06s;
+}
+.rozeta-antenna-ball {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: rozeta-ping 2.8s ease-in-out infinite;
+}
+@keyframes rozeta-blink {
+  0%, 88%, 100% { transform: scaleY(1); }
+  92% { transform: scaleY(0.08); }
+  96% { transform: scaleY(1); }
+}
+@keyframes rozeta-ping {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.6); }
+}
+
 /* Neo-brutalist custom utilities */
 .shadow-neo-sm {
   box-shadow: 3px 3px 0px 0px #000;
