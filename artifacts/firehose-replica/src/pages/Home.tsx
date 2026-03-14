@@ -379,17 +379,14 @@ function WhySection() {
 
         {/* Header */}
         <div className="mb-4 inline-block border-4 border-black bg-white px-4 py-2 text-sm font-bold tracking-widest uppercase shadow-neo-sm">
-          The Automation Stack
+          How It Works
         </div>
         <h2 className="text-5xl font-bold tracking-tighter uppercase sm:text-6xl lg:text-7xl">
-          Your business{" "}
+          Not all automation{" "}
           <span className="inline-block -rotate-1 border-4 border-black bg-[hsl(0,85%,70%)] px-3 shadow-neo-md">
-            has levels
+            is created equal
           </span>
         </h2>
-        <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed opacity-80">
-          Most businesses are stuck at Level 1. The best ones are moving to Level 3. Here's the difference.
-        </p>
 
         {/* Level cards */}
         <div className="mt-12 flex flex-col gap-5">
