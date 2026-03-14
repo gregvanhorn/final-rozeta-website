@@ -3,89 +3,117 @@ import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, Externa
 
 const USE_CASES = [
   {
-    id: "financial-news",
-    label: "Financial News",
-    description: "Track earnings reports and market-moving news across major publications in real-time.",
-    query: "site:(reuters.com OR bloomberg.com OR wsj.com OR ft.com) AND title:tesla AND page_category:\"financial news\"",
+    id: "step-1",
+    label: "Step 1 — Find the Leaks",
+    description: "We audit your pipeline, response times, estimate follow-up, and retention process to identify exactly where revenue is walking out the door.",
+    query: "audit: pipeline AND response_times AND estimate_follow_up AND retention",
     events: [
       {
-        title: "Tesla Reports Record Q4 Deliveries, Beating Wall Street Estimates",
-        url: "https://reuters.com/business/autos/tesla-record-q4-deliveries",
-        summary: "+ Tesla delivered 495,570 vehicles in Q4, exceeding analyst expectations of 473,000",
+        title: "Pipeline audit complete",
+        url: "",
+        summary: "+ Identified revenue gaps in lead response, estimate follow-up, and retention",
       },
       {
-        title: "Tesla Energy Division Revenue Doubles Year-Over-Year",
-        url: "https://bloomberg.com/news/articles/tesla-energy-revenue",
-        summary: "+ Energy generation and storage revenue reached $3.2B, up 100% from prior year",
+        title: "Dollar figure attached to every leak",
+        url: "",
+        summary: "+ $0 left vague — every gap gets a real number assigned to it",
       },
       {
-        title: "Tesla Expands Supercharger Network to 60,000 Stations Globally",
-        url: "https://wsj.com/business/autos/tesla-supercharger-expansion",
-        summary: "+ Supercharger network now covers 60,000 stations across 45 countries",
-      },
-      {
-        title: "Tesla Autonomous Driving Unit Secures Regulatory Approval in EU",
-        url: "https://ft.com/content/tesla-autonomous-eu-approval",
-        summary: "+ Full Self-Driving technology approved for limited deployment in Germany and France",
+        title: "Full revenue leak report delivered",
+        url: "",
+        summary: "+ Clear picture of exactly where money is walking out the door",
       },
     ],
   },
   {
-    id: "tech-acquisitions",
-    label: "Tech Acquisitions",
-    description: "Monitor acquisition news on TechCrunch to stay ahead of industry moves.",
-    query: "site:techcrunch.com AND added:acquisition",
+    id: "step-2",
+    label: "Step 2 — Build the Systems",
+    description: "We custom-build the five Revenue Recovery systems for your specific business — your CRM, your workflow, your team. Nothing templated. Live in 14 days.",
+    query: "build: CRM AND workflow AND team_systems AND timeline:14_days",
     events: [
       {
-        title: "Google Cloud Acquires AI Security Firm Wiz",
-        url: "https://techcrunch.com/2026/02/google-acquires-wiz",
-        summary: "+ Google completed its largest acquisition ever, purchasing Wiz for $32B",
+        title: "Custom systems scoped to your business",
+        url: "",
+        summary: "+ No templates — built around your CRM, workflow, and team structure",
       },
       {
-        title: "Databricks Completes $1.6B Acquisition of Tabular",
-        url: "https://techcrunch.com/2026/02/databricks-tabular-deal",
-        summary: "+ Databricks acquired the Apache Iceberg creators to bolster open lakehouse",
+        title: "All five recovery systems configured",
+        url: "",
+        summary: "+ Lead response, estimate follow-up, no-show recovery, reactivation, reviews",
       },
       {
-        title: "Salesforce Acquires Informatica in $8B Deal",
-        url: "https://techcrunch.com/2026/03/salesforce-informatica",
-        summary: "+ Salesforce revived its acquisition bid for data management giant Informatica",
+        title: "Live in 14 days",
+        url: "",
+        summary: "+ Full buildout and handoff completed within two weeks of kickoff",
       },
     ],
   },
   {
-    id: "reddit-mentions",
-    label: "Reddit Mentions",
-    description: "Watch Reddit for real-time Tesla community discussions and user reviews.",
-    query: "site:reddit.com AND title:tesla AND page_category:\"artificial intelligence\"",
+    id: "step-3",
+    label: "Step 3 — Plug the Leaks",
+    description: "The systems go live. Leads get responded to in 60 seconds. Dead estimates get worked. No-shows get recovered. You stop losing money you were already earning.",
+    query: "deploy: lead_response:60s AND estimate_recovery AND no_show_followup",
     events: [
       {
-        title: "Tesla Unveils Next-Gen Robotaxi Fleet at Austin Event",
-        url: "https://nytimes.com/2026/03/tesla-robotaxi-fleet",
-        summary: "+ Tesla revealed a fleet of 50 autonomous robotaxis at its Austin gigafactory",
+        title: "Leads responded to within 60 seconds",
+        url: "",
+        summary: "+ Automated response fires the moment a new lead hits your pipeline",
       },
       {
-        title: "Tesla FSD v13 Real-World Test: Coast to Coast",
-        url: "https://reddit.com/r/teslamotors/comments/fsd-v13-test",
-        summary: "+ Just completed a coast-to-coast drive on FSD v13 with zero interventions",
+        title: "Dead estimates reactivated",
+        url: "",
+        summary: "+ Follow-up sequences re-engage quotes that went cold",
       },
       {
-        title: "Tesla Model 2 First Drive: The $25K Game Changer",
-        url: "https://motortrend.com/reviews/tesla-model-2-first-drive",
-        summary: "+ The new Tesla Model 2 starts at $24,990 and delivers 280 miles of range",
+        title: "No-shows recovered automatically",
+        url: "",
+        summary: "+ Missed appointments trigger instant rebooking sequences",
       },
     ],
   },
   {
-    id: "sec-filings",
-    label: "SEC Filings",
-    description: "Track Tesla SEC filings and regulatory documents automatically.",
-    query: "site:sec.gov AND title:tesla AND publish_time:[2026-01-01 TO 2026-03-01]",
+    id: "step-4",
+    label: "Step 4 — Measure the Recovery",
+    description: "Every system is tracked. Every month you get a plain-language report showing exactly what each system recovered — jobs booked, estimates closed, customers reactivated, reviews captured.",
+    query: "report: jobs_booked AND estimates_closed AND customers_reactivated AND reviews",
     events: [
       {
-        title: "Tesla Inc. Form 10-K Annual Report Filing",
-        url: "https://sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=tsla",
-        summary: "+ Annual report shows total revenue of $112.8B, up 28% year-over-year",
+        title: "Monthly plain-language report delivered",
+        url: "",
+        summary: "+ No dashboards to learn — just a clear summary of what was recovered",
+      },
+      {
+        title: "Jobs booked and estimates closed tracked",
+        url: "",
+        summary: "+ Every recovered dollar attributed to the system that captured it",
+      },
+      {
+        title: "Customer reactivations and reviews logged",
+        url: "",
+        summary: "+ Full visibility into retention and reputation recovery each month",
+      },
+    ],
+  },
+  {
+    id: "step-5",
+    label: "Step 5 — Optimize and Expand",
+    description: "Once the first layer is running, we go deeper. New leaks get identified. New systems get built. The engagement compounds and the business gets harder to disrupt every month.",
+    query: "optimize: new_leaks AND expand_systems AND compound_growth",
+    events: [
+      {
+        title: "New leaks identified as business evolves",
+        url: "",
+        summary: "+ Ongoing audits surface new revenue gaps as your operations grow",
+      },
+      {
+        title: "New systems built on top of existing layer",
+        url: "",
+        summary: "+ Each phase compounds on the last — coverage deepens every month",
+      },
+      {
+        title: "Business becomes harder to disrupt",
+        url: "",
+        summary: "+ Systematized operations create resilience competitors can't match",
       },
     ],
   },
@@ -344,7 +372,7 @@ function StreamDemo() {
             {" "}system
           </h2>
           <p className="mt-4 text-xl font-bold text-white/60">
-            Select a use case and watch live events arrive in real-time
+            Select a step to see exactly what happens and what gets recovered
           </p>
         </div>
 
@@ -382,7 +410,7 @@ function StreamDemo() {
               <div className="h-3 w-3 border-2 border-black bg-yellow-400" />
               <div className="h-3 w-3 border-2 border-black bg-green-400" />
               <span className="ml-2 text-xs font-bold text-white/50 uppercase tracking-widest">
-                SSE Stream — tap:{useCase.id}
+                Rozeta Labs — {useCase.id}
               </span>
             </div>
 
