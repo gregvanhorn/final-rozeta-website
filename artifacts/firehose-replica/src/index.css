@@ -115,6 +115,21 @@
   }
 }
 
+/* Rozeta logo glitch effect */
+.rozeta-logo-icon {
+  transition: filter 0.1s;
+}
+.rozeta-logo-icon:hover {
+  animation: rozeta-glitch 0.5s steps(3) infinite;
+}
+@keyframes rozeta-glitch {
+  0%   { filter: none; transform: none; }
+  25%  { filter: drop-shadow(2px 0 0 rgba(255,0,64,0.95)) drop-shadow(-2px 0 0 rgba(0,245,255,0.95)); transform: translateX(-1px); }
+  50%  { filter: drop-shadow(-2px 0 0 rgba(255,0,64,0.95)) drop-shadow(2px 0 0 rgba(0,245,255,0.95)); transform: translateX(1px); }
+  75%  { filter: drop-shadow(1px 0 0 rgba(255,0,64,0.5)) drop-shadow(-1px 0 0 rgba(0,245,255,0.5)); transform: none; }
+  100% { filter: none; transform: none; }
+}
+
 /* Rozeta bot logo animations */
 .rozeta-eye {
   transform-box: fill-box;
