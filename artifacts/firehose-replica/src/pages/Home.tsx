@@ -228,30 +228,14 @@ function Navbar() {
           <a href="#" className="flex items-center gap-3">
             <div className="flex h-9 w-9 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-[3px_3px_0px_0px_#000]">
               <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden="true">
-                {/* 5×5 pixel grid face — yellow gaps form the expression */}
-                {/* Row 0: solid top bar */}
-                <rect x="0.2" y="0.2" width="3.6" height="3.6" fill="black" />
-                <rect x="4.2" y="0.2" width="3.6" height="3.6" fill="black" />
-                <rect x="8.2" y="0.2" width="3.6" height="3.6" fill="black" />
-                <rect x="12.2" y="0.2" width="3.6" height="3.6" fill="black" />
-                <rect x="16.2" y="0.2" width="3.6" height="3.6" fill="black" />
-                {/* Row 1: sides only */}
-                <rect x="0.2" y="4.2" width="3.6" height="3.6" fill="black" />
-                <rect x="16.2" y="4.2" width="3.6" height="3.6" fill="black" />
-                {/* Row 2: sides + eyes (cols 1 and 3), gap at col 2 */}
-                <rect x="0.2" y="8.2" width="3.6" height="3.6" fill="black" />
-                <rect x="4.2" y="8.2" width="3.6" height="3.6" fill="black" />
-                <rect x="12.2" y="8.2" width="3.6" height="3.6" fill="black" />
-                <rect x="16.2" y="8.2" width="3.6" height="3.6" fill="black" />
-                {/* Row 3: sides only */}
-                <rect x="0.2" y="12.2" width="3.6" height="3.6" fill="black" />
-                <rect x="16.2" y="12.2" width="3.6" height="3.6" fill="black" />
-                {/* Row 4: solid bottom bar */}
-                <rect x="0.2" y="16.2" width="3.6" height="3.6" fill="black" />
-                <rect x="4.2" y="16.2" width="3.6" height="3.6" fill="black" />
-                <rect x="8.2" y="16.2" width="3.6" height="3.6" fill="black" />
-                <rect x="12.2" y="16.2" width="3.6" height="3.6" fill="black" />
-                <rect x="16.2" y="16.2" width="3.6" height="3.6" fill="black" />
+                {/* Left eye — fills most of left half */}
+                <rect x="1" y="2.5" width="7.5" height="10" fill="black" />
+                {/* Left eye highlight */}
+                <rect x="7" y="3.5" width="2" height="2" fill="white" />
+                {/* Right eye — fills most of right half */}
+                <rect x="11.5" y="2.5" width="7.5" height="10" fill="black" />
+                {/* Right eye highlight */}
+                <rect x="17.5" y="3.5" width="2" height="2" fill="white" />
               </svg>
             </div>
             <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
