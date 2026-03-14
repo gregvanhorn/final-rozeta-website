@@ -369,7 +369,7 @@ function WhySection() {
   return (
     <section className="relative border-b-4 border-black bg-[hsl(47,100%,50%)]">
       <div className="bg-halftone absolute inset-0 opacity-10" />
-      <div className="relative mx-auto max-w-2xl px-6 py-24">
+      <div className="relative mx-auto max-w-7xl px-6 py-24">
         <div className="mb-8 flex justify-center">
           <div className="inline-block border-4 border-black bg-white px-4 py-2 text-sm font-bold tracking-widest uppercase shadow-neo-sm">
             Why Rozeta Labs?
