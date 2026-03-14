@@ -337,10 +337,11 @@ function StreamDemo() {
             Level One
           </div>
           <h2 className="text-4xl font-bold tracking-tighter uppercase text-white sm:text-5xl lg:text-6xl">
-            Watch data{" "}
+            Our proven{" "}
             <span className="ml-3 inline-block border-4 border-white bg-[hsl(47,100%,50%)] px-3 text-black shadow-[6px_6px_0px_0px_rgba(255,255,255,0.8)]">
-              stream in
+              revenue recovery
             </span>
+            {" "}system
           </h2>
           <p className="mt-4 text-xl font-bold text-white/60">
             Select a use case and watch live events arrive in real-time
