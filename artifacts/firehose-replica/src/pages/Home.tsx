@@ -232,8 +232,6 @@ function Navbar() {
                 <rect x="1" y="2.5" width="7.5" height="10" fill="black" />
                 {/* Left eye highlight */}
                 <rect x="7" y="3.5" width="2" height="2" fill="white" />
-                {/* Nose — small square centered in the gap */}
-                <rect x="9" y="9" width="2" height="2.5" fill="black" />
                 {/* Right eye — fills most of right half */}
                 <rect x="11.5" y="2.5" width="7.5" height="10" fill="black" />
                 {/* Right eye highlight */}
