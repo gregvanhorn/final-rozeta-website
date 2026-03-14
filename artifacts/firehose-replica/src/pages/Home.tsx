@@ -344,6 +344,67 @@ function Hero() {
   );
 }
 
+function WhySection() {
+  const cards = [
+    {
+      bg: "bg-[hsl(0,85%,70%)]",
+      icon: <Radio className="h-7 w-7 stroke-black stroke-[2px]" />,
+      title: "Speed",
+      description: "Leads responded to in 60 seconds. Estimates followed up automatically. No-shows recovered the same day. Speed is the difference between a booked job and a lost one.",
+    },
+    {
+      bg: "bg-[hsl(260,60%,75%)]",
+      icon: <Code2 className="h-7 w-7 stroke-black stroke-[2px]" />,
+      title: "Precision",
+      description: "Every system is built around your CRM, your workflow, and your team. Nothing generic. Nothing off the shelf. Custom-built to how you actually run your business.",
+    },
+    {
+      bg: "bg-[hsl(47,100%,50%)]",
+      icon: <Sparkles className="h-7 w-7 stroke-black stroke-[2px]" />,
+      title: "Results",
+      description: "Every system is tracked. Every recovery is measured. You get a plain-language report every month showing exactly what each system earned back — in dollars.",
+    },
+  ];
+
+  return (
+    <section className="relative border-b-4 border-black bg-[hsl(47,100%,50%)]">
+      <div className="bg-halftone absolute inset-0 opacity-10" />
+      <div className="relative mx-auto max-w-2xl px-6 py-24">
+        <div className="mb-8 flex justify-center">
+          <div className="inline-block border-4 border-black bg-white px-4 py-2 text-sm font-bold tracking-widest uppercase shadow-neo-sm">
+            Why Rozeta Labs?
+          </div>
+        </div>
+
+        <div className="text-center">
+          <h2 className="text-5xl font-bold tracking-tighter uppercase sm:text-6xl lg:text-7xl">
+            Built for{" "}
+            <span className="inline-block -rotate-1 border-4 border-black bg-[hsl(0,85%,70%)] px-3 shadow-neo-md">
+              Owners
+            </span>
+          </h2>
+          <p className="mt-4 text-xl font-bold italic opacity-70">(not spreadsheets.)</p>
+        </div>
+
+        <div className="mt-14 flex flex-col gap-5">
+          {cards.map((card, i) => (
+            <div
+              key={i}
+              className="border-4 border-black bg-white p-6 shadow-neo-md transition-all duration-200 hover:-translate-y-1 hover:shadow-neo-lg"
+            >
+              <div className={`mb-5 inline-flex h-14 w-14 items-center justify-center border-4 border-black ${card.bg} shadow-neo-sm`}>
+                {card.icon}
+              </div>
+              <h3 className="text-xl font-bold tracking-tight uppercase">{card.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed font-bold opacity-60">{card.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function StreamDemo() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [queryCycle, setQueryCycle] = useState(0);
@@ -730,6 +791,7 @@ export default function Home() {
     <div className="min-h-screen bg-[hsl(46,100%,96%)] font-sans text-[hsl(0,0%,5%)]">
       <Navbar />
       <Hero />
+      <WhySection />
       <StreamDemo />
       <QueryExamples />
       <Features />
