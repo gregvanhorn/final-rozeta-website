@@ -415,13 +415,6 @@ function WhySection() {
           ))}
         </div>
 
-        {/* Closing line */}
-        <div className="mt-8 border-4 border-black bg-white p-6 shadow-neo-md">
-          <p className="text-base font-bold leading-relaxed">
-            We start every engagement at Level 1. Not because it's easy — because it's where you see money come back fast enough to trust the process.{" "}
-            <span className="border-b-4 border-black">Level 2 and Level 3 are where we go once that trust is built.</span>
-          </p>
-        </div>
 
       </div>
     </section>
