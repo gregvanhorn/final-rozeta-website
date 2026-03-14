@@ -300,10 +300,10 @@ function Hero() {
       {/* Grid background */}
       <div className="bg-grid-neo absolute inset-0 opacity-50" />
 
-      {/* Decorative shapes */}
+      {/* Decorative shapes — only visible on wider screens */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/3 right-1/4 h-20 w-20 border-4 border-black bg-[hsl(47,100%,50%)] opacity-30" />
-        <div className="absolute top-1/4 left-[25%] h-16 w-16 rotate-12 border-4 border-black bg-[hsl(46,50%,88%)] opacity-30" />
+        <div className="absolute top-1/3 right-1/4 h-20 w-20 border-4 border-black bg-[hsl(47,100%,50%)] opacity-30 hidden sm:block" />
+        <div className="absolute top-1/4 left-[25%] h-16 w-16 rotate-12 border-4 border-black bg-[hsl(46,50%,88%)] opacity-30 hidden sm:block" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:py-40">
