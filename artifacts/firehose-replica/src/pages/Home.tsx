@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Zap, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, ExternalLink } from "lucide-react";
+import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, ExternalLink } from "lucide-react";
 
 const USE_CASES = [
   {
@@ -104,7 +104,7 @@ const QUERY_EXAMPLES = [
 
 const FEATURES = [
   {
-    icon: <Zap className="h-6 w-6" />,
+    icon: <Bot className="h-6 w-6" />,
     title: "Instant SSE Streaming",
     description: "Receive updates in milliseconds via Server-Sent Events. No polling, no delays — changes arrive the moment we detect them.",
   },
@@ -199,7 +199,7 @@ function Navbar() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
             <div className="flex h-9 w-9 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-[3px_3px_0px_0px_#000]">
-              <Zap className="h-5 w-5 fill-black stroke-black stroke-[3px]" />
+              <Bot className="h-5 w-5 stroke-black stroke-[2.5px]" />
             </div>
             <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
           </a>
@@ -669,7 +669,7 @@ function Footer() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-[3px_3px_0px_0px_#000]">
-              <Zap className="h-5 w-5 fill-black stroke-black stroke-[3px]" />
+              <Bot className="h-5 w-5 stroke-black stroke-[2.5px]" />
             </div>
             <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
           </a>
