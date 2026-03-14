@@ -201,7 +201,7 @@ function Navbar() {
             <div className="flex h-9 w-9 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-[3px_3px_0px_0px_#000]">
               <Zap className="h-5 w-5 fill-black stroke-black stroke-[3px]" />
             </div>
-            <span className="text-xl font-bold tracking-tight uppercase">Firehose</span>
+            <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
           </a>
 
           {/* Desktop Nav */}
@@ -672,12 +672,12 @@ function Footer() {
             <div className="flex h-10 w-10 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-[3px_3px_0px_0px_#000]">
               <Zap className="h-5 w-5 fill-black stroke-black stroke-[3px]" />
             </div>
-            <span className="text-xl font-bold tracking-tight uppercase">Firehose</span>
+            <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
           </a>
 
           <div className="flex flex-col items-center gap-2 sm:items-end">
             <p className="text-sm font-bold tracking-wide">
-              Firehose is a product of Ahrefs Pte. Ltd.
+              Rozeta Labs
             </p>
             <div className="flex items-center gap-4">
               {["Privacy", "Terms", "Docs", "Status"].map((link) => (
