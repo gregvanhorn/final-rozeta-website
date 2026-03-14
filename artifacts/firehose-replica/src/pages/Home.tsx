@@ -307,7 +307,7 @@ function Hero() {
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </a>
             <p className="text-center text-sm font-bold tracking-wide uppercase opacity-60">
-              Free during beta. No credit card required.
+              If we don't deliver, you don't pay. Simple as that.
             </p>
           </div>
         </div>
