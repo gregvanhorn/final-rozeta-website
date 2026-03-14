@@ -303,7 +303,7 @@ function Hero() {
               href="#signup"
               className="group animate-neo-pulse inline-flex h-16 items-center justify-center gap-2 border-4 border-black bg-[hsl(47,100%,50%)] px-10 text-lg font-bold tracking-wide uppercase shadow-neo-md transition-all duration-100 hover:bg-yellow-400 active:translate-x-[3px] active:translate-y-[3px] active:shadow-none"
             >
-              Start Streaming Free
+              Get Started Now
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </a>
             <p className="text-center text-sm font-bold tracking-wide uppercase opacity-60">
@@ -652,7 +652,7 @@ function CTA() {
             href="#signup"
             className="group animate-neo-pulse inline-flex items-center gap-3 border-4 border-white bg-[hsl(47,100%,50%)] px-10 py-5 text-xl font-bold tracking-wide text-black uppercase shadow-[8px_8px_0px_0px_#fff] transition-all duration-100 hover:bg-yellow-400 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none"
           >
-            Get Started Free
+            Get Started Now
             <ArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-1" />
           </a>
         </div>
