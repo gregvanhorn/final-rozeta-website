@@ -228,14 +228,10 @@ function Navbar() {
           <a href="#" className="flex items-center gap-3">
             <div className="rozeta-logo-icon flex h-9 w-9 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-[3px_3px_0px_0px_#000]">
               <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden="true">
-                {/* Left eye — white oval */}
-                <ellipse cx="5" cy="7.5" rx="4" ry="5" fill="white" />
-                {/* Left pupil — black, shifted right (looking right) */}
-                <ellipse cx="6.8" cy="8.5" rx="1.8" ry="2.4" fill="black" />
-                {/* Right eye — white oval */}
-                <ellipse cx="15" cy="7.5" rx="4" ry="5" fill="white" />
-                {/* Right pupil — black, shifted right */}
-                <ellipse cx="16.8" cy="8.5" rx="1.8" ry="2.4" fill="black" />
+                {/* Outer diamond */}
+                <polygon points="10,1 19,10 10,19 1,10" fill="black" />
+                {/* Inner diamond cutout — yellow shows through */}
+                <polygon points="10,5 15,10 10,15 5,10" fill="hsl(47,100%,50%)" />
               </svg>
             </div>
             <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
@@ -785,10 +781,8 @@ function Footer() {
           <a href="#" className="flex items-center gap-3">
             <div className="rozeta-logo-icon flex h-10 w-10 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-[3px_3px_0px_0px_#000]">
               <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden="true">
-                <ellipse cx="5" cy="7.5" rx="4" ry="5" fill="white" />
-                <ellipse cx="6.8" cy="8.5" rx="1.8" ry="2.4" fill="black" />
-                <ellipse cx="15" cy="7.5" rx="4" ry="5" fill="white" />
-                <ellipse cx="16.8" cy="8.5" rx="1.8" ry="2.4" fill="black" />
+                <polygon points="10,1 19,10 10,19 1,10" fill="black" />
+                <polygon points="10,5 15,10 10,15 5,10" fill="hsl(47,100%,50%)" />
               </svg>
             </div>
             <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
