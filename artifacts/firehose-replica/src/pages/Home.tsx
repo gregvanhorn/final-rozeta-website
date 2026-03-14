@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, ExternalLink } from "lucide-react";
+import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, ExternalLink, Zap, Brain } from "lucide-react";
 
 const USE_CASES = [
   {
@@ -350,7 +350,7 @@ function WhySection() {
       level: "Level 1",
       title: "Automation",
       iconBg: "bg-[hsl(0,85%,70%)]",
-      icon: <Radio className="h-7 w-7 stroke-black stroke-[2px]" />,
+      icon: <Zap className="h-7 w-7 stroke-black stroke-[2px]" />,
       body: "Your business runs on manual processes right now. Someone has to remember to follow up. Someone has to send the confirmation. Someone has to chase the estimate. Level 1 replaces all of that with rules-based systems — when a lead comes in, this happens. When an estimate goes unanswered for 7 days, this fires. No human required.",
       callout: "This is where we start with every client because the wins are fast, the ROI is immediate, and you feel the difference within the first 30 days.",
     },
@@ -358,7 +358,7 @@ function WhySection() {
       level: "Level 2",
       title: "Intelligent Automation",
       iconBg: "bg-[hsl(260,60%,75%)]",
-      icon: <Code2 className="h-7 w-7 stroke-black stroke-[2px]" />,
+      icon: <Brain className="h-7 w-7 stroke-black stroke-[2px]" />,
       body: "Level 1 systems follow rules. Level 2 systems make judgments. Instead of sending the same follow-up to every cold estimate, the system reads the job type, the dollar amount, and the customer's last response — and writes a message that's actually relevant to that specific person. Instead of a generic confirmation text, the system knows it's a repeat customer and references their last job.",
       callout: "This is where AI enters the workflow and where the results start to compound.",
     },
@@ -366,7 +366,7 @@ function WhySection() {
       level: "Level 3",
       title: "Autonomous Operations",
       iconBg: "bg-[hsl(47,100%,50%)]",
-      icon: <Sparkles className="h-7 w-7 stroke-black stroke-[2px]" />,
+      icon: <Bot className="h-7 w-7 stroke-black stroke-[2px]" />,
       body: "This is where your business stops reacting and starts running ahead of problems. AI agents monitor your pipeline, flag anomalies, identify opportunities, and take action without being asked. Your dispatcher doesn't build the schedule — the system drafts it. Your estimator doesn't start from scratch — the system builds the first version from the job photos. Your owner doesn't pull the weekly report — it's in his inbox every Monday morning before he wakes up.",
       callout: "This is the version of your business that runs without you in it.",
     },
@@ -398,13 +398,15 @@ function WhySection() {
               key={i}
               className="border-4 border-black bg-white p-6 shadow-neo-md transition-all duration-200 hover:-translate-y-1 hover:shadow-neo-lg"
             >
-              <div className="mb-5 flex items-center gap-3">
+              <div className="mb-5 flex items-center gap-4">
                 <div className={`inline-flex h-14 w-14 shrink-0 items-center justify-center border-4 border-black ${level.iconBg} shadow-neo-sm`}>
                   {level.icon}
                 </div>
-                <span className="text-xs font-bold tracking-widest uppercase opacity-50">{level.level}</span>
+                <div>
+                  <p className="text-xs font-bold tracking-widest uppercase opacity-50">{level.level}</p>
+                  <h3 className="text-xl font-bold tracking-tight uppercase">{level.title}</h3>
+                </div>
               </div>
-              <h3 className="text-xl font-bold tracking-tight uppercase">{level.title}</h3>
               <p className="mt-2 text-sm leading-relaxed font-bold opacity-60">{level.body}</p>
               <p className="mt-4 border-l-4 border-black pl-4 text-sm font-bold leading-relaxed">
                 {level.callout}
