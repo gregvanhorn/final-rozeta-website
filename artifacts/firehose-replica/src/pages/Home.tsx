@@ -292,9 +292,9 @@ function Hero() {
           </div>
 
           <p className="mx-auto mt-10 max-w-2xl text-center text-xl leading-relaxed font-bold sm:text-2xl">
-            Define rules. Get notified the instant a matching web page changes.{" "}
+            Running your business manually is losing you money. Recover lost revenue with our proven systems.{" "}
             <span className="inline-block border-b-4 border-black">
-              Powered by Lucene queries + SSE.
+              Guaranteed.
             </span>
           </p>
 
