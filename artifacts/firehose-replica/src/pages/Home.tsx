@@ -231,7 +231,7 @@ function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden border-2 border-black p-1"
+            className="md:hidden border-4 border-black bg-white p-2 shadow-neo-sm transition-all duration-100 active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
             onClick={() => setOpen(!open)}
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
