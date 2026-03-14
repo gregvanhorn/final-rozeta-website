@@ -230,12 +230,12 @@ function Navbar() {
               <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden="true">
                 {/* Left eye — fills most of left half */}
                 <rect x="1" y="2.5" width="7.5" height="10" fill="black" />
-                {/* Left eye highlight */}
-                <rect x="7" y="3.5" width="2" height="2" fill="white" />
+                {/* Left eye highlight — top-right of left eye */}
+                <rect x="6.3" y="3.3" width="3" height="3" fill="white" />
                 {/* Right eye — fills most of right half */}
                 <rect x="11.5" y="2.5" width="7.5" height="10" fill="black" />
-                {/* Right eye highlight */}
-                <rect x="17.5" y="3.5" width="2" height="2" fill="white" />
+                {/* Right eye highlight — top-right of right eye */}
+                <rect x="16.8" y="3.3" width="3" height="3" fill="white" />
               </svg>
             </div>
             <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
