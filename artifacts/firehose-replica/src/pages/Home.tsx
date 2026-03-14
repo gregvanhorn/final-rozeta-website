@@ -528,7 +528,7 @@ function Features() {
           </span>
         </h2>
         <p className="mt-4 text-xl font-bold opacity-60">
-          Custom autonomous AI agents for specific business needs.
+          Built for specific business needs. See examples below.
         </p>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
