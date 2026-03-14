@@ -133,23 +133,23 @@ const QUERY_EXAMPLES = [
 const FEATURES = [
   {
     icon: <Bot className="h-6 w-6" />,
-    title: "Instant SSE Streaming",
-    description: "Receive updates in milliseconds via Server-Sent Events. No polling, no delays — changes arrive the moment we detect them.",
+    title: "Price Hawk",
+    description: "Monitors what you're actually paying per unit across suppliers over time and alerts you when prices have quietly crept up. Most owners don't realize they're getting slowly bled until it's already cost them thousands.",
   },
   {
     icon: <Code2 className="h-6 w-6" />,
-    title: "Lucene Query Language",
-    description: "Use the same query language powering Elasticsearch. Site filters, phrase matching, boolean operators, date ranges, and more.",
+    title: "Close Rate Whisperer",
+    description: "Analyzes your estimate pipeline by job type, zip code, ticket size, and season to tell you exactly where you're underpriced and where you're losing deals you shouldn't. If you're closing 90% of bids in a category, you're leaving money on the table — this agent finds it.",
   },
   {
     icon: <Radio className="h-6 w-6" />,
-    title: "Real-Time Crawling",
-    description: "Our crawler continuously indexes the web. When a matching page appears or changes, you're notified within seconds.",
+    title: "Ghost Hunter",
+    description: "Scans your customer database and scores past clients by reactivation probability based on service history, time since last job, and seasonal patterns. Turns a dead list into a warm pipeline without spending a dollar on ads.",
   },
   {
     icon: <Sparkles className="h-6 w-6" />,
-    title: "ML-Classified Content",
-    description: "Use page_category: filters powered by machine learning to target specific content types across any website.",
+    title: "Storm Chaser",
+    description: "Monitors weather events and local permit filings to surface demand surges before your competitors even know they're coming. By the time everyone else is scrambling for storm leads, you're already booked.",
   },
 ];
 
@@ -519,16 +519,16 @@ function Features() {
       <div className="bg-grid-neo absolute inset-0 opacity-30" />
       <div className="relative mx-auto max-w-7xl px-6 py-24">
         <div className="mb-4 inline-block border-4 border-black bg-white px-4 py-2 text-sm font-bold tracking-widest uppercase shadow-neo-sm">
-          How It Works
+          Level Two
         </div>
         <h2 className="text-4xl font-bold tracking-tighter uppercase sm:text-5xl lg:text-6xl">
-          Built for{" "}
+          Custom Built{" "}
           <span className="inline-block border-4 border-black bg-[hsl(47,100%,50%)] px-3 shadow-neo-sm">
-            developers
+            AI Agents
           </span>
         </h2>
         <p className="mt-4 text-xl font-bold opacity-60">
-          Simple to integrate. Powerful enough for production.
+          Custom autonomous AI agents for specific business needs.
         </p>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
