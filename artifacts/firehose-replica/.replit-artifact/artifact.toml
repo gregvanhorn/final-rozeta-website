@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Firehose Replica"
+version = "1.0.0"
+id = "artifacts/firehose-replica"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 19707
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/firehose-replica run dev"
+
+[services.env]
+PORT = "19707"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/firehose-replica", "run", "build"]
+publicDir = "artifacts/firehose-replica/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
