@@ -387,6 +387,9 @@ function WhySection() {
             is created equal
           </span>
         </h2>
+        <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed opacity-80">
+          Most businesses are stuck at Level 1. The best ones are moving to Level 3. Here's the difference.
+        </p>
 
         {/* Level cards */}
         <div className="mt-12 flex flex-col gap-5">
