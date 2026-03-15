@@ -303,16 +303,16 @@ function Navbar() {
 
 function Hero() {
   const [wordIndex, setWordIndex] = useState(0);
-  const [animClass, setAnimClass] = useState("slot-enter");
+  const [animClass, setAnimClass] = useState("word-fade-in");
 
   useEffect(() => {
     let timeoutId: ReturnType<typeof setTimeout>;
     const interval = setInterval(() => {
-      setAnimClass("slot-exit");
+      setAnimClass("word-fade-out");
       timeoutId = setTimeout(() => {
         setWordIndex((prev) => (prev + 1) % ROTATING_WORDS.length);
-        setAnimClass("slot-enter");
-      }, 300);
+        setAnimClass("word-fade-in");
+      }, 250);
     }, 2500);
     return () => {
       clearInterval(interval);
