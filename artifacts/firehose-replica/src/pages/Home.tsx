@@ -1,7 +1,10 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, ExternalLink, Zap, Brain } from "lucide-react";
 
-const ROTATING_WORDS = ["Service", "Franchise", "Construction", "Consulting"];
+const ROTATING_WORDS = [
+  "Home Services", "Franchises", "Private Equity",
+  "Professional Services", "Small Businesses", "Real Estate", "Health & Wellness",
+];
 
 const USE_CASES = [
   {
@@ -301,51 +304,47 @@ function Navbar() {
   );
 }
 
-const SCRAMBLE_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
 function Hero() {
-  const [displayText, setDisplayText] = useState(ROTATING_WORDS[0].toUpperCase());
+  const [displayText, setDisplayText] = useState(ROTATING_WORDS[0]);
+  const displayTextRef = useRef(ROTATING_WORDS[0]);
   const wordIndexRef = useRef(0);
-  const scrambleRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const scrambleTo = useCallback((targetWord: string) => {
-    if (scrambleRef.current) clearInterval(scrambleRef.current);
-    const target = targetWord.toUpperCase();
-    let iteration = 0;
-    const framesPerChar = 4;
-    const nonSpaceChars = target.replace(/ /g, "").length;
-    const maxIterations = nonSpaceChars * framesPerChar + framesPerChar;
-
-    scrambleRef.current = setInterval(() => {
-      let locked = Math.floor(iteration / framesPerChar);
-      let charPos = 0;
-      const result = target.split("").map((char) => {
-        if (char === " ") return " ";
-        if (charPos < locked) { charPos++; return char; }
-        charPos++;
-        return SCRAMBLE_CHARS[Math.floor(Math.random() * SCRAMBLE_CHARS.length)];
-      }).join("");
-      setDisplayText(result);
-      iteration++;
-      if (iteration > maxIterations) {
-        clearInterval(scrambleRef.current!);
-        scrambleRef.current = null;
-        setDisplayText(target);
-      }
-    }, 40);
+  const updateDisplay = useCallback((text: string) => {
+    displayTextRef.current = text;
+    setDisplayText(text);
   }, []);
+
+  const typewriteTo = useCallback((targetWord: string) => {
+    if (timerRef.current) clearTimeout(timerRef.current);
+
+    const deleteStep = () => {
+      const current = displayTextRef.current;
+      if (current.length === 0) { typeStep(0); return; }
+      updateDisplay(current.slice(0, -1));
+      timerRef.current = setTimeout(deleteStep, 40);
+    };
+
+    const typeStep = (i: number) => {
+      if (i >= targetWord.length) { timerRef.current = null; return; }
+      updateDisplay(targetWord.slice(0, i + 1));
+      timerRef.current = setTimeout(() => typeStep(i + 1), 65);
+    };
+
+    deleteStep();
+  }, [updateDisplay]);
 
   useEffect(() => {
     const interval = setInterval(() => {
       const nextIndex = (wordIndexRef.current + 1) % ROTATING_WORDS.length;
       wordIndexRef.current = nextIndex;
-      scrambleTo(ROTATING_WORDS[nextIndex]);
-    }, 2800);
+      typewriteTo(ROTATING_WORDS[nextIndex]);
+    }, 3500);
     return () => {
       clearInterval(interval);
-      if (scrambleRef.current) clearInterval(scrambleRef.current);
+      if (timerRef.current) clearTimeout(timerRef.current);
     };
-  }, [scrambleTo]);
+  }, [typewriteTo]);
 
   return (
     <section className="relative overflow-hidden border-b-4 border-black bg-[hsl(46,100%,96%)]">
@@ -365,7 +364,7 @@ function Hero() {
               Scale Your
             </span>
             <span className="mt-4 block text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
-              <span className="font-mono">{displayText}</span>
+              {displayText}
             </span>
             <span className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
               <span>Business</span>
