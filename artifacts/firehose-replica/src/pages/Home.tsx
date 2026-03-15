@@ -381,7 +381,7 @@ function Hero() {
           </div>
 
           <p className="mx-auto mt-10 max-w-2xl text-center text-xl leading-relaxed font-bold sm:text-2xl">
-            Running your business manually is losing you money. Recover lost revenue with our proven AI and automation systems.{" "}
+            Top operators don't outwork you — they out-automate you. We help build AI and automation systems running around the clock, recovering the revenue you're manually missing.{" "}
             <span className="inline-block border-b-4 border-black">
               Guaranteed.
             </span>
