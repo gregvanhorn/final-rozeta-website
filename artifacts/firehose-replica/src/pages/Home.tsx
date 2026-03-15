@@ -315,11 +315,11 @@ function Hero() {
         <div className="flex flex-col items-center">
           <div className="relative mx-auto max-w-5xl text-center">
             <span className="block text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
-              <span className="relative inline-block">Scale Your SMB</span>
+              <span className="relative inline-block">Scale Your SMB with a</span>
             </span>
             <span className="mt-2 block text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
               <span className="relative inline-block -rotate-1 border-4 border-black bg-[hsl(47,100%,50%)] px-4 shadow-neo-md">
-                with AI
+                Fractional AI Department
               </span>
             </span>
           </div>
