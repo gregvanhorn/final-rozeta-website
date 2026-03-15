@@ -210,3 +210,27 @@
 .animate-stream-in {
   animation: stream-in 0.4s ease-out forwards;
 }
+
+@keyframes slot-exit {
+  0%   { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-100%); opacity: 0; }
+}
+@keyframes slot-enter {
+  0%   { transform: translateY(100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+.slot-exit {
+  animation: slot-exit 0.3s ease-in forwards;
+}
+.slot-enter {
+  animation: slot-enter 0.3s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slot-exit,
+  .slot-enter {
+    animation: none;
+    transform: none;
+    opacity: 1;
+  }
+}

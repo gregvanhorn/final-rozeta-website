@@ -1,5 +1,7 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, ExternalLink, Zap, Brain } from "lucide-react";
+
+const ROTATING_WORDS = ["Service", "Franchise", "Construction", "Consulting"];
 
 const USE_CASES = [
   {
@@ -300,6 +302,24 @@ function Navbar() {
 }
 
 function Hero() {
+  const [wordIndex, setWordIndex] = useState(0);
+  const [animClass, setAnimClass] = useState("slot-enter");
+
+  useEffect(() => {
+    let timeoutId: ReturnType<typeof setTimeout>;
+    const interval = setInterval(() => {
+      setAnimClass("slot-exit");
+      timeoutId = setTimeout(() => {
+        setWordIndex((prev) => (prev + 1) % ROTATING_WORDS.length);
+        setAnimClass("slot-enter");
+      }, 300);
+    }, 2500);
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
   return (
     <section className="relative overflow-hidden border-b-4 border-black bg-[hsl(46,100%,96%)]">
       {/* Grid background */}
@@ -315,9 +335,17 @@ function Hero() {
         <div className="flex flex-col items-center">
           <div className="relative mx-auto max-w-5xl text-center">
             <span className="block text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
-              <span className="relative inline-block">Scale Your SMB</span>
+              Scale Your
             </span>
-            <span className="mt-2 block text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
+            <span className="mt-4 block text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
+              <span className="inline-block h-[1.1em] overflow-hidden align-bottom">
+                <span key={wordIndex} className={`inline-block ${animClass}`}>
+                  {ROTATING_WORDS[wordIndex]}
+                </span>
+              </span>
+            </span>
+            <span className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
+              <span>Business</span>
               <span className="relative inline-block -rotate-1 border-4 border-black bg-[hsl(47,100%,50%)] px-4 shadow-neo-md">
                 with AI
               </span>
