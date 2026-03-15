@@ -240,10 +240,10 @@
 }
 .typewriter-cursor {
   display: inline-block;
-  width: 0.08em;
-  height: 0.9em;
+  width: 0.07em;
+  height: 0.75em;
   background: currentColor;
-  margin-left: 0.05em;
-  vertical-align: middle;
+  margin-left: 0.06em;
+  vertical-align: text-bottom;
   animation: typewriter-blink 0.8s step-start infinite;
 }
