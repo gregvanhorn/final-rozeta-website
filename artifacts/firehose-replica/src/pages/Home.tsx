@@ -3,7 +3,7 @@ import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, Externa
 
 const ROTATING_WORDS = [
   "Home Service", "Franchise", "Private Equity",
-  "Professional Service", "Real Estate", "Health & Wellness",
+  "Service", "Real Estate", "Health & Wellness",
 ];
 
 const USE_CASES = [
