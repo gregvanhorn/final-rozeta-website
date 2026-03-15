@@ -233,3 +233,17 @@
     opacity: 1;
   }
 }
+
+@keyframes typewriter-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.typewriter-cursor {
+  display: inline-block;
+  width: 0.08em;
+  height: 0.9em;
+  background: currentColor;
+  margin-left: 0.05em;
+  vertical-align: middle;
+  animation: typewriter-blink 0.8s step-start infinite;
+}

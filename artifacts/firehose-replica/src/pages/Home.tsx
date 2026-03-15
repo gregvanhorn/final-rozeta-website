@@ -364,7 +364,7 @@ function Hero() {
               Scale Your
             </span>
             <span className="mt-4 block text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
-              {displayText}
+              {displayText}<span className="typewriter-cursor" aria-hidden="true" />
             </span>
             <span className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
               <span>Business</span>
