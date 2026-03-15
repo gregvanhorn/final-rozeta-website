@@ -2,8 +2,8 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, ExternalLink, Zap, Brain } from "lucide-react";
 
 const ROTATING_WORDS = [
-  "Home Services", "Franchises", "Private Equity",
-  "Professional Services", "Small Businesses", "Real Estate", "Health & Wellness",
+  "Home Service", "Franchise", "Private Equity",
+  "Professional Service", "Real Estate", "Health & Wellness",
 ];
 
 const USE_CASES = [
