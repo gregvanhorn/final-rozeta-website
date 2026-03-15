@@ -381,7 +381,7 @@ function Hero() {
           </div>
 
           <p className="mx-auto mt-10 max-w-2xl text-center text-xl leading-relaxed font-bold sm:text-2xl">
-            Top operators don't outwork you. They out automate you. We build AI and automation systems that run around the clock. Recovering the revenue you're manually missing.
+            Top operators don't outwork you. They out automate you. We build AI and automation systems that run around the clock. Recovering the profits you're manually missing.
           </p>
 
           <div className="mt-12 flex flex-col items-center gap-4">
