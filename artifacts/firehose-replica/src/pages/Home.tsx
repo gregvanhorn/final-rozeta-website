@@ -318,17 +318,23 @@ function Hero() {
   const typewriteTo = useCallback((targetWord: string) => {
     if (timerRef.current) clearTimeout(timerRef.current);
 
-    const deleteStep = () => {
-      const current = displayTextRef.current;
-      if (current.length === 0) { typeStep(0); return; }
-      updateDisplay(current.slice(0, -1));
-      timerRef.current = setTimeout(deleteStep, 40);
-    };
-
     const typeStep = (i: number) => {
       if (i >= targetWord.length) { timerRef.current = null; return; }
       updateDisplay(targetWord.slice(0, i + 1));
       timerRef.current = setTimeout(() => typeStep(i + 1), 65);
+    };
+
+    const deleteStep = () => {
+      const current = displayTextRef.current;
+      if (current.length === 0) { typeStep(0); return; }
+      updateDisplay(current.slice(0, -1));
+      if (current.length > 1) {
+        timerRef.current = setTimeout(deleteStep, 40);
+      } else {
+        // Last char just cleared — call typeStep synchronously so React 18
+        // batches both state updates into one render, preventing an empty frame
+        typeStep(0);
+      }
     };
 
     deleteStep();
