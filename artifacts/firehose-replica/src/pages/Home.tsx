@@ -301,24 +301,51 @@ function Navbar() {
   );
 }
 
+const SCRAMBLE_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
 function Hero() {
-  const [wordIndex, setWordIndex] = useState(0);
-  const [animClass, setAnimClass] = useState("word-fade-in");
+  const [displayText, setDisplayText] = useState(ROTATING_WORDS[0].toUpperCase());
+  const wordIndexRef = useRef(0);
+  const scrambleRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const scrambleTo = useCallback((targetWord: string) => {
+    if (scrambleRef.current) clearInterval(scrambleRef.current);
+    const target = targetWord.toUpperCase();
+    let iteration = 0;
+    const framesPerChar = 4;
+    const nonSpaceChars = target.replace(/ /g, "").length;
+    const maxIterations = nonSpaceChars * framesPerChar + framesPerChar;
+
+    scrambleRef.current = setInterval(() => {
+      let locked = Math.floor(iteration / framesPerChar);
+      let charPos = 0;
+      const result = target.split("").map((char) => {
+        if (char === " ") return " ";
+        if (charPos < locked) { charPos++; return char; }
+        charPos++;
+        return SCRAMBLE_CHARS[Math.floor(Math.random() * SCRAMBLE_CHARS.length)];
+      }).join("");
+      setDisplayText(result);
+      iteration++;
+      if (iteration > maxIterations) {
+        clearInterval(scrambleRef.current!);
+        scrambleRef.current = null;
+        setDisplayText(target);
+      }
+    }, 40);
+  }, []);
 
   useEffect(() => {
-    let timeoutId: ReturnType<typeof setTimeout>;
     const interval = setInterval(() => {
-      setAnimClass("word-fade-out");
-      timeoutId = setTimeout(() => {
-        setWordIndex((prev) => (prev + 1) % ROTATING_WORDS.length);
-        setAnimClass("word-fade-in");
-      }, 250);
-    }, 2500);
+      const nextIndex = (wordIndexRef.current + 1) % ROTATING_WORDS.length;
+      wordIndexRef.current = nextIndex;
+      scrambleTo(ROTATING_WORDS[nextIndex]);
+    }, 2800);
     return () => {
       clearInterval(interval);
-      clearTimeout(timeoutId);
+      if (scrambleRef.current) clearInterval(scrambleRef.current);
     };
-  }, []);
+  }, [scrambleTo]);
 
   return (
     <section className="relative overflow-hidden border-b-4 border-black bg-[hsl(46,100%,96%)]">
@@ -338,11 +365,7 @@ function Hero() {
               Scale Your
             </span>
             <span className="mt-4 block text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
-              <span className="inline-block h-[1.1em] overflow-hidden align-bottom">
-                <span key={wordIndex} className={`inline-block ${animClass}`}>
-                  {ROTATING_WORDS[wordIndex]}
-                </span>
-              </span>
+              <span className="font-mono">{displayText}</span>
             </span>
             <span className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
               <span>Business</span>
