@@ -261,7 +261,7 @@ function Hero() {
           </div>
 
           <p className="mx-auto mt-10 max-w-2xl text-center text-xl leading-relaxed font-bold sm:text-2xl">
-            We're the internal AI transformation team you've been looking for — without the full-time hire. We go cross-org, kill the manual processes, and ship in 14 days.
+            We're the AI transformation team you've been looking for — without the full-time hire. We go cross-org, kill the manual processes, and ship production-ready workflows within 14 days.
           </p>
 
           <div className="mt-12 flex flex-col items-center gap-4">
