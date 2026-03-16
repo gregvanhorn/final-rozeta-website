@@ -66,37 +66,37 @@ const DEPARTMENTS = [
   {
     icon: <Crown className="h-6 w-6" />,
     name: "Owner / Leadership",
-    blurb: "Where is your time going? We map every decision that only you make — and identify which ones a system should be making instead.",
+    blurb: "Where is your time actually going? We audit how decisions flow through your organization and map every place where a system should be doing the work instead of you.",
   },
   {
     icon: <TrendingUp className="h-6 w-6" />,
     name: "Sales / Estimating",
-    blurb: "How fast are quotes going out? What percentage of estimates go cold and never get followed up? We find every leak in the sales pipeline.",
+    blurb: "Are your reps being measured on speed-to-follow-up, close rate, or conversion by lead source? How fast are proposals going out, and what percentage go cold with zero follow-up? We audit the full sales process — from first contact to signed deal — and find every place where a lead stops moving forward.",
   },
   {
     icon: <Truck className="h-6 w-6" />,
-    name: "Operations / Dispatch",
-    blurb: "How is scheduling handled? Where are crews sitting idle? We look for scheduling gaps, double-bookings, and manual handoffs that cause delays.",
+    name: "Operations",
+    blurb: "Where are your internal workflows breaking down? We dig into the approval bottlenecks, cross-department handoffs, and manual processes that slow your operation down — regardless of what your business actually delivers.",
   },
   {
     icon: <HardHat className="h-6 w-6" />,
-    name: "Field / Crews",
-    blurb: "What information are crews missing on-site? Where does scope creep happen and never make it back to billing? We close that loop.",
+    name: "Field / Crew Dispatch",
+    blurb: "What are your people on the ground missing, and what are they capturing that never makes it back to the office? We build the data loops that connect the field to ops to billing in real time — so nothing falls through the gap between \"job done\" and \"money collected.\"",
   },
   {
     icon: <Headphones className="h-6 w-6" />,
     name: "Customer Service",
-    blurb: "What questions repeat every single day? What's getting dropped between the office and the field? We automate the routine and escalate the critical.",
+    blurb: "What are your team members answering manually every single day? We identify the repeat questions, the dropped follow-ups, and the slow response cycles — then automate what's routine and escalate what actually needs a human.",
   },
   {
     icon: <Megaphone className="h-6 w-6" />,
-    name: "Marketing / Lead Gen",
-    blurb: "What channels aren't being followed up? What does your actual lead response time look like? We find where leads are going cold before anyone notices.",
+    name: "Marketing / Lead Gen / Go-To-Market",
+    blurb: "We look at every channel, every follow-up gap, and every nurture sequence — then build the systems that attract, capture, and convert without your team manually working every lead.",
   },
   {
     icon: <DollarSign className="h-6 w-6" />,
     name: "Finance / Billing",
-    blurb: "What's being invoiced late? What work is completed but never billed? We surface revenue that's already been earned but hasn't been collected.",
+    blurb: "Where is revenue slipping through the cracks? We look at what's invoiced late, what's never invoiced at all, and what's stuck in collections — then build the follow-up systems that recover what's already been earned.",
   },
 ];
 
@@ -497,7 +497,7 @@ function EmbedOrg() {
               Nothing is off-limits.
             </p>
             <p className="mt-2 max-w-3xl text-sm font-semibold leading-relaxed text-black/70">
-              Most consultants talk to the owner and call it a day. We go cross-org — every function, every workflow, every repetitive task — until we have a complete map of what's broken and what's possible. That's what makes our builds stick.
+              Most consultants talk to the owner and call it a day. We go cross-org — every team, every workflow, every repetitive process — until we have a complete picture of what's costing you money and what we can build to stop the bleeding. That's what makes our systems stick.
             </p>
           </div>
         </div>
