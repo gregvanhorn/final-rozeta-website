@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, Zap, Brain } from "lucide-react";
+import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, Zap, Brain, Crown, TrendingUp, Truck, HardHat, Headphones, Megaphone, DollarSign } from "lucide-react";
 
 const ROTATING_WORDS = [
   "Home Service", "Franchise", "Private Equity",
@@ -62,15 +62,42 @@ const PROCESS_STEPS = [
   },
 ];
 
-const QUERY_EXAMPLES = [
-  { query: 'site:reuters.com AND title:tesla', label: "Target specific sites" },
-  { query: 'page_category:"artificial intelligence"', label: "ML-classified content" },
-  { query: 'publish_time:[2026-01-01 TO 2026-03-01]', label: "Time-range filtering" },
-  { query: 'title:"breaking news" AND added:acquisition', label: "Compound queries" },
-  { query: 'site:(nytimes.com OR wsj.com)', label: "Multi-site queries" },
-  { query: 'NOT site:reddit.com AND title:bitcoin', label: "Exclusion filters" },
-  { query: '"machine learning" OR "deep learning"', label: "Phrase matching" },
-  { query: 'page_language:en AND domain_type:news', label: "Language & type filters" },
+const DEPARTMENTS = [
+  {
+    icon: <Crown className="h-6 w-6" />,
+    name: "Owner / Leadership",
+    blurb: "Where is your time going? We map every decision that only you make — and identify which ones a system should be making instead.",
+  },
+  {
+    icon: <TrendingUp className="h-6 w-6" />,
+    name: "Sales / Estimating",
+    blurb: "How fast are quotes going out? What percentage of estimates go cold and never get followed up? We find every leak in the sales pipeline.",
+  },
+  {
+    icon: <Truck className="h-6 w-6" />,
+    name: "Operations / Dispatch",
+    blurb: "How is scheduling handled? Where are crews sitting idle? We look for scheduling gaps, double-bookings, and manual handoffs that cause delays.",
+  },
+  {
+    icon: <HardHat className="h-6 w-6" />,
+    name: "Field / Crews",
+    blurb: "What information are crews missing on-site? Where does scope creep happen and never make it back to billing? We close that loop.",
+  },
+  {
+    icon: <Headphones className="h-6 w-6" />,
+    name: "Customer Service",
+    blurb: "What questions repeat every single day? What's getting dropped between the office and the field? We automate the routine and escalate the critical.",
+  },
+  {
+    icon: <Megaphone className="h-6 w-6" />,
+    name: "Marketing / Lead Gen",
+    blurb: "What channels aren't being followed up? What does your actual lead response time look like? We find where leads are going cold before anyone notices.",
+  },
+  {
+    icon: <DollarSign className="h-6 w-6" />,
+    name: "Finance / Billing",
+    blurb: "What's being invoiced late? What work is completed but never billed? We surface revenue that's already been earned but hasn't been collected.",
+  },
 ];
 
 const FEATURES = [
@@ -415,35 +442,64 @@ function StreamDemo() {
   );
 }
 
-function QueryExamples() {
+function EmbedOrg() {
   return (
     <section className="relative border-b-4 border-black bg-black">
       <div className="bg-dots-neo absolute inset-0 opacity-10" />
       <div className="relative mx-auto max-w-7xl px-6 py-24">
-        <h2 className="text-4xl font-bold tracking-tighter text-white uppercase sm:text-5xl lg:text-6xl">
-          Surgical{" "}
-          <span className="ml-3 inline-block border-4 border-white bg-[hsl(46,50%,88%)] px-3 text-black shadow-[6px_6px_0px_0px_#fff]">
-            precision
+
+        {/* Badge */}
+        <div className="mb-6 inline-block border-4 border-white bg-black px-4 py-2 text-sm font-bold tracking-widest text-white uppercase shadow-[3px_3px_0px_0px_rgba(255,255,255,0.4)]">
+          How It Works: Step Two
+        </div>
+
+        {/* Header */}
+        <h2 className="text-5xl font-bold tracking-tighter text-white uppercase sm:text-6xl lg:text-7xl">
+          We embed{" "}
+          <span className="inline-block border-4 border-black bg-[hsl(47,100%,50%)] px-3 text-black shadow-[6px_6px_0px_0px_rgba(255,255,255,0.5)]">
+            into your org
           </span>
         </h2>
-        <p className="mt-4 text-xl font-bold text-white/60">
-          Lucene query syntax gives you surgical precision
+
+        {/* Subheader */}
+        <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed text-white/60">
+          We sit alongside the owner and every department head — not to observe, but to dig. We're looking for every bottleneck, broken handoff, and manual process that's costing you money.
         </p>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {QUERY_EXAMPLES.map((ex, i) => (
+        {/* Department grid */}
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {DEPARTMENTS.map((dept, i) => (
             <div
               key={i}
-              className="border-2 border-white/20 bg-white/5 p-4 transition-all duration-200 hover:border-white/40 hover:bg-white/10"
+              className="border-4 border-white bg-black p-6 shadow-[5px_5px_0px_0px_rgba(255,255,255,0.15)] transition-colors hover:bg-white/5"
             >
-              <code className="block font-mono text-sm leading-relaxed break-words text-[hsl(47,100%,50%)]">
-                {ex.query}
-              </code>
-              <p className="mt-2 text-xs font-bold tracking-wide text-white/50 uppercase">
-                {ex.label}
+              <div className="mb-4 flex items-center gap-3">
+                <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center border-4 border-white bg-[hsl(47,100%,50%)] text-black">
+                  {dept.icon}
+                </div>
+                <span className="text-sm font-bold tracking-widest text-white uppercase">
+                  {dept.name}
+                </span>
+              </div>
+              <div className="mb-4 h-px bg-white/20" />
+              <p className="mb-1 text-xs font-bold tracking-widest text-[hsl(47,100%,50%)] uppercase">
+                What we look for:
+              </p>
+              <p className="text-sm font-medium leading-relaxed text-white/70">
+                {dept.blurb}
               </p>
             </div>
           ))}
+
+          {/* Closing CTA card */}
+          <div className="border-4 border-[hsl(47,100%,50%)] bg-[hsl(47,100%,50%)] p-6 shadow-[5px_5px_0px_0px_rgba(255,200,0,0.3)] sm:col-span-2 lg:col-span-3">
+            <p className="text-xl font-bold uppercase text-black">
+              Nothing is off-limits.
+            </p>
+            <p className="mt-2 max-w-3xl text-sm font-semibold leading-relaxed text-black/70">
+              Most consultants talk to the owner and call it a day. We go cross-org — every function, every workflow, every repetitive task — until we have a complete map of what's broken and what's possible. That's what makes our builds stick.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -714,7 +770,7 @@ export default function Home() {
       <Hero />
       <WhySection />
       <StreamDemo />
-      <QueryExamples />
+      <EmbedOrg />
       <Features />
       <CodeExample />
       <OurProcess />
