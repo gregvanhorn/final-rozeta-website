@@ -12,3 +12,9 @@ id = "gUS8u8uTFTotPs9HN1zmt"
 uri = "file://.local/step-three-agents.md"
 type = "text"
 title = "Step Three: Custom AI Agents — Planning Reference (Updated)"
+
+[[outputs]]
+id = "61P5Z8iPo9GIRL1i75Qkx"
+uri = "file://.local/rozeta-labs-website-brief.md"
+type = "text"
+title = "Rozeta Labs — Website Brief"
