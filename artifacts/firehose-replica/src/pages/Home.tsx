@@ -293,24 +293,8 @@ function Hero() {
 
           <p className="mx-auto mt-10 max-w-2xl text-center text-xl leading-relaxed font-bold sm:text-2xl">
             We're the AI transformation team you've been looking for.{" "}
-            <span className="relative inline-block pb-3">
+            <span className="font-extrabold text-[hsl(0,85%,70%)]">
               Without the full-time hire.
-              <svg
-                className="absolute bottom-0 left-0 w-full"
-                height="10"
-                viewBox="0 0 300 10"
-                preserveAspectRatio="none"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0,7 L50,2 L100,8 L150,2 L200,8 L250,2 L300,6"
-                  stroke="hsl(0,85%,70%)"
-                  strokeWidth="3.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
             </span>{" "}
             We go cross-org, kill the manual processes, and ship your first workflow within 14 days.
           </p>
