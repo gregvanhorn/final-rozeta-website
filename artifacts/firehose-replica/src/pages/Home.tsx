@@ -10,7 +10,7 @@ const USE_CASES = [
   {
     id: "system-01",
     label: "System 01 — 60-Second Response Engine",
-    description: "Kills speed-to-lead failure. The moment a lead hits any channel, an instant personalized SMS fires to the prospect, the right person internally gets notified, and everything logs in the CRM — all within 60 seconds. Responding in under 60 seconds vs 5 minutes increases close rate by 400%.",
+    description: "Kills speed-to-lead failure. The moment a lead hits any channel, an instant personalized SMS and email fires to the prospect, the right person internally gets notified, and everything logs in the CRM — all within 60 seconds. Responding in under 60 seconds vs 5 minutes increases close rate by 400%.",
   },
   {
     id: "system-02",
