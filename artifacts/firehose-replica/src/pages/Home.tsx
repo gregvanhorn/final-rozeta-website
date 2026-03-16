@@ -290,7 +290,7 @@ function WhySection() {
       iconBg: "bg-[hsl(0,85%,70%)]",
       icon: <Zap className="h-7 w-7 stroke-black stroke-[2px]" />,
       body: "Your business runs on manual processes right now. Someone has to remember to follow up. Someone has to send the confirmation. Someone has to chase the estimate. Level 1 replaces all of that with rules-based systems — when a lead comes in, this happens. When an estimate goes unanswered for 7 days, this fires. No human required.",
-      callout: "This is low-hanging fruit that can be identified and tackled quickly, usually within the first 7 days of engagement.",
+      callout: "This is low-hanging fruit that can be identified and tackled quickly. Your first automation is usually live within the first 7 days of engagement.",
     },
     {
       level: "Level 2",
