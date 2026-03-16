@@ -373,7 +373,7 @@ function StreamDemo() {
         {/* Section header */}
         <div className="mb-12">
           <div className="mb-4 inline-block border-4 border-black bg-white px-4 py-2 text-sm font-bold tracking-widest uppercase shadow-neo-sm">
-            Level One
+            How It Works: Step One
           </div>
           <h2 className="text-4xl font-bold tracking-tighter uppercase text-white sm:text-5xl lg:text-6xl">
             Our proven{" "}
@@ -383,7 +383,7 @@ function StreamDemo() {
             {" "}system
           </h2>
           <p className="mt-4 text-xl font-bold text-white/60">
-            Select a step to see exactly what happens and what gets recovered
+            We tackle the lowest-hanging fruit and identify immediate ways to recover revenue with Level 1 automations.
           </p>
         </div>
 
