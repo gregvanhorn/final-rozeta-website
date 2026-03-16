@@ -293,7 +293,7 @@ function Hero() {
 
           <p className="mx-auto mt-10 max-w-2xl text-center text-xl leading-relaxed font-bold sm:text-2xl">
             We're the AI transformation team you've been looking for.{" "}
-            <span className="font-extrabold text-[hsl(0,85%,70%)]">
+            <span className="inline-block -rotate-1 border-4 border-black bg-[hsl(0,85%,70%)] px-2 font-extrabold shadow-neo-sm">
               Without the full-time hire.
             </span>{" "}
             We go cross-org, kill the manual processes, and ship your first workflow within 14 days.
