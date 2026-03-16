@@ -295,8 +295,7 @@ function Hero() {
             We're the AI transformation team your SMB has been looking for.{" "}
             <span className="inline-block -rotate-1 border-4 border-black bg-[hsl(0,85%,70%)] px-2 font-extrabold shadow-neo-sm">
               Without the full-time hire.
-            </span>
-            <br />
+            </span>{" "}
             We go cross-org, kill the manual processes, and ship your first workflow within 14 days.
           </p>
 
