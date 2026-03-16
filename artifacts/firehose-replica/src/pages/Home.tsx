@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, Zap, Brain, Crown, TrendingUp, Truck, HardHat, Headphones, Megaphone, DollarSign } from "lucide-react";
+import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, Zap, Brain, Crown, TrendingUp, Truck, HardHat, Headphones, Megaphone, DollarSign, Check, AlertTriangle, Clock, Users } from "lucide-react";
 
 const ROTATING_WORDS = [
   "Home Service", "Franchise", "Private Equity",
@@ -774,12 +774,167 @@ function Footer() {
   );
 }
 
+function ProblemSection() {
+  const problems = [
+    {
+      icon: <Clock className="h-7 w-7 stroke-black stroke-[2px]" />,
+      iconBg: "bg-[hsl(47,100%,50%)]",
+      headline: "Placeholder Headline One",
+      body: "This is a placeholder for a problem statement. The content will be filled in later. The design and layout are what matter right now.",
+    },
+    {
+      icon: <AlertTriangle className="h-7 w-7 stroke-black stroke-[2px]" />,
+      iconBg: "bg-[hsl(0,85%,70%)]",
+      headline: "Placeholder Headline Two",
+      body: "This is a placeholder for a second problem statement. The content will be filled in later. The design and layout are what matter right now.",
+    },
+    {
+      icon: <Users className="h-7 w-7 stroke-black stroke-[2px]" />,
+      iconBg: "bg-[hsl(260,60%,75%)]",
+      headline: "Placeholder Headline Three",
+      body: "This is a placeholder for a third problem statement. The content will be filled in later. The design and layout are what matter right now.",
+    },
+  ];
+
+  return (
+    <section className="border-b-4 border-black bg-black px-6 py-24 sm:px-12">
+      <div className="mx-auto max-w-6xl">
+        <div className="mb-4 inline-block border-4 border-white bg-transparent px-4 py-2 text-sm font-bold tracking-widest uppercase text-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)]">
+          Sound Familiar?
+        </div>
+        <h2 className="text-5xl font-bold tracking-tighter uppercase text-white sm:text-6xl lg:text-7xl">
+          Placeholder
+          <br />
+          Problem Section.
+        </h2>
+        <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed text-white/50">
+          This section will speak directly to the SMB owner's lived experience. Content to be written — the aesthetic is what's being validated here.
+        </p>
+
+        <div className="mt-14 grid gap-6 sm:grid-cols-3">
+          {problems.map((p) => (
+            <div
+              key={p.headline}
+              className="border-4 border-white bg-[hsl(46,100%,96%)] p-6 shadow-[6px_6px_0px_0px_rgba(255,255,255,0.4)]"
+            >
+              <div className={`mb-5 inline-flex items-center justify-center border-4 border-black p-3 ${p.iconBg}`}>
+                {p.icon}
+              </div>
+              <h3 className="text-xl font-extrabold uppercase tracking-tight">{p.headline}</h3>
+              <p className="mt-3 text-sm font-bold leading-relaxed opacity-60">{p.body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function PricingModel() {
+  const membershipIncludes = [
+    "Unlimited Level 1 automations",
+    "Dedicated implementation team",
+    "Cross-org process audit",
+    "First automation live within 7 days",
+    "Ongoing monitoring & optimization",
+    "Direct Slack access to your team",
+  ];
+
+  const projectIncludes = [
+    "Custom AI agent development",
+    "Deep integration & data work",
+    "Multi-system orchestration",
+    "Priced per project — no retainers",
+    "~50% of typical consulting rates",
+  ];
+
+  return (
+    <section className="border-b-4 border-black bg-[hsl(46,100%,96%)] px-6 py-24 sm:px-12">
+      <div className="mx-auto max-w-6xl">
+        <div className="mb-4 inline-block border-4 border-black bg-black px-4 py-2 text-sm font-bold tracking-widest uppercase text-[hsl(47,100%,50%)] shadow-neo-sm">
+          The Model
+        </div>
+        <h2 className="text-5xl font-bold tracking-tighter uppercase sm:text-6xl lg:text-7xl">
+          A Costco Membership
+          <br />
+          For AI.
+        </h2>
+        <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed opacity-60">
+          Costco charges you a flat fee to get in the door. Then everything inside is at cost — no markup, no games. That's exactly how we work.
+        </p>
+
+        <div className="mt-14 grid gap-6 lg:grid-cols-2">
+          {/* Membership Card */}
+          <div className="relative border-4 border-black bg-[hsl(47,100%,50%)] p-8 shadow-neo-lg">
+            <div className="mb-2 inline-block border-4 border-black bg-black px-3 py-1 text-xs font-bold uppercase tracking-widest text-[hsl(47,100%,50%)]">
+              Level 1 Membership
+            </div>
+            <div className="mt-4 flex items-end gap-2">
+              <span className="text-7xl font-extrabold tracking-tighter leading-none">$500</span>
+              <span className="mb-2 text-xl font-bold uppercase">/month</span>
+            </div>
+            <p className="mt-3 text-base font-bold opacity-70">
+              One flat fee. Unlimited Level 1 automations. Your whole operation.
+            </p>
+            <div className="mt-8 space-y-3">
+              {membershipIncludes.map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  <div className="mt-0.5 flex-shrink-0 border-2 border-black bg-black p-0.5">
+                    <Check className="h-4 w-4 stroke-[hsl(47,100%,50%)] stroke-[3px]" />
+                  </div>
+                  <span className="text-sm font-bold leading-snug">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Project Pricing Card */}
+          <div className="border-4 border-black bg-white p-8 shadow-neo-lg">
+            <div className="mb-2 inline-block border-4 border-black bg-[hsl(47,100%,50%)] px-3 py-1 text-xs font-bold uppercase tracking-widest">
+              Level 2 & 3 Projects
+            </div>
+            <div className="mt-4 flex items-end gap-2">
+              <span className="text-7xl font-extrabold tracking-tighter leading-none">At Cost</span>
+            </div>
+            <p className="mt-3 text-base font-bold leading-snug opacity-60">
+              Like Costco bulk pricing — the heavy-lift AI work is priced at roughly half what you'd pay a traditional consultancy.
+            </p>
+            <div className="mt-8 space-y-3">
+              {projectIncludes.map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  <div className="mt-0.5 flex-shrink-0 border-2 border-black bg-black p-0.5">
+                    <Check className="h-4 w-4 stroke-[hsl(47,100%,50%)] stroke-[3px]" />
+                  </div>
+                  <span className="text-sm font-bold leading-snug opacity-70">{item}</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8 border-t-4 border-black pt-6">
+              <p className="text-sm font-extrabold uppercase tracking-wide opacity-50">
+                Membership required. No surprise invoices.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 border-4 border-black bg-black px-6 py-4 shadow-neo-sm">
+          <p className="text-center text-sm font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">
+            No contracts. No retainers. Just results — or you cancel anytime.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-[hsl(46,100%,96%)] font-sans text-[hsl(0,0%,5%)]">
       <Navbar />
       <Hero />
+      <ProblemSection />
       <WhySection />
+      <PricingModel />
       <StreamDemo />
       <EmbedOrg />
       <Features />
