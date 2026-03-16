@@ -797,9 +797,9 @@ function ProblemSection() {
   ];
 
   return (
-    <section className="border-b-4 border-black bg-black px-6 py-24 sm:px-12">
+    <section className="border-b-4 border-black bg-[hsl(210,100%,56%)] px-6 py-24 sm:px-12">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-4 inline-block border-4 border-white bg-transparent px-4 py-2 text-sm font-bold tracking-widest uppercase text-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)]">
+        <div className="mb-4 inline-block border-4 border-black bg-white px-4 py-2 text-sm font-bold tracking-widest uppercase shadow-neo-sm">
           Sound Familiar?
         </div>
         <h2 className="text-5xl font-bold tracking-tighter uppercase text-white sm:text-6xl lg:text-7xl">
@@ -807,7 +807,7 @@ function ProblemSection() {
           <br />
           Problem Section.
         </h2>
-        <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed text-white/50">
+        <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed text-white/70">
           This section will speak directly to the SMB owner's lived experience. Content to be written — the aesthetic is what's being validated here.
         </p>
 
@@ -815,7 +815,7 @@ function ProblemSection() {
           {problems.map((p) => (
             <div
               key={p.headline}
-              className="border-4 border-white bg-[hsl(46,100%,96%)] p-6 shadow-[6px_6px_0px_0px_rgba(255,255,255,0.4)]"
+              className="border-4 border-black bg-[hsl(46,100%,96%)] p-6 shadow-neo-md"
             >
               <div className={`mb-5 inline-flex items-center justify-center border-4 border-black p-3 ${p.iconBg}`}>
                 {p.icon}
