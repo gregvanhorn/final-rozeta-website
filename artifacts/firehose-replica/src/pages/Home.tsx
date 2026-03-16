@@ -102,24 +102,28 @@ const DEPARTMENTS = [
 
 const FEATURES = [
   {
-    icon: <Bot className="h-6 w-6" />,
+    icon: <TrendingUp className="h-6 w-6" />,
+    industry: "HOME SERVICES",
     title: "Price Hawk",
-    description: "Monitors what you're actually paying per unit across suppliers over time and alerts you when prices have quietly crept up. Most owners don't realize they're getting slowly bled until it's already cost them thousands.",
-  },
-  {
-    icon: <Code2 className="h-6 w-6" />,
-    title: "Close Rate Whisperer",
-    description: "Analyzes your estimate pipeline by job type, zip code, ticket size, and season to tell you exactly where you're underpriced and where you're losing deals you shouldn't. If you're closing 90% of bids in a category, you're leaving money on the table — this agent finds it.",
-  },
-  {
-    icon: <Radio className="h-6 w-6" />,
-    title: "Ghost Hunter",
-    description: "Scans your customer database and scores past clients by reactivation probability based on service history, time since last job, and seasonal patterns. Turns a dead list into a warm pipeline without spending a dollar on ads.",
+    description: "Most owners don't realize their supplier costs have quietly crept up until it's already cost them thousands. Price Hawk maintains a live database of every invoice from every supplier — normalized across formats — and fires an alert the moment a line item drifts upward. When you're about to place a supply order, it tells you exactly where to buy each item to hit the lowest total cost.",
   },
   {
     icon: <Sparkles className="h-6 w-6" />,
-    title: "Storm Chaser",
-    description: "Monitors weather events and local permit filings to surface demand surges before your competitors even know they're coming. By the time everyone else is scrambling for storm leads, you're already booked.",
+    industry: "FRANCHISE",
+    title: "Upsell Detection Agent",
+    description: "Reads job notes, field photos, and crew reports in real time. When it detects language or imagery indicating an unaddressed problem — a cracked component, a worn part, a safety risk — it flags the upsell opportunity with a suggested line item before the crew leaves the site. Revenue that used to walk out the door gets captured automatically.",
+  },
+  {
+    icon: <Brain className="h-6 w-6" />,
+    industry: "HEALTH & WELLNESS",
+    title: "Client Sentiment Trajectory Agent",
+    description: "Reads every inbound email, text, and support ticket from each client. Tracks sentiment over time — not just flagging complaints, but detecting when a previously satisfied client starts trending negative. Fires an internal alert with a summary of exactly what shifted and which interactions caused it. Catches churn before it becomes a cancellation.",
+  },
+  {
+    icon: <DollarSign className="h-6 w-6" />,
+    industry: "PROFESSIONAL SERVICES",
+    title: "Job Profitability Forensics Agent",
+    description: "After every engagement closes, pulls actual hours, materials, subcontractor costs, change orders, and payment data — and calculates true profit vs. estimate. Over time, surfaces which job types, lead sources, and client segments are margin-makers vs. margin-killers. Most owners think they know. They don't.",
   },
 ];
 
@@ -512,7 +516,7 @@ function Features() {
       <div className="bg-grid-neo absolute inset-0 opacity-30" />
       <div className="relative mx-auto max-w-7xl px-6 py-24">
         <div className="mb-4 inline-block border-4 border-black bg-white px-4 py-2 text-sm font-bold tracking-widest uppercase shadow-neo-sm">
-          Level Two
+          How It Works: Step Three
         </div>
         <h2 className="text-4xl font-bold tracking-tighter uppercase sm:text-5xl lg:text-6xl">
           Custom Built{" "}
@@ -521,7 +525,7 @@ function Features() {
           </span>
         </h2>
         <p className="mt-4 text-xl font-bold opacity-60">
-          Built for specific business needs. See examples below.
+          Once we know what's broken, we build agents that fix it. These aren't Zaps — they process unstructured data, recognize patterns across thousands of data points, and make decisions no rule-based tool can replicate.
         </p>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -530,6 +534,9 @@ function Features() {
               key={i}
               className="group border-4 border-black bg-white p-8 shadow-neo-md transition-all duration-200 hover:-translate-y-2 hover:shadow-neo-lg"
             >
+              <div className="mb-4 inline-block border-4 border-black bg-black px-3 py-1 text-xs font-bold tracking-widest text-[hsl(47,100%,50%)] uppercase">
+                {f.industry}
+              </div>
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-neo-sm">
                 {f.icon}
               </div>
