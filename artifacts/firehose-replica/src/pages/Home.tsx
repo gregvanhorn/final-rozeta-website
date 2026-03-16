@@ -1,11 +1,128 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Bot, ArrowRight, Code2, Sparkles, Radio, X, Menu, Zap, Brain } from "lucide-react";
+import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, ExternalLink, Zap, Brain } from "lucide-react";
 
 const ROTATING_WORDS = [
   "Home Service", "Franchise", "Private Equity",
   "Service", "Real Estate", "Health & Wellness",
 ];
 
+const USE_CASES = [
+  {
+    id: "step-1",
+    label: "Step 1 — Find the Leaks",
+    description: "We audit your pipeline, response times, estimate follow-up, and retention process to identify exactly where revenue is walking out the door.",
+    query: "audit: pipeline AND response_times AND estimate_follow_up AND retention",
+    events: [
+      {
+        title: "Pipeline audit complete",
+        url: "",
+        summary: "+ Identified revenue gaps in lead response, estimate follow-up, and retention",
+      },
+      {
+        title: "Dollar figure attached to every leak",
+        url: "",
+        summary: "+ $0 left vague — every gap gets a real number assigned to it",
+      },
+      {
+        title: "Full revenue leak report delivered",
+        url: "",
+        summary: "+ Clear picture of exactly where money is walking out the door",
+      },
+    ],
+  },
+  {
+    id: "step-2",
+    label: "Step 2 — Build the Systems",
+    description: "We custom-build the five Revenue Recovery systems for your specific business — your CRM, your workflow, your team. Nothing templated. Live in 14 days.",
+    query: "build: CRM AND workflow AND team_systems AND timeline:14_days",
+    events: [
+      {
+        title: "Custom systems scoped to your business",
+        url: "",
+        summary: "+ No templates — built around your CRM, workflow, and team structure",
+      },
+      {
+        title: "All five recovery systems configured",
+        url: "",
+        summary: "+ Lead response, estimate follow-up, no-show recovery, reactivation, reviews",
+      },
+      {
+        title: "Live in 14 days",
+        url: "",
+        summary: "+ Full buildout and handoff completed within two weeks of kickoff",
+      },
+    ],
+  },
+  {
+    id: "step-3",
+    label: "Step 3 — Plug the Leaks",
+    description: "The systems go live. Leads get responded to in 60 seconds. Dead estimates get worked. No-shows get recovered. You stop losing money you were already earning.",
+    query: "deploy: lead_response:60s AND estimate_recovery AND no_show_followup",
+    events: [
+      {
+        title: "Leads responded to within 60 seconds",
+        url: "",
+        summary: "+ Automated response fires the moment a new lead hits your pipeline",
+      },
+      {
+        title: "Dead estimates reactivated",
+        url: "",
+        summary: "+ Follow-up sequences re-engage quotes that went cold",
+      },
+      {
+        title: "No-shows recovered automatically",
+        url: "",
+        summary: "+ Missed appointments trigger instant rebooking sequences",
+      },
+    ],
+  },
+  {
+    id: "step-4",
+    label: "Step 4 — Measure the Recovery",
+    description: "Every system is tracked. Every month you get a plain-language report showing exactly what each system recovered — jobs booked, estimates closed, customers reactivated, reviews captured.",
+    query: "report: jobs_booked AND estimates_closed AND customers_reactivated AND reviews",
+    events: [
+      {
+        title: "Monthly plain-language report delivered",
+        url: "",
+        summary: "+ No dashboards to learn — just a clear summary of what was recovered",
+      },
+      {
+        title: "Jobs booked and estimates closed tracked",
+        url: "",
+        summary: "+ Every recovered dollar attributed to the system that captured it",
+      },
+      {
+        title: "Customer reactivations and reviews logged",
+        url: "",
+        summary: "+ Full visibility into retention and reputation recovery each month",
+      },
+    ],
+  },
+  {
+    id: "step-5",
+    label: "Step 5 — Optimize and Expand",
+    description: "Once the first layer is running, we go deeper. New leaks get identified. New systems get built. The engagement compounds and the business gets harder to disrupt every month.",
+    query: "optimize: new_leaks AND expand_systems AND compound_growth",
+    events: [
+      {
+        title: "New leaks identified as business evolves",
+        url: "",
+        summary: "+ Ongoing audits surface new revenue gaps as your operations grow",
+      },
+      {
+        title: "New systems built on top of existing layer",
+        url: "",
+        summary: "+ Each phase compounds on the last — coverage deepens every month",
+      },
+      {
+        title: "Business becomes harder to disrupt",
+        url: "",
+        summary: "+ Systematized operations create resilience competitors can't match",
+      },
+    ],
+  },
+];
 
 const QUERY_EXAMPLES = [
   { query: 'site:reuters.com AND title:tesla', label: "Target specific sites" },
@@ -41,6 +158,64 @@ const FEATURES = [
   },
 ];
 
+function renderQueryHighlighted(query: string) {
+  const parts: { text: string; type: "keyword" | "quote" | "paren" | "plain" }[] = [];
+  let i = 0;
+  while (i < query.length) {
+    if (query[i] === " ") {
+      parts.push({ text: " ", type: "plain" });
+      i++;
+      continue;
+    }
+    const rest = query.slice(i);
+    const kwMatch = rest.match(/^(AND|OR|NOT|TO)\b/);
+    if (kwMatch) {
+      parts.push({ text: kwMatch[1], type: "keyword" });
+      i += kwMatch[1].length;
+      continue;
+    }
+    if (query[i] === '"') {
+      let j = i + 1;
+      while (j < query.length && query[j] !== '"') j++;
+      parts.push({ text: query.slice(i, j + 1), type: "quote" });
+      i = j + 1;
+      continue;
+    }
+    if (query[i] === "(" || query[i] === ")") {
+      parts.push({ text: query[i], type: "paren" });
+      i++;
+      continue;
+    }
+    let j = i;
+    while (j < query.length && query[j] !== " " && query[j] !== '"' && query[j] !== "(" && query[j] !== ")") j++;
+    parts.push({ text: query.slice(i, j), type: "plain" });
+    i = j;
+  }
+  return parts;
+}
+
+function useStreamAnimation(count: number, seed: number) {
+  const [visibleCount, setVisibleCount] = useState(0);
+
+  useEffect(() => {
+    setVisibleCount(0);
+    let current = 0;
+    let cancelled = false;
+
+    const tick = () => {
+      if (cancelled) return;
+      current++;
+      if (current <= count) {
+        setVisibleCount(current);
+        setTimeout(tick, 400);
+      }
+    };
+    setTimeout(tick, 200);
+    return () => { cancelled = true; };
+  }, [count, seed]);
+
+  return visibleCount;
+}
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -304,6 +479,140 @@ function WhySection() {
   );
 }
 
+function StreamDemo() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [queryCycle, setQueryCycle] = useState(0);
+  const useCase = USE_CASES[activeIndex];
+  const visibleCount = useStreamAnimation(useCase.events.length, queryCycle);
+
+  const handleTab = (idx: number) => {
+    setActiveIndex(idx);
+    setQueryCycle((c) => c + 1);
+  };
+
+  return (
+    <section id="use-cases" className="relative border-b-4 border-black bg-[hsl(210,100%,56%)]">
+      <div className="bg-halftone absolute inset-0 opacity-5" />
+      <div className="relative mx-auto max-w-7xl px-6 py-24">
+        {/* Section header */}
+        <div className="mb-12">
+          <div className="mb-4 inline-block border-4 border-black bg-white px-4 py-2 text-sm font-bold tracking-widest uppercase shadow-neo-sm">
+            Level One
+          </div>
+          <h2 className="text-4xl font-bold tracking-tighter uppercase text-white sm:text-5xl lg:text-6xl">
+            Our proven{" "}
+            <span className="ml-3 inline-block border-4 border-white bg-[hsl(47,100%,50%)] px-3 text-black shadow-[6px_6px_0px_0px_rgba(255,255,255,0.8)]">
+              revenue recovery
+            </span>
+            {" "}system
+          </h2>
+          <p className="mt-4 text-xl font-bold text-white/60">
+            Select a step to see exactly what happens and what gets recovered
+          </p>
+        </div>
+
+        <div className="grid gap-6 lg:grid-cols-[1fr_1.5fr]">
+          {/* Left: Use case selector */}
+          <div className="flex flex-col gap-3">
+            {USE_CASES.map((uc, i) => (
+              <button
+                key={uc.id}
+                onClick={() => handleTab(i)}
+                className={`group border-4 border-black p-5 text-left transition-all duration-100 ${
+                  activeIndex === i
+                    ? "bg-[hsl(47,100%,50%)] shadow-neo-md translate-x-[-2px] translate-y-[-2px]"
+                    : "bg-white hover:-translate-x-[1px] hover:-translate-y-[1px] hover:shadow-neo-sm"
+                }`}
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-base font-bold tracking-tight uppercase">
+                    {uc.label}
+                  </span>
+                  {activeIndex === i && <ChevronRight className="h-4 w-4" />}
+                </div>
+                <p className="mt-1 text-sm font-bold opacity-60 leading-relaxed">
+                  {uc.description}
+                </p>
+              </button>
+            ))}
+          </div>
+
+          {/* Right: Stream output */}
+          <div className="border-4 border-black bg-black shadow-neo-md">
+            {/* Terminal header */}
+            <div className="flex items-center gap-2 border-b-4 border-black bg-[hsl(0,0%,15%)] px-4 py-3">
+              <div className="h-3 w-3 border-2 border-black bg-red-500" />
+              <div className="h-3 w-3 border-2 border-black bg-yellow-400" />
+              <div className="h-3 w-3 border-2 border-black bg-green-400" />
+              <span className="ml-2 text-xs font-bold text-white/50 uppercase tracking-widest">
+                Rozeta Labs — {useCase.id}
+              </span>
+            </div>
+
+            {/* Query display */}
+            <div className="border-b-4 border-white/10 bg-[hsl(0,0%,10%)] px-4 py-3">
+              <div className="mb-1 text-xs font-bold text-white/40 uppercase tracking-widest">Query</div>
+              <div className="font-mono text-sm leading-relaxed break-all">
+                {renderQueryHighlighted(useCase.query).map((part, i) => (
+                  <span
+                    key={i}
+                    className={
+                      part.type === "keyword"
+                        ? "font-bold text-[hsl(47,100%,50%)]"
+                        : part.type === "quote"
+                        ? "text-green-400"
+                        : part.type === "paren"
+                        ? "text-[hsl(210,100%,70%)]"
+                        : "text-white"
+                    }
+                  >
+                    {part.text}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Events */}
+            <div className="divide-y divide-white/10 min-h-[280px]">
+              {useCase.events.slice(0, visibleCount).map((event, i) => (
+                <div
+                  key={i}
+                  className="animate-stream-in px-4 py-4"
+                  style={{ animationDelay: `${i * 50}ms` }}
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="mt-0.5 h-2 w-2 shrink-0 border-2 border-[hsl(47,100%,50%)] bg-[hsl(47,100%,50%)]" />
+                    <div>
+                      <a
+                        href={event.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex items-start gap-1 text-sm font-bold text-white hover:underline decoration-yellow-400"
+                      >
+                        {event.title}
+                        <ExternalLink className="mt-0.5 h-3 w-3 shrink-0 opacity-0 group-hover:opacity-100" />
+                      </a>
+                      <p className="mt-1 font-mono text-xs text-green-400">{event.summary}</p>
+                      <p className="mt-1 font-mono text-xs text-white/30 truncate">{event.url}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+
+              {visibleCount < useCase.events.length && (
+                <div className="flex items-center gap-2 px-4 py-3">
+                  <div className="h-2 w-2 animate-pulse border-2 border-[hsl(47,100%,50%)] bg-[hsl(47,100%,50%)]" />
+                  <span className="font-mono text-xs text-white/40">Waiting for events...</span>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function QueryExamples() {
   return (
     <section className="relative border-b-4 border-black bg-black">
@@ -560,6 +869,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <WhySection />
+      <StreamDemo />
       <QueryExamples />
       <Features />
       <CodeExample />
