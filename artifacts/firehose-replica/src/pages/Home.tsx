@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, ExternalLink, Zap, Brain } from "lucide-react";
+import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, Zap, Brain } from "lucide-react";
 
 const ROTATING_WORDS = [
   "Home Service", "Franchise", "Private Equity",
@@ -158,64 +158,6 @@ const FEATURES = [
   },
 ];
 
-function renderQueryHighlighted(query: string) {
-  const parts: { text: string; type: "keyword" | "quote" | "paren" | "plain" }[] = [];
-  let i = 0;
-  while (i < query.length) {
-    if (query[i] === " ") {
-      parts.push({ text: " ", type: "plain" });
-      i++;
-      continue;
-    }
-    const rest = query.slice(i);
-    const kwMatch = rest.match(/^(AND|OR|NOT|TO)\b/);
-    if (kwMatch) {
-      parts.push({ text: kwMatch[1], type: "keyword" });
-      i += kwMatch[1].length;
-      continue;
-    }
-    if (query[i] === '"') {
-      let j = i + 1;
-      while (j < query.length && query[j] !== '"') j++;
-      parts.push({ text: query.slice(i, j + 1), type: "quote" });
-      i = j + 1;
-      continue;
-    }
-    if (query[i] === "(" || query[i] === ")") {
-      parts.push({ text: query[i], type: "paren" });
-      i++;
-      continue;
-    }
-    let j = i;
-    while (j < query.length && query[j] !== " " && query[j] !== '"' && query[j] !== "(" && query[j] !== ")") j++;
-    parts.push({ text: query.slice(i, j), type: "plain" });
-    i = j;
-  }
-  return parts;
-}
-
-function useStreamAnimation(count: number, seed: number) {
-  const [visibleCount, setVisibleCount] = useState(0);
-
-  useEffect(() => {
-    setVisibleCount(0);
-    let current = 0;
-    let cancelled = false;
-
-    const tick = () => {
-      if (cancelled) return;
-      current++;
-      if (current <= count) {
-        setVisibleCount(current);
-        setTimeout(tick, 400);
-      }
-    };
-    setTimeout(tick, 200);
-    return () => { cancelled = true; };
-  }, [count, seed]);
-
-  return visibleCount;
-}
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -481,13 +423,9 @@ function WhySection() {
 
 function StreamDemo() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [queryCycle, setQueryCycle] = useState(0);
-  const useCase = USE_CASES[activeIndex];
-  const visibleCount = useStreamAnimation(useCase.events.length, queryCycle);
 
   const handleTab = (idx: number) => {
     setActiveIndex(idx);
-    setQueryCycle((c) => c + 1);
   };
 
   return (
@@ -511,102 +449,28 @@ function StreamDemo() {
           </p>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-[1fr_1.5fr]">
-          {/* Left: Use case selector */}
-          <div className="flex flex-col gap-3">
-            {USE_CASES.map((uc, i) => (
-              <button
-                key={uc.id}
-                onClick={() => handleTab(i)}
-                className={`group border-4 border-black p-5 text-left transition-all duration-100 ${
-                  activeIndex === i
-                    ? "bg-[hsl(47,100%,50%)] shadow-neo-md translate-x-[-2px] translate-y-[-2px]"
-                    : "bg-white hover:-translate-x-[1px] hover:-translate-y-[1px] hover:shadow-neo-sm"
-                }`}
-              >
-                <div className="flex items-center justify-between">
-                  <span className="text-base font-bold tracking-tight uppercase">
-                    {uc.label}
-                  </span>
-                  {activeIndex === i && <ChevronRight className="h-4 w-4" />}
-                </div>
-                <p className="mt-1 text-sm font-bold opacity-60 leading-relaxed">
-                  {uc.description}
-                </p>
-              </button>
-            ))}
-          </div>
-
-          {/* Right: Stream output */}
-          <div className="border-4 border-black bg-black shadow-neo-md">
-            {/* Terminal header */}
-            <div className="flex items-center gap-2 border-b-4 border-black bg-[hsl(0,0%,15%)] px-4 py-3">
-              <div className="h-3 w-3 border-2 border-black bg-red-500" />
-              <div className="h-3 w-3 border-2 border-black bg-yellow-400" />
-              <div className="h-3 w-3 border-2 border-black bg-green-400" />
-              <span className="ml-2 text-xs font-bold text-white/50 uppercase tracking-widest">
-                Rozeta Labs — {useCase.id}
-              </span>
-            </div>
-
-            {/* Query display */}
-            <div className="border-b-4 border-white/10 bg-[hsl(0,0%,10%)] px-4 py-3">
-              <div className="mb-1 text-xs font-bold text-white/40 uppercase tracking-widest">Query</div>
-              <div className="font-mono text-sm leading-relaxed break-all">
-                {renderQueryHighlighted(useCase.query).map((part, i) => (
-                  <span
-                    key={i}
-                    className={
-                      part.type === "keyword"
-                        ? "font-bold text-[hsl(47,100%,50%)]"
-                        : part.type === "quote"
-                        ? "text-green-400"
-                        : part.type === "paren"
-                        ? "text-[hsl(210,100%,70%)]"
-                        : "text-white"
-                    }
-                  >
-                    {part.text}
-                  </span>
-                ))}
+        <div className="flex flex-col gap-3">
+          {USE_CASES.map((uc, i) => (
+            <button
+              key={uc.id}
+              onClick={() => handleTab(i)}
+              className={`group border-4 border-black p-5 text-left transition-all duration-100 ${
+                activeIndex === i
+                  ? "bg-[hsl(47,100%,50%)] shadow-neo-md translate-x-[-2px] translate-y-[-2px]"
+                  : "bg-white hover:-translate-x-[1px] hover:-translate-y-[1px] hover:shadow-neo-sm"
+              }`}
+            >
+              <div className="flex items-center justify-between">
+                <span className="text-base font-bold tracking-tight uppercase">
+                  {uc.label}
+                </span>
+                {activeIndex === i && <ChevronRight className="h-4 w-4" />}
               </div>
-            </div>
-
-            {/* Events */}
-            <div className="divide-y divide-white/10 min-h-[280px]">
-              {useCase.events.slice(0, visibleCount).map((event, i) => (
-                <div
-                  key={i}
-                  className="animate-stream-in px-4 py-4"
-                  style={{ animationDelay: `${i * 50}ms` }}
-                >
-                  <div className="flex items-start gap-3">
-                    <div className="mt-0.5 h-2 w-2 shrink-0 border-2 border-[hsl(47,100%,50%)] bg-[hsl(47,100%,50%)]" />
-                    <div>
-                      <a
-                        href={event.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group flex items-start gap-1 text-sm font-bold text-white hover:underline decoration-yellow-400"
-                      >
-                        {event.title}
-                        <ExternalLink className="mt-0.5 h-3 w-3 shrink-0 opacity-0 group-hover:opacity-100" />
-                      </a>
-                      <p className="mt-1 font-mono text-xs text-green-400">{event.summary}</p>
-                      <p className="mt-1 font-mono text-xs text-white/30 truncate">{event.url}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-
-              {visibleCount < useCase.events.length && (
-                <div className="flex items-center gap-2 px-4 py-3">
-                  <div className="h-2 w-2 animate-pulse border-2 border-[hsl(47,100%,50%)] bg-[hsl(47,100%,50%)]" />
-                  <span className="font-mono text-xs text-white/40">Waiting for events...</span>
-                </div>
-              )}
-            </div>
-          </div>
+              <p className="mt-1 text-sm font-bold opacity-60 leading-relaxed">
+                {uc.description}
+              </p>
+            </button>
+          ))}
         </div>
       </div>
     </section>
