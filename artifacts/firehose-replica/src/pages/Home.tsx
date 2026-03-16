@@ -309,21 +309,21 @@ function Hero() {
         <div className="flex flex-col items-center">
           <div className="relative mx-auto max-w-5xl text-center">
             <span className="block text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
-              Scale Your
+              Your
             </span>
             <span className="mt-4 block text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
               {displayText}<span className="typewriter-cursor" aria-hidden="true" />
             </span>
             <span className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
-              <span>Business</span>
+              <span>Business Needs</span>
               <span className="relative inline-block -rotate-1 border-4 border-black bg-[hsl(47,100%,50%)] px-4 shadow-neo-md">
-                with AI
+                An AI Team
               </span>
             </span>
           </div>
 
           <p className="mx-auto mt-10 max-w-2xl text-center text-xl leading-relaxed font-bold sm:text-2xl">
-            Top operators don't outwork you. They out automate you. We build AI and automation systems that run around the clock. Recovering the profits you're manually missing.
+            We're the internal AI transformation team you've been looking for — without the full-time hire. We go cross-org, kill the manual processes, and ship in 14 days.
           </p>
 
           <div className="mt-12 flex flex-col items-center gap-4">
