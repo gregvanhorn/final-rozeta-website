@@ -8,119 +8,57 @@ const ROTATING_WORDS = [
 
 const USE_CASES = [
   {
+    id: "system-01",
+    label: "System 01 — 60-Second Response Engine",
+    description: "Kills speed-to-lead failure. The moment a lead hits any channel, an instant personalized SMS fires to the prospect, the right person internally gets notified, and everything logs in the CRM — all within 60 seconds. Responding in under 60 seconds vs 5 minutes increases close rate by 400%.",
+  },
+  {
+    id: "system-02",
+    label: "System 02 — Dead Estimate Reactivation",
+    description: "Kills the estimate graveyard. Every open quote older than 7 days gets enrolled in a timed follow-up sequence — casual check-in at day 7, value-add at day 14, urgency trigger at day 21, final ask at day 30. Most clients recover 3–8 jobs in the first 30 days from quotes that were already written.",
+  },
+  {
+    id: "system-03",
+    label: "System 03 — No-Show Recovery Protocol",
+    description: "Kills no-show and cancellation bleed. Confirmation and reminder sequences fire at 48h, 24h, and 2h before every appointment. If a customer no-shows, an immediate recovery SMS offers the next available slot and triggers a 3-touch re-engagement sequence. Most operators recover 30–40% of no-shows that previously just disappeared.",
+  },
+  {
+    id: "system-04",
+    label: "System 04 — Owner Liberation System",
+    description: "Kills the owner-as-bottleneck problem. We map every recurring decision the owner makes, automate the high-frequency ones with decision trees, deploy a company-trained AI assistant for staff questions, and replace status check-ins with automated daily briefings. Most owners remove themselves from 50–70% of day-to-day decisions within 90 days.",
+  },
+  {
+    id: "system-05",
+    label: "System 05 — Repeat Revenue Reactivation",
+    description: "Kills zero retention. Three sub-systems run together: post-job review capture sequences, a referral ask protocol for satisfied customers, and AI-personalized seasonal reactivation campaigns for every past customer segmented by job type and service date. Your completed job list becomes a recurring revenue asset.",
+  },
+];
+
+const PROCESS_STEPS = [
+  {
     id: "step-1",
     label: "Step 1 — Find the Leaks",
-    description: "We audit your pipeline, response times, estimate follow-up, and retention process to identify exactly where revenue is walking out the door.",
-    query: "audit: pipeline AND response_times AND estimate_follow_up AND retention",
-    events: [
-      {
-        title: "Pipeline audit complete",
-        url: "",
-        summary: "+ Identified revenue gaps in lead response, estimate follow-up, and retention",
-      },
-      {
-        title: "Dollar figure attached to every leak",
-        url: "",
-        summary: "+ $0 left vague — every gap gets a real number assigned to it",
-      },
-      {
-        title: "Full revenue leak report delivered",
-        url: "",
-        summary: "+ Clear picture of exactly where money is walking out the door",
-      },
-    ],
+    description: "We audit your pipeline, response times, estimate follow-up, and retention process to identify exactly where revenue is walking out the door. Every gap gets a dollar figure — nothing left vague.",
   },
   {
     id: "step-2",
     label: "Step 2 — Build the Systems",
     description: "We custom-build the five Revenue Recovery systems for your specific business — your CRM, your workflow, your team. Nothing templated. Live in 14 days.",
-    query: "build: CRM AND workflow AND team_systems AND timeline:14_days",
-    events: [
-      {
-        title: "Custom systems scoped to your business",
-        url: "",
-        summary: "+ No templates — built around your CRM, workflow, and team structure",
-      },
-      {
-        title: "All five recovery systems configured",
-        url: "",
-        summary: "+ Lead response, estimate follow-up, no-show recovery, reactivation, reviews",
-      },
-      {
-        title: "Live in 14 days",
-        url: "",
-        summary: "+ Full buildout and handoff completed within two weeks of kickoff",
-      },
-    ],
   },
   {
     id: "step-3",
     label: "Step 3 — Plug the Leaks",
     description: "The systems go live. Leads get responded to in 60 seconds. Dead estimates get worked. No-shows get recovered. You stop losing money you were already earning.",
-    query: "deploy: lead_response:60s AND estimate_recovery AND no_show_followup",
-    events: [
-      {
-        title: "Leads responded to within 60 seconds",
-        url: "",
-        summary: "+ Automated response fires the moment a new lead hits your pipeline",
-      },
-      {
-        title: "Dead estimates reactivated",
-        url: "",
-        summary: "+ Follow-up sequences re-engage quotes that went cold",
-      },
-      {
-        title: "No-shows recovered automatically",
-        url: "",
-        summary: "+ Missed appointments trigger instant rebooking sequences",
-      },
-    ],
   },
   {
     id: "step-4",
     label: "Step 4 — Measure the Recovery",
     description: "Every system is tracked. Every month you get a plain-language report showing exactly what each system recovered — jobs booked, estimates closed, customers reactivated, reviews captured.",
-    query: "report: jobs_booked AND estimates_closed AND customers_reactivated AND reviews",
-    events: [
-      {
-        title: "Monthly plain-language report delivered",
-        url: "",
-        summary: "+ No dashboards to learn — just a clear summary of what was recovered",
-      },
-      {
-        title: "Jobs booked and estimates closed tracked",
-        url: "",
-        summary: "+ Every recovered dollar attributed to the system that captured it",
-      },
-      {
-        title: "Customer reactivations and reviews logged",
-        url: "",
-        summary: "+ Full visibility into retention and reputation recovery each month",
-      },
-    ],
   },
   {
     id: "step-5",
     label: "Step 5 — Optimize and Expand",
     description: "Once the first layer is running, we go deeper. New leaks get identified. New systems get built. The engagement compounds and the business gets harder to disrupt every month.",
-    query: "optimize: new_leaks AND expand_systems AND compound_growth",
-    events: [
-      {
-        title: "New leaks identified as business evolves",
-        url: "",
-        summary: "+ Ongoing audits surface new revenue gaps as your operations grow",
-      },
-      {
-        title: "New systems built on top of existing layer",
-        url: "",
-        summary: "+ Each phase compounds on the last — coverage deepens every month",
-      },
-      {
-        title: "Business becomes harder to disrupt",
-        url: "",
-        summary: "+ Systematized operations create resilience competitors can't match",
-      },
-    ],
   },
 ];
 
@@ -623,6 +561,48 @@ eventSource.onmessage = (event) => {
   );
 }
 
+function OurProcess() {
+  return (
+    <section className="relative border-b-4 border-black bg-[hsl(46,100%,96%)]">
+      <div className="relative mx-auto max-w-7xl px-6 py-24">
+        <div className="mb-12">
+          <div className="mb-4 inline-block border-4 border-black bg-[hsl(47,100%,50%)] px-4 py-2 text-sm font-bold tracking-widest uppercase shadow-neo-sm">
+            Our Process
+          </div>
+          <h2 className="text-4xl font-bold tracking-tighter uppercase sm:text-5xl lg:text-6xl">
+            How we work{" "}
+            <span className="inline-block border-b-4 border-black">with you</span>
+          </h2>
+          <p className="mt-4 text-xl font-bold opacity-60">
+            From audit to compounding results — five steps, 14 days to live.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          {PROCESS_STEPS.map((step, i) => (
+            <div
+              key={step.id}
+              className="flex gap-6 border-4 border-black bg-white p-6 shadow-neo-sm"
+            >
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] text-sm font-bold shadow-[3px_3px_0_0_#000]">
+                {i + 1}
+              </div>
+              <div>
+                <h3 className="text-base font-bold tracking-tight uppercase">
+                  {step.label}
+                </h3>
+                <p className="mt-1 text-sm font-bold opacity-60 leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function AISection() {
   return (
     <section className="relative border-b-4 border-black bg-[hsl(46,50%,88%)]">
@@ -737,6 +717,7 @@ export default function Home() {
       <QueryExamples />
       <Features />
       <CodeExample />
+      <OurProcess />
       <AISection />
       <CTA />
       <Footer />
