@@ -290,7 +290,7 @@ function WhySection() {
       iconBg: "bg-[hsl(0,85%,70%)]",
       icon: <Zap className="h-7 w-7 stroke-black stroke-[2px]" />,
       body: "Your business runs on manual processes right now. Someone has to remember to follow up. Someone has to send the confirmation. Someone has to chase the estimate. Level 1 replaces all of that with rules-based systems — when a lead comes in, this happens. When an estimate goes unanswered for 7 days, this fires. No human required.",
-      callout: "This is where we start with every client because the wins are fast, the ROI is immediate, and you feel the difference within the first 30 days.",
+      callout: "This is low-hanging fruit that can be identified and tackled quickly, usually within the first 7 days of engagement.",
     },
     {
       level: "Level 2",
@@ -317,7 +317,7 @@ function WhySection() {
 
         {/* Header */}
         <div className="mb-4 inline-block border-4 border-black bg-white px-4 py-2 text-sm font-bold tracking-widest uppercase shadow-neo-sm">
-          How It Works
+          A Quick Lesson
         </div>
         <h2 className="text-5xl font-bold tracking-tighter uppercase sm:text-6xl lg:text-7xl">
           Not all automation{" "}
@@ -326,7 +326,7 @@ function WhySection() {
           </span>
         </h2>
         <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed opacity-80">
-          Most businesses are stuck at Level 1. The best ones are moving to Level 3. Here's the difference.
+          Most businesses are stuck at Level 1. The best ones are moving to Level 3.
         </p>
 
         {/* Level cards */}
