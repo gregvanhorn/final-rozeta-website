@@ -292,7 +292,7 @@ function Hero() {
           </div>
 
           <p className="mx-auto mt-10 max-w-2xl text-center text-xl leading-relaxed font-bold sm:text-2xl">
-            We're the AI transformation team you've been looking for.{" "}
+            We're the AI transformation team your SMB has been looking for.{" "}
             <span className="inline-block -rotate-1 border-4 border-black bg-[hsl(0,85%,70%)] px-2 font-extrabold shadow-neo-sm">
               Without the full-time hire.
             </span>{" "}
