@@ -315,7 +315,7 @@ function Hero() {
               {displayText}<span className="typewriter-cursor" aria-hidden="true" />
             </span>
             <span className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
-              <span>Business Needs</span>
+              <span>Business Is Missing</span>
               <span className="relative inline-block -rotate-1 border-4 border-black bg-[hsl(47,100%,50%)] px-4 shadow-neo-md">
                 An AI Team
               </span>
