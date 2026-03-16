@@ -410,7 +410,7 @@ function StreamDemo() {
             {" "}system
           </h2>
           <p className="mt-4 text-xl font-bold text-white/60">
-            We tackle the lowest-hanging fruit first by identifying immediate ways to recover revenue with Level 1 automations.
+            We tackle the lowest-hanging fruit first by identifying immediate ways to recover revenue using Level 1 and 2 automations.
           </p>
         </div>
 
