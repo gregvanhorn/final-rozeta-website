@@ -292,7 +292,11 @@ function Hero() {
           </div>
 
           <p className="mx-auto mt-10 max-w-2xl text-center text-xl leading-relaxed font-bold sm:text-2xl">
-            We're the AI transformation team you've been looking for. Without the full-time hire. We go cross-org, kill the manual processes, and ship your first workflow within 14 days.
+            We're the AI transformation team you've been looking for.{" "}
+            <span style={{ textDecoration: "underline wavy hsl(0,85%,70%)", textDecorationThickness: "3px", textUnderlineOffset: "6px" }}>
+              Without the full-time hire.
+            </span>{" "}
+            We go cross-org, kill the manual processes, and ship your first workflow within 14 days.
           </p>
 
           <div className="mt-12 flex flex-col items-center gap-4">
