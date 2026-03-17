@@ -550,80 +550,6 @@ function Features() {
   );
 }
 
-function CodeExample() {
-  const code = `const eventSource = new EventSource(
-  'https://firehose.com/stream?key=YOUR_KEY&tap=my-tap'
-);
-
-eventSource.onmessage = (event) => {
-  const data = JSON.parse(event.data);
-  console.log('New page:', data.url);
-  console.log('Title:', data.title);
-  console.log('Changed:', data.changed_at);
-};`;
-
-  return (
-    <section className="relative border-b-4 border-black bg-[hsl(210,100%,56%)]">
-      <div className="bg-halftone absolute inset-0 opacity-5" />
-      <div className="relative mx-auto max-w-7xl px-6 py-24">
-        <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <div>
-            <div className="mb-4 inline-block border-4 border-black bg-white px-4 py-2 text-sm font-bold tracking-widest uppercase shadow-neo-sm">
-              Integration
-            </div>
-            <h2 className="text-4xl font-bold tracking-tighter uppercase text-white sm:text-5xl">
-              Three lines of{" "}
-              <span className="border-b-4 border-[hsl(47,100%,50%)]">code</span>
-            </h2>
-            <p className="mt-4 text-xl font-bold text-white/70">
-              Connect to your tap's SSE endpoint. Receive structured JSON events as pages are crawled.
-            </p>
-            <ul className="mt-8 flex flex-col gap-3">
-              {["Create a tap with your Lucene query", "Get your API key", "Connect via EventSource", "Handle events in real-time"].map((step, i) => (
-                <li key={i} className="flex items-center gap-3">
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center border-4 border-white bg-[hsl(47,100%,50%)] text-xs font-bold text-black shadow-[2px_2px_0_0_#fff]">
-                    {i + 1}
-                  </span>
-                  <span className="font-bold text-white">{step}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Code block */}
-          <div className="border-4 border-black bg-black shadow-neo-lg">
-            <div className="flex items-center gap-2 border-b-4 border-black bg-[hsl(0,0%,15%)] px-4 py-3">
-              <div className="h-3 w-3 border-2 border-black bg-red-500" />
-              <div className="h-3 w-3 border-2 border-black bg-yellow-400" />
-              <div className="h-3 w-3 border-2 border-black bg-green-400" />
-              <span className="ml-2 text-xs font-bold text-white/50 uppercase tracking-widest">
-                JavaScript
-              </span>
-            </div>
-            <pre className="overflow-x-auto p-6 text-sm leading-relaxed">
-              <code className="font-mono">
-                {code.split("\n").map((line, i) => (
-                  <div key={i}>
-                    {line
-                      .split(/(const|new EventSource|onmessage|JSON\.parse|console\.log|'[^']+'|`[^`]+`)/g)
-                      .map((part, j) => {
-                        if (/^(const|new EventSource|onmessage|JSON\.parse|console\.log)$/.test(part))
-                          return <span key={j} className="text-[hsl(47,100%,50%)]">{part}</span>;
-                        if (/^('|`)/.test(part))
-                          return <span key={j} className="text-green-400">{part}</span>;
-                        return <span key={j} className="text-white/80">{part}</span>;
-                      })}
-                  </div>
-                ))}
-              </code>
-            </pre>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function OurProcess() {
   return (
     <section className="relative border-b-4 border-black bg-[hsl(46,100%,96%)]">
@@ -936,7 +862,6 @@ export default function Home() {
       <EmbedOrg />
       <Features />
       <PricingModel />
-      <CodeExample />
       <OurProcess />
       <AISection />
       <CTA />
