@@ -776,19 +776,19 @@ function ProblemSection() {
       icon: <Puzzle className="h-7 w-7 stroke-black stroke-[2px]" />,
       iconBg: "bg-[hsl(47,100%,50%)]",
       headline: "You don't know what you don't know.",
-      body: "AI is moving fast and the gap between what you're doing now and what's possible is growing — but you don't have time to map it. You need someone who can walk into your operation, see what you can't see, and tell you exactly where AI creates leverage. That person doesn't exist on your team.",
+      body: "AI is moving fast and the gap between what you're doing now and what's possible is growing - but you don't have time to map it. You need someone who can walk into your operation, see what you can't see, and tell you exactly where AI creates leverage. That person doesn't exist on your team.",
     },
     {
       icon: <Target className="h-7 w-7 stroke-black stroke-[2px]" />,
       iconBg: "bg-[hsl(0,85%,70%)]",
       headline: "The market is full of AI companies that don't understand your business.",
-      body: "You've seen the pitches — agencies selling generic automations, consultants who've never run a P&L, dev shops that can build anything but don't know what to build. The problem isn't finding someone who knows AI. It's finding someone who knows AI and understands how a small business actually operates. That barely exists.",
+      body: "You've seen the pitches - agencies selling generic automations, consultants who've never run a P&L, dev shops that can build anything but don't know what to build. The problem isn't finding someone who knows AI. It's finding someone who knows AI and understands how a small business actually operates. That barely exists.",
     },
     {
       icon: <Rocket className="h-7 w-7 stroke-black stroke-[2px]" />,
       iconBg: "bg-[hsl(260,60%,75%)]",
       headline: "You're leaving transformation on the table because there's no one to own it.",
-      body: "There's no one in your org whose job it is to figure out what to build and actually build it. You're not going to hire a full-time AI person, and you're not going to hand your operation to an agency that's never been inside a business like yours. So it sits — quarter after quarter, because nobody owns it.",
+      body: "There's no one in your org whose job it is to figure out what to build and actually build it. You're not going to hire a full-time AI person, and you're not going to hand your operation to an agency that's never been inside a business like yours. So it sits - quarter after quarter, because nobody owns it.",
     },
   ];
 
