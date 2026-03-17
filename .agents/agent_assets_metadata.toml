@@ -18,3 +18,21 @@ id = "61P5Z8iPo9GIRL1i75Qkx"
 uri = "file://.local/rozeta-labs-website-brief.md"
 type = "text"
 title = "Rozeta Labs — Website Brief"
+
+[[outputs]]
+id = "lbcAnr7GHP75cjW3imPtM"
+uri = "file://artifacts/firehose-replica/public/rozeta-icon.svg"
+type = "image"
+title = "Rozeta Icon — SVG"
+
+[[outputs]]
+id = "zO2uPtW_yi4tG_LewHZFT"
+uri = "file://artifacts/firehose-replica/public/rozeta-icon-512.png"
+type = "image"
+title = "Rozeta Icon — PNG 512×512"
+
+[[outputs]]
+id = "0ZDpN84wYYBfheZfchOIb"
+uri = "file://artifacts/firehose-replica/public/rozeta-icon-1024.png"
+type = "image"
+title = "Rozeta Icon — PNG 1024×1024"
