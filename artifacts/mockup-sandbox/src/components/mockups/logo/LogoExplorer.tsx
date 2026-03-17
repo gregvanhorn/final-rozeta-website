@@ -8,10 +8,10 @@ export function LogoExplorer() {
           <polygon points="38,20 23,17 26,20 23,23" fill="black" />
           <polygon points="20,38 17,23 20,26 23,23" fill="black" />
           <polygon points="2,20 17,23 14,20 17,17" fill="black" />
-          <polygon points="28,5 22,16 24,15 25,17" fill="black" opacity="0.5" />
-          <polygon points="35,28 24,22 25,24 22,25" fill="black" opacity="0.5" />
-          <polygon points="12,35 18,24 16,25 15,23" fill="black" opacity="0.5" />
-          <polygon points="5,12 16,18 15,16 18,15" fill="black" opacity="0.5" />
+          <polygon points="28,5 22,16 24,15 25,17" fill="black" />
+          <polygon points="35,28 24,22 25,24 22,25" fill="black" />
+          <polygon points="12,35 18,24 16,25 15,23" fill="black" />
+          <polygon points="5,12 16,18 15,16 18,15" fill="black" />
           <circle cx="20" cy="20" r="3" fill="black" />
         </svg>
       ),
@@ -107,7 +107,6 @@ export function LogoExplorer() {
             strokeWidth="5"
             strokeLinecap="round"
             strokeLinejoin="round"
-            opacity="0.35"
           />
         </svg>
       ),
@@ -124,7 +123,7 @@ export function LogoExplorer() {
             strokeLinejoin="round"
           />
           <polygon points="20,12 26,20 20,28 14,20" fill="black" />
-          <polygon points="20,16 22.5,20 20,24 17.5,20" fill="hsl(47,100%,50%)" />
+          <polygon points="20,16 22.5,20 20,24 17.5,20" fill="none" stroke="black" strokeWidth="1.5" />
         </svg>
       ),
     },
@@ -137,14 +136,14 @@ export function LogoExplorer() {
           <path d="M23,20 L36,20 L36,12" stroke="black" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
           <path d="M20,23 L20,36 L12,36" stroke="black" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
           <path d="M17,20 L4,20 L4,28" stroke="black" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M22,18 L30,10 L30,4" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.5" />
-          <path d="M18,22 L10,30 L10,36" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.5" />
+          <path d="M22,18 L30,10 L30,4" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M18,22 L10,30 L10,36" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           <circle cx="28" cy="4" r="2" fill="black" />
           <circle cx="36" cy="12" r="2" fill="black" />
           <circle cx="12" cy="36" r="2" fill="black" />
           <circle cx="4" cy="28" r="2" fill="black" />
-          <circle cx="30" cy="4" r="1.5" fill="black" opacity="0.5" />
-          <circle cx="10" cy="36" r="1.5" fill="black" opacity="0.5" />
+          <circle cx="30" cy="4" r="1.5" fill="black" />
+          <circle cx="10" cy="36" r="1.5" fill="black" />
         </svg>
       ),
     },
