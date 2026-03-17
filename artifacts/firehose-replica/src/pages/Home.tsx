@@ -779,19 +779,19 @@ function ProblemSection() {
       icon: <Puzzle className="h-7 w-7 stroke-black stroke-[2px]" />,
       iconBg: "bg-[hsl(47,100%,50%)]",
       headline: "You don't know what you don't know.",
-      body: "You're not behind. You're busy running a business that works. But AI is moving so fast that the gap between \"what you're doing now\" and \"what's possible\" is getting wider every month — and you don't have time to map it. You're not looking for a chatbot. You're looking for someone who can walk into your operation, see what you can't see, and tell you exactly where AI creates leverage you haven't thought of yet. That person doesn't exist on your team, and you haven't found them outside of it either.",
+      body: "AI is moving fast and the gap between what you're doing now and what's possible is growing — but you don't have time to map it. You need someone who can walk into your operation, see what you can't see, and tell you exactly where AI creates leverage. That person doesn't exist on your team.",
     },
     {
       icon: <Target className="h-7 w-7 stroke-black stroke-[2px]" />,
       iconBg: "bg-[hsl(0,85%,70%)]",
       headline: "The market is full of AI companies that don't understand your business.",
-      body: "You've seen the pitches. Agencies selling generic automations. Consultants who've never run a P&L. Dev shops that can build anything but don't know what to build. The problem isn't finding someone who knows AI. It's finding someone who knows AI and understands how a small business actually operates — the messy handoffs, the tribal knowledge, the ten tools that don't talk to each other, the decisions that still run through one person's gut. You need a team that speaks both languages. That barely exists.",
+      body: "You've seen the pitches — agencies selling generic automations, consultants who've never run a P&L, dev shops that can build anything but don't know what to build. The problem isn't finding someone who knows AI. It's finding someone who knows AI and understands how a small business actually operates. That barely exists.",
     },
     {
       icon: <Rocket className="h-7 w-7 stroke-black stroke-[2px]" />,
       iconBg: "bg-[hsl(260,60%,75%)]",
       headline: "You're leaving transformation on the table because there's no one to own it.",
-      body: "It's not that you don't believe in AI. It's that there's no one in your org whose job it is to figure out what to build, build it, and keep optimizing it. You're not going to hire a full-time AI person. You're not going to do it yourself. And you're definitely not going to hand your operation to some agency that's never been inside a business like yours. So it sits. Quarter after quarter, the thing you know could change your business just doesn't get done — because nobody owns it.",
+      body: "There's no one in your org whose job it is to figure out what to build and actually build it. You're not going to hire a full-time AI person, and you're not going to hand your operation to an agency that's never been inside a business like yours. So it sits — quarter after quarter, because nobody owns it.",
     },
   ];
 
