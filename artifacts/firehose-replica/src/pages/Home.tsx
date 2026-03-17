@@ -145,10 +145,11 @@ function Navbar() {
           <a href="#" className="flex items-center gap-3">
             <div className="rozeta-logo-icon flex h-9 w-9 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-[3px_3px_0px_0px_#000]">
               <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden="true">
-                {/* Outer diamond */}
-                <polygon points="10,1 19,10 10,19 1,10" fill="black" />
-                {/* Inner diamond cutout — yellow shows through */}
-                <polygon points="10,5 15,10 10,15 5,10" fill="hsl(47,100%,50%)" />
+                <line x1="3"   y1="8"  x2="3"   y2="12" stroke="black" strokeWidth="2" strokeLinecap="round" />
+                <line x1="6.5" y1="5"  x2="6.5" y2="15" stroke="black" strokeWidth="2" strokeLinecap="round" />
+                <line x1="10"  y1="1"  x2="10"  y2="19" stroke="black" strokeWidth="2" strokeLinecap="round" />
+                <line x1="13.5" y1="5" x2="13.5" y2="15" stroke="black" strokeWidth="2" strokeLinecap="round" />
+                <line x1="17"  y1="8"  x2="17"  y2="12" stroke="black" strokeWidth="2" strokeLinecap="round" />
               </svg>
             </div>
             <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
@@ -668,8 +669,11 @@ function Footer() {
           <a href="#" className="flex items-center gap-3">
             <div className="rozeta-logo-icon flex h-10 w-10 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-[3px_3px_0px_0px_#000]">
               <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden="true">
-                <polygon points="10,1 19,10 10,19 1,10" fill="black" />
-                <polygon points="10,5 15,10 10,15 5,10" fill="hsl(47,100%,50%)" />
+                <line x1="3"   y1="8"  x2="3"   y2="12" stroke="black" strokeWidth="2" strokeLinecap="round" />
+                <line x1="6.5" y1="5"  x2="6.5" y2="15" stroke="black" strokeWidth="2" strokeLinecap="round" />
+                <line x1="10"  y1="1"  x2="10"  y2="19" stroke="black" strokeWidth="2" strokeLinecap="round" />
+                <line x1="13.5" y1="5" x2="13.5" y2="15" stroke="black" strokeWidth="2" strokeLinecap="round" />
+                <line x1="17"  y1="8"  x2="17"  y2="12" stroke="black" strokeWidth="2" strokeLinecap="round" />
               </svg>
             </div>
             <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
