@@ -24,23 +24,17 @@ export default function BookCall() {
 
       <section className="relative border-b-4 border-black bg-black">
         <div className="bg-dots-neo absolute inset-0 opacity-10" />
-        <div className="relative mx-auto max-w-4xl px-6 py-20 text-center">
-          <div className="mb-6 inline-block border-4 border-white bg-transparent px-4 py-2 text-sm font-bold tracking-widest uppercase text-white shadow-[4px_4px_0px_0px_#fff]">
-            Free - 30 Minutes
-          </div>
+        <div className="relative mx-auto max-w-4xl px-6 py-8 text-center">
           <h1 className="text-5xl font-bold tracking-tighter text-white uppercase sm:text-6xl lg:text-7xl">
             Book a{" "}
             <span className="inline-block border-4 border-white bg-[hsl(47,100%,50%)] px-3 text-black shadow-[6px_6px_0px_0px_#fff]">
               Discovery Call
             </span>
           </h1>
-          <p className="mx-auto mt-6 max-w-xl text-xl font-bold text-white/70">
-            30 minutes. No fluff. We'll show you exactly what we'd build for your business.
-          </p>
         </div>
       </section>
 
-      <section className="mx-auto max-w-4xl px-6 py-16">
+      <section className="mx-auto max-w-4xl px-6 py-8">
         <div className="border-4 border-black bg-white shadow-[8px_8px_0px_0px_#000]">
           <iframe
             src={BOOKING_URL}
@@ -51,10 +45,6 @@ export default function BookCall() {
             className="block min-h-[700px]"
           />
         </div>
-
-        <p className="mt-6 text-center text-sm font-bold uppercase tracking-widest opacity-40">
-          No contracts. No pressure. Just a conversation.
-        </p>
       </section>
 
       <Footer />
