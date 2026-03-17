@@ -778,7 +778,7 @@ function PricingModel() {
     "Deep integration & data work",
     "Multi-system orchestration",
     "Priced per project — no retainers",
-    "~50% of typical consulting rates",
+    "More than 50% off typical consulting rates",
   ];
 
   return (
@@ -831,7 +831,7 @@ function PricingModel() {
               <span className="mt-1 block text-sm font-bold italic opacity-50">deeply discounted</span>
             </div>
             <p className="mt-3 text-base font-bold leading-snug opacity-60">
-              Members get deeply discounted rates on all Level 2 &amp; 3 work — roughly half what you'd pay a traditional consultancy or AI agency.
+              Members get deeply discounted rates on all Level 2 &amp; 3 work — more than 50% off what you'd pay a traditional consultancy or AI agency.
             </p>
             <div className="mt-8 space-y-3">
               {projectIncludes.map((item) => (
