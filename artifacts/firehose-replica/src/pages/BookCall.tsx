@@ -1,11 +1,22 @@
+import { useEffect } from "react";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 
-// ↓↓↓ PASTE YOUR CALENDLY EMBED URL HERE (e.g. "https://calendly.com/you/discovery") ↓↓↓
-const CALENDLY_URL = "";
-// ↑↑↑ PASTE YOUR CALENDLY EMBED URL HERE ↑↑↑
+const BOOKING_URL = "https://api.leadconnectorhq.com/widget/booking/x1rvrRKGnhrlgJ8rGOpg";
+const BOOKING_SCRIPT = "https://link.msgsndr.com/js/form_embed.js";
 
 export default function BookCall() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = BOOKING_SCRIPT;
+    script.type = "text/javascript";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-[hsl(46,100%,96%)] font-sans text-[hsl(0,0%,5%)]">
       <Navbar />
@@ -31,26 +42,14 @@ export default function BookCall() {
 
       <section className="mx-auto max-w-4xl px-6 py-16">
         <div className="border-4 border-black bg-white shadow-[8px_8px_0px_0px_#000]">
-          {CALENDLY_URL ? (
-            <iframe
-              src={CALENDLY_URL}
-              width="100%"
-              height="700"
-              frameBorder="0"
-              title="Book a Discovery Call"
-              className="block"
-            />
-          ) : (
-            <div className="flex min-h-[700px] flex-col items-center justify-center gap-4 bg-[hsl(46,100%,96%)] p-12 text-center">
-              <div className="border-4 border-black bg-[hsl(47,100%,50%)] px-6 py-4 shadow-neo-md">
-                <p className="text-lg font-bold uppercase tracking-wide">Calendly embed goes here</p>
-                <p className="mt-1 text-sm font-bold opacity-60">
-                  Set <code className="bg-black text-[hsl(47,100%,50%)] px-1">CALENDLY_URL</code> at the top of{" "}
-                  <code className="bg-black text-[hsl(47,100%,50%)] px-1">BookCall.tsx</code>
-                </p>
-              </div>
-            </div>
-          )}
+          <iframe
+            src={BOOKING_URL}
+            id="x1rvrRKGnhrlgJ8rGOpg_1773779018363"
+            style={{ width: "100%", border: "none", overflow: "hidden" }}
+            scrolling="no"
+            title="Book a Discovery Call"
+            className="block min-h-[700px]"
+          />
         </div>
 
         <p className="mt-6 text-center text-sm font-bold uppercase tracking-widest opacity-40">
