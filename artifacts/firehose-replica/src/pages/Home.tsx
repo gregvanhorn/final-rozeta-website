@@ -276,7 +276,7 @@ function Hero() {
         <div className="absolute top-1/4 left-[25%] h-16 w-16 rotate-12 border-4 border-black bg-[hsl(46,50%,88%)] opacity-30 hidden sm:block" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 py-10 sm:py-14 lg:py-16">
+      <div className="relative mx-auto max-w-7xl px-6 py-24 lg:py-12">
         <div className="flex flex-col items-center">
           <div className="relative mx-auto max-w-5xl text-center">
             <span className="block text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
@@ -293,7 +293,7 @@ function Hero() {
             </span>
           </div>
 
-          <p className="mx-auto mt-10 max-w-2xl text-center text-xl leading-relaxed font-bold sm:text-2xl">
+          <p className="mx-auto mt-10 max-w-2xl lg:max-w-5xl text-center text-xl leading-relaxed font-bold sm:text-2xl">
             We're the AI transformation team your SMB has been looking for. We go cross-org, kill the manual processes, and ship your first workflow within 14 days.
           </p>
 
