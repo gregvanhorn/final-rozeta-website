@@ -598,43 +598,6 @@ function OurProcess() {
   );
 }
 
-function AISection() {
-  return (
-    <section className="relative border-b-4 border-black bg-[hsl(46,50%,88%)]">
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="border-4 border-black bg-white p-6 shadow-neo-md sm:p-8">
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-10">
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center border-4 border-black bg-[hsl(46,50%,88%)] shadow-neo-sm">
-              <Sparkles className="h-7 w-7" />
-            </div>
-            <div className="flex-1">
-              <h3 className="text-2xl font-bold tracking-tight uppercase sm:text-3xl">
-                Let AI set it up for you
-              </h3>
-              <p className="mt-2 text-base leading-relaxed font-bold opacity-70">
-                Create a key, install the Firehose skill in your AI assistant, and share your key. It can set up taps, rules, and streaming from a single prompt.
-              </p>
-            </div>
-            <div className="flex shrink-0 flex-col gap-3 sm:flex-row lg:flex-col">
-              <a
-                href="#get-key"
-                className="inline-flex items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] px-5 py-3 text-sm font-bold tracking-wide uppercase shadow-neo-sm transition-all duration-100 hover:bg-yellow-400 active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
-              >
-                Get API Key
-              </a>
-              <a
-                href="#docs"
-                className="inline-flex items-center justify-center border-4 border-black bg-white px-5 py-3 text-sm font-bold tracking-wide uppercase shadow-neo-sm transition-all duration-100 hover:bg-gray-50 active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
-              >
-                View Docs
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function CTA() {
   return (
@@ -873,7 +836,6 @@ export default function Home() {
       <Features />
       <PricingModel />
       <OurProcess />
-      <AISection />
       <CTA />
       <Footer />
     </div>
