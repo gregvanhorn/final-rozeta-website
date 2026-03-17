@@ -496,7 +496,7 @@ function Features() {
 
 function OurProcess() {
   return (
-    <section className="relative border-b-4 border-black bg-[hsl(46,100%,96%)]">
+    <section id="how-it-works" className="relative border-b-4 border-black bg-[hsl(46,100%,96%)]">
       <div className="relative mx-auto max-w-7xl px-6 py-24">
         <div className="mb-12">
           <div className="mb-4 inline-block border-4 border-black bg-[hsl(47,100%,50%)] px-4 py-2 text-sm font-bold tracking-widest uppercase shadow-neo-sm">
@@ -644,7 +644,7 @@ function PricingModel() {
   ];
 
   return (
-    <section className="border-b-4 border-black bg-[hsl(46,100%,96%)] px-6 py-24 sm:px-12">
+    <section id="pricing" className="border-b-4 border-black bg-[hsl(46,100%,96%)] px-6 py-24 sm:px-12">
       <div className="mx-auto max-w-6xl">
         <div className="mb-4 inline-block border-4 border-black bg-black px-4 py-2 text-sm font-bold tracking-widest uppercase text-[hsl(47,100%,50%)] shadow-neo-sm">
           Pricing
