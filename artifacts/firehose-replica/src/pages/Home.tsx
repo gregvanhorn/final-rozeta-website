@@ -808,17 +808,21 @@ function ProblemSection() {
           You're running a real operation. You've got the team, the revenue, the systems. But AI transformation keeps landing on the backburner - because you don't have time to figure out what's possible, what's worth building, or who can actually do it inside your business.
         </p>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-3">
+        <div className="mt-14 flex flex-col gap-5">
           {problems.map((p) => (
             <div
               key={p.headline}
               className="border-4 border-black bg-[hsl(46,100%,96%)] p-6 shadow-neo-md"
             >
-              <div className={`mb-5 inline-flex items-center justify-center border-4 border-black p-3 ${p.iconBg}`}>
-                {p.icon}
+              <div className="flex items-start gap-5">
+                <div className={`inline-flex h-14 w-14 shrink-0 items-center justify-center border-4 border-black ${p.iconBg} shadow-neo-sm`}>
+                  {p.icon}
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold tracking-tight uppercase">{p.headline}</h3>
+                  <p className="mt-2 text-sm leading-relaxed font-bold opacity-60">{p.body}</p>
+                </div>
               </div>
-              <h3 className="text-base font-extrabold uppercase tracking-tight leading-snug">{p.headline}</h3>
-              <p className="mt-3 text-sm font-bold leading-relaxed opacity-60">{p.body}</p>
             </div>
           ))}
         </div>
