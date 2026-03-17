@@ -828,7 +828,6 @@ function PricingModel() {
             </div>
             <div className="mt-4">
               <span className="text-5xl font-extrabold tracking-tighter leading-none block sm:text-6xl">Member Rate</span>
-              <span className="mt-1 block text-sm font-bold italic opacity-50">deeply discounted</span>
             </div>
             <p className="mt-3 text-base font-bold leading-snug opacity-60">
               Members get deeply discounted rates on all Level 2 &amp; 3 work — more than 50% off what you'd pay a traditional consultancy or AI agency.
