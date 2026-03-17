@@ -530,7 +530,7 @@ function Features() {
           Once we know what's broken, we build agents that fix it. These aren't Zaps — they process unstructured data, recognize patterns across thousands of data points, and make decisions no rule-based tool can replicate.
         </p>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-8 md:grid-cols-2">
           {FEATURES.map((f, i) => (
             <div
               key={i}
