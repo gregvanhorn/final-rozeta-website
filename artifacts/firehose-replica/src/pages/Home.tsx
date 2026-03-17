@@ -10,27 +10,27 @@ const ROTATING_WORDS = [
 const USE_CASES = [
   {
     id: "system-01",
-    label: "System 01 — 60-Second Response Engine",
-    description: "Kills speed-to-lead failure. The moment a lead hits any channel, an instant personalized SMS and email fires to the prospect, the right person internally gets notified, and everything logs in the CRM — all within 60 seconds. Responding in under 60 seconds vs 5 minutes increases close rate by 400%.",
+    label: "System 01 - 60-Second Response Engine",
+    description: "Kills speed-to-lead failure. The moment a lead hits any channel, an instant personalized SMS and email fires to the prospect, the right person internally gets notified, and everything logs in the CRM - all within 60 seconds. Responding in under 60 seconds vs 5 minutes increases close rate by 400%.",
   },
   {
     id: "system-02",
-    label: "System 02 — Dead Estimate Reactivation",
-    description: "Kills the estimate graveyard. Every open quote older than 7 days gets enrolled in a timed follow-up sequence — casual check-in at day 7, value-add at day 14, urgency trigger at day 21, final ask at day 30. Most clients recover 3–8 jobs in the first 30 days from quotes that were already written.",
+    label: "System 02 - Dead Estimate Reactivation",
+    description: "Kills the estimate graveyard. Every open quote older than 7 days gets enrolled in a timed follow-up sequence - casual check-in at day 7, value-add at day 14, urgency trigger at day 21, final ask at day 30. Most clients recover 3–8 jobs in the first 30 days from quotes that were already written.",
   },
   {
     id: "system-03",
-    label: "System 03 — No-Show Recovery Protocol",
+    label: "System 03 - No-Show Recovery Protocol",
     description: "Kills no-show and cancellation bleed. Confirmation and reminder sequences fire at 48h, 24h, and 2h before every appointment. If a customer no-shows, an immediate recovery SMS offers the next available slot and triggers a 3-touch re-engagement sequence. Most operators recover 30–40% of no-shows that previously just disappeared.",
   },
   {
     id: "system-04",
-    label: "System 04 — Owner Liberation System",
+    label: "System 04 - Owner Liberation System",
     description: "Kills the owner-as-bottleneck problem. We map every recurring decision the owner makes, automate the high-frequency ones with decision trees, deploy a company-trained AI assistant for staff questions, and replace status check-ins with automated daily briefings. Most owners remove themselves from 50–70% of day-to-day decisions within 90 days.",
   },
   {
     id: "system-05",
-    label: "System 05 — Repeat Revenue Reactivation",
+    label: "System 05 - Repeat Revenue Reactivation",
     description: "Kills zero retention. Three sub-systems run together: post-job review capture sequences, a referral ask protocol for satisfied customers, and AI-personalized seasonal reactivation campaigns for every past customer segmented by job type and service date. Your completed job list becomes a recurring revenue asset.",
   },
 ];
@@ -38,27 +38,27 @@ const USE_CASES = [
 const PROCESS_STEPS = [
   {
     id: "step-1",
-    label: "Step 1 — Find the Leaks",
-    description: "We audit your pipeline, response times, estimate follow-up, and retention process to identify exactly where revenue is walking out the door. Every gap gets a dollar figure — nothing left vague.",
+    label: "Step 1 - Find the Leaks",
+    description: "We audit your pipeline, response times, estimate follow-up, and retention process to identify exactly where revenue is walking out the door. Every gap gets a dollar figure - nothing left vague.",
   },
   {
     id: "step-2",
-    label: "Step 2 — Build the Systems",
-    description: "We custom-build the five Revenue Recovery systems for your specific business — your CRM, your workflow, your team. Nothing templated. Live in 14 days.",
+    label: "Step 2 - Build the Systems",
+    description: "We custom-build the five Revenue Recovery systems for your specific business - your CRM, your workflow, your team. Nothing templated. Live in 14 days.",
   },
   {
     id: "step-3",
-    label: "Step 3 — Plug the Leaks",
+    label: "Step 3 - Plug the Leaks",
     description: "The systems go live. Leads get responded to in 60 seconds. Dead estimates get worked. No-shows get recovered. You stop losing money you were already earning.",
   },
   {
     id: "step-4",
-    label: "Step 4 — Measure the Recovery",
-    description: "Every system is tracked. Every month you get a plain-language report showing exactly what each system recovered — jobs booked, estimates closed, customers reactivated, reviews captured.",
+    label: "Step 4 - Measure the Recovery",
+    description: "Every system is tracked. Every month you get a plain-language report showing exactly what each system recovered - jobs booked, estimates closed, customers reactivated, reviews captured.",
   },
   {
     id: "step-5",
-    label: "Step 5 — Optimize and Expand",
+    label: "Step 5 - Optimize and Expand",
     description: "Once the first layer is running, we go deeper. New leaks get identified. New systems get built. The engagement compounds and the business gets harder to disrupt every month.",
   },
 ];
@@ -72,32 +72,32 @@ const DEPARTMENTS = [
   {
     icon: <TrendingUp className="h-6 w-6" />,
     name: "Sales / Estimating",
-    blurb: "Are your reps being measured on speed-to-follow-up, close rate, or conversion by lead source? How fast are proposals going out, and what percentage go cold with zero follow-up? We audit the full sales process — from first contact to signed deal — and find every place where a lead stops moving forward.",
+    blurb: "Are your reps being measured on speed-to-follow-up, close rate, or conversion by lead source? How fast are proposals going out, and what percentage go cold with zero follow-up? We audit the full sales process - from first contact to signed deal - and find every place where a lead stops moving forward.",
   },
   {
     icon: <Truck className="h-6 w-6" />,
     name: "Operations",
-    blurb: "Where are your internal workflows breaking down? We dig into the approval bottlenecks, cross-department handoffs, and manual processes that slow your operation down — regardless of what your business actually delivers.",
+    blurb: "Where are your internal workflows breaking down? We dig into the approval bottlenecks, cross-department handoffs, and manual processes that slow your operation down - regardless of what your business actually delivers.",
   },
   {
     icon: <HardHat className="h-6 w-6" />,
     name: "Field / Crew Dispatch",
-    blurb: "What are your people on the ground missing, and what are they capturing that never makes it back to the office? We build the data loops that connect the field to ops to billing in real time — so nothing falls through the gap between \"job done\" and \"money collected.\"",
+    blurb: "What are your people on the ground missing, and what are they capturing that never makes it back to the office? We build the data loops that connect the field to ops to billing in real time - so nothing falls through the gap between \"job done\" and \"money collected.\"",
   },
   {
     icon: <Headphones className="h-6 w-6" />,
     name: "Customer Service",
-    blurb: "What are your team members answering manually every single day? We identify the repeat questions, the dropped follow-ups, and the slow response cycles — then automate what's routine and escalate what actually needs a human.",
+    blurb: "What are your team members answering manually every single day? We identify the repeat questions, the dropped follow-ups, and the slow response cycles - then automate what's routine and escalate what actually needs a human.",
   },
   {
     icon: <Megaphone className="h-6 w-6" />,
     name: "Marketing / Lead Gen / Go-To-Market",
-    blurb: "We look at every channel, every follow-up gap, and every nurture sequence — then build the systems that attract, capture, and convert without your team manually working every lead.",
+    blurb: "We look at every channel, every follow-up gap, and every nurture sequence - then build the systems that attract, capture, and convert without your team manually working every lead.",
   },
   {
     icon: <DollarSign className="h-6 w-6" />,
     name: "Finance / Billing",
-    blurb: "Where is revenue slipping through the cracks? We look at what's invoiced late, what's never invoiced at all, and what's stuck in collections — then build the follow-up systems that recover what's already been earned.",
+    blurb: "Where is revenue slipping through the cracks? We look at what's invoiced late, what's never invoiced at all, and what's stuck in collections - then build the follow-up systems that recover what's already been earned.",
   },
 ];
 
@@ -106,25 +106,25 @@ const FEATURES = [
     icon: <TrendingUp className="h-6 w-6" />,
     industry: "HOME SERVICES",
     title: "Supply Hawk",
-    description: "Most owners don't realize their supplier costs have quietly crept up until it's already cost them thousands. Supply Hawk maintains a live database of every invoice from every supplier — normalized across formats — and fires an alert the moment a line item drifts upward. When you're about to place a supply order, it tells you exactly where to buy each item to hit the lowest total cost.",
+    description: "Most owners don't realize their supplier costs have quietly crept up until it's already cost them thousands. Supply Hawk maintains a live database of every invoice from every supplier - normalized across formats - and fires an alert the moment a line item drifts upward. When you're about to place a supply order, it tells you exactly where to buy each item to hit the lowest total cost.",
   },
   {
     icon: <Sparkles className="h-6 w-6" />,
     industry: "FRANCHISE",
     title: "Upsell Detection Agent",
-    description: "Reads job notes, field photos, and crew reports in real time. When it detects language or imagery indicating an unaddressed problem — a cracked component, a worn part, a safety risk — it flags the upsell opportunity with a suggested line item before the crew leaves the site. Revenue that used to walk out the door gets captured automatically.",
+    description: "Reads job notes, field photos, and crew reports in real time. When it detects language or imagery indicating an unaddressed problem - a cracked component, a worn part, a safety risk - it flags the upsell opportunity with a suggested line item before the crew leaves the site. Revenue that used to walk out the door gets captured automatically.",
   },
   {
     icon: <Brain className="h-6 w-6" />,
     industry: "HEALTH & WELLNESS",
     title: "Client Sentiment Trajectory Agent",
-    description: "Reads every inbound email, text, and support ticket from each client. Tracks sentiment over time — not just flagging complaints, but detecting when a previously satisfied client starts trending negative. Fires an internal alert with a summary of exactly what shifted and which interactions caused it. Catches churn before it becomes a cancellation.",
+    description: "Reads every inbound email, text, and support ticket from each client. Tracks sentiment over time - not just flagging complaints, but detecting when a previously satisfied client starts trending negative. Fires an internal alert with a summary of exactly what shifted and which interactions caused it. Catches churn before it becomes a cancellation.",
   },
   {
     icon: <DollarSign className="h-6 w-6" />,
     industry: "PROFESSIONAL SERVICES",
     title: "Job Profitability Forensics Agent",
-    description: "After every engagement closes, pulls actual hours, materials, subcontractor costs, change orders, and payment data — and calculates true profit vs. estimate. Over time, surfaces which job types, lead sources, and client segments are margin-makers vs. margin-killers. Most owners think they know. They don't.",
+    description: "After every engagement closes, pulls actual hours, materials, subcontractor costs, change orders, and payment data - and calculates true profit vs. estimate. Over time, surfaces which job types, lead sources, and client segments are margin-makers vs. margin-killers. Most owners think they know. They don't.",
   },
 ];
 
@@ -244,7 +244,7 @@ function Hero() {
       if (current.length > 1) {
         timerRef.current = setTimeout(deleteStep, 40);
       } else {
-        // Last char just cleared — call typeStep synchronously so React 18
+        // Last char just cleared - call typeStep synchronously so React 18
         // batches both state updates into one render, preventing an empty frame
         typeStep(0);
       }
@@ -270,7 +270,7 @@ function Hero() {
       {/* Grid background */}
       <div className="bg-grid-neo absolute inset-0 opacity-50" />
 
-      {/* Decorative shapes — only visible on wider screens */}
+      {/* Decorative shapes - only visible on wider screens */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute top-1/3 right-1/4 h-20 w-20 border-4 border-black bg-[hsl(47,100%,50%)] opacity-30 hidden sm:block" />
         <div className="absolute top-1/4 left-[25%] h-16 w-16 rotate-12 border-4 border-black bg-[hsl(46,50%,88%)] opacity-30 hidden sm:block" />
@@ -322,7 +322,7 @@ function WhySection() {
       title: "Automation",
       iconBg: "bg-[hsl(0,85%,70%)]",
       icon: <Zap className="h-7 w-7 stroke-black stroke-[2px]" />,
-      body: "Your business runs on manual processes right now. Someone has to remember to follow up. Someone has to send the confirmation. Someone has to chase the estimate. Level 1 replaces all of that with rules-based systems — when a lead comes in, this happens. When an estimate goes unanswered for 7 days, this fires. No human required.",
+      body: "Your business runs on manual processes right now. Someone has to remember to follow up. Someone has to send the confirmation. Someone has to chase the estimate. Level 1 replaces all of that with rules-based systems - when a lead comes in, this happens. When an estimate goes unanswered for 7 days, this fires. No human required.",
       callout: "This is low-hanging fruit that can be identified and tackled quickly. Your first automation is usually live within the first 7 days of engagement.",
     },
     {
@@ -330,7 +330,7 @@ function WhySection() {
       title: "Intelligent Automation",
       iconBg: "bg-[hsl(260,60%,75%)]",
       icon: <Brain className="h-7 w-7 stroke-black stroke-[2px]" />,
-      body: "Level 1 systems follow rules. Level 2 systems make judgments. Instead of sending the same follow-up to every cold estimate, the system reads the job type, the dollar amount, and the customer's last response — and writes a message that's actually relevant to that specific person. Instead of a generic confirmation text, the system knows it's a repeat customer and references their last job.",
+      body: "Level 1 systems follow rules. Level 2 systems make judgments. Instead of sending the same follow-up to every cold estimate, the system reads the job type, the dollar amount, and the customer's last response - and writes a message that's actually relevant to that specific person. Instead of a generic confirmation text, the system knows it's a repeat customer and references their last job.",
       callout: "This is where AI enters the workflow and where the results start to compound.",
     },
     {
@@ -338,7 +338,7 @@ function WhySection() {
       title: "Autonomous Operations",
       iconBg: "bg-[hsl(47,100%,50%)]",
       icon: <Bot className="h-7 w-7 stroke-black stroke-[2px]" />,
-      body: "This is where your business stops reacting and starts running ahead of problems. AI agents monitor your pipeline, flag anomalies, identify opportunities, and take action without being asked. Your dispatcher doesn't build the schedule — the system drafts it. Your estimator doesn't start from scratch — the system builds the first version from the job photos. Your owner doesn't pull the weekly report — it's in his inbox every Monday morning before he wakes up.",
+      body: "This is where your business stops reacting and starts running ahead of problems. AI agents monitor your pipeline, flag anomalies, identify opportunities, and take action without being asked. Your dispatcher doesn't build the schedule - the system drafts it. Your estimator doesn't start from scratch - the system builds the first version from the job photos. Your owner doesn't pull the weekly report - it's in his inbox every Monday morning before he wakes up.",
       callout: "This is the version of your business that runs without you in it.",
     },
   ];
@@ -469,7 +469,7 @@ function EmbedOrg() {
 
         {/* Subheader */}
         <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed text-white/60">
-          We sit alongside the owner and every department head — not to observe, but to dig. We're looking for every bottleneck, broken handoff, and manual process that's costing you money.
+          We sit alongside the owner and every department head - not to observe, but to dig. We're looking for every bottleneck, broken handoff, and manual process that's costing you money.
         </p>
 
         {/* Department grid */}
@@ -503,7 +503,7 @@ function EmbedOrg() {
               Nothing is off-limits.
             </p>
             <p className="mt-2 max-w-3xl text-sm font-semibold leading-relaxed text-black/70">
-              Most consultants talk to the owner and call it a day. We go cross-org — every team, every workflow, every repetitive process — until we have a complete picture of what's costing you money and what we can build to stop the bleeding. That's what makes our systems stick.
+              Most consultants talk to the owner and call it a day. We go cross-org - every team, every workflow, every repetitive process - until we have a complete picture of what's costing you money and what we can build to stop the bleeding. That's what makes our systems stick.
             </p>
           </div>
         </div>
@@ -527,7 +527,7 @@ function Features() {
           </span>
         </h2>
         <p className="mt-4 text-xl font-bold opacity-60">
-          Once we know what's broken, we build agents that fix it. These aren't Zaps — they process unstructured data, recognize patterns across thousands of data points, and make decisions no rule-based tool can replicate.
+          Once we know what's broken, we build agents that fix it. These aren't Zaps - they process unstructured data, recognize patterns across thousands of data points, and make decisions no rule-based tool can replicate.
         </p>
 
         <p className="mt-8 border-l-4 border-black pl-4 text-sm font-bold italic tracking-wide opacity-50">
@@ -569,7 +569,7 @@ function OurProcess() {
             <span className="inline-block border-b-4 border-black">with you</span>
           </h2>
           <p className="mt-4 text-xl font-bold opacity-60">
-            From audit to compounding results — five steps, 14 days to live.
+            From audit to compounding results - five steps, 14 days to live.
           </p>
         </div>
 
@@ -611,7 +611,7 @@ function CTA() {
           </span>
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-xl font-bold text-white/70">
-          Your first automation goes live in 14 days — or you don't pay a cent.
+          Your first automation goes live in 14 days - or you don't pay a cent.
         </p>
         <div className="mt-12">
           <a
@@ -741,7 +741,7 @@ function PricingModel() {
     "Custom AI agent development",
     "Deep integration & data work",
     "Multi-system orchestration",
-    "Priced per project — no retainers",
+    "Priced per project - no retainers",
     "More than 50% off typical consulting rates",
   ];
 
@@ -757,7 +757,7 @@ function PricingModel() {
           For AI
         </h2>
         <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed opacity-60">
-          Costco charges you a flat fee to get in the door. Everything inside is deeply discounted — no agency markups, no retainer games. That's exactly how we work.
+          Costco charges you a flat fee to get in the door. Everything inside is deeply discounted - no agency markups, no retainer games. That's exactly how we work.
         </p>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
@@ -794,7 +794,7 @@ function PricingModel() {
               <span className="text-5xl font-extrabold tracking-tighter leading-none block sm:text-6xl">Member Rate</span>
             </div>
             <p className="mt-3 text-base font-bold leading-snug opacity-60">
-              Members get deeply discounted rates on all Level 2 &amp; 3 work — more than 50% off what you'd pay a traditional consultancy or AI agency.
+              Members get deeply discounted rates on all Level 2 &amp; 3 work - more than 50% off what you'd pay a traditional consultancy or AI agency.
             </p>
             <div className="mt-8 space-y-3">
               {projectIncludes.map((item) => (
@@ -816,7 +816,7 @@ function PricingModel() {
 
         <div className="mt-8 border-4 border-black bg-black px-6 py-4 shadow-neo-sm">
           <p className="text-center text-sm font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">
-            No contracts. No retainers. Just results — or you cancel anytime.
+            No contracts. No retainers. Just results - or you cancel anytime.
           </p>
         </div>
       </div>

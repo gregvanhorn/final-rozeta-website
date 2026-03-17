@@ -13,7 +13,7 @@ const departments = [
     icon: <Crown className="h-6 w-6" />,
     name: "Owner / Leadership",
     blurb:
-      "Where is your time going? We map every decision that only you make — and identify which ones a system should be making instead.",
+      "Where is your time going? We map every decision that only you make - and identify which ones a system should be making instead.",
   },
   {
     icon: <TrendingUp className="h-6 w-6" />,
@@ -82,7 +82,7 @@ export function EmbedOrg() {
 
         {/* Subheader */}
         <p className="mt-5 max-w-2xl text-lg font-semibold leading-relaxed text-white/60">
-          We sit alongside the owner and every department head — not to observe, but to dig. We're
+          We sit alongside the owner and every department head - not to observe, but to dig. We're
           looking for every bottleneck, broken handoff, and manual process that's costing you money.
         </p>
 
@@ -130,8 +130,8 @@ export function EmbedOrg() {
               Nothing is off-limits.
             </p>
             <p className="mt-2 max-w-3xl text-sm font-semibold leading-relaxed text-black/70">
-              Most consultants talk to the owner and call it a day. We go cross-org — every function,
-              every workflow, every repetitive task — until we have a complete map of what's broken and
+              Most consultants talk to the owner and call it a day. We go cross-org - every function,
+              every workflow, every repetitive task - until we have a complete map of what's broken and
               what's possible. That's what makes our builds stick.
             </p>
           </div>

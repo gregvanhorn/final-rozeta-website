@@ -4,7 +4,7 @@ export function AgentPlanningDoc() {
     { rank: 2, name: "Franchise / Multi-Location", note: "Cleaning, fitness, food, auto repair", why: "One solution scales across every unit" },
     { rank: 3, name: "Health & Wellness", note: "MedSpa, dental, chiro, PT, gyms", why: "High appointment value, massive dormant-client problem" },
     { rank: 4, name: "Real Estate / Property Mgmt", note: "", why: "High-ticket, extremely lead-heavy, almost no automation" },
-    { rank: 5, name: "Professional Services", note: "Consulting, legal, accounting, agencies", why: "High ACV — proposal follow-up and billing are chronic pain" },
+    { rank: 5, name: "Professional Services", note: "Consulting, legal, accounting, agencies", why: "High ACV - proposal follow-up and billing are chronic pain" },
     { rank: 6, name: "Private Equity / Portfolio Co.", note: "", why: "Cross-vertical buyer, wants operational improvement at scale" },
   ];
 
@@ -16,13 +16,13 @@ export function AgentPlanningDoc() {
     { rank: 5, name: "Invoice Follow-Up Agent", dept: "Finance", desc: "Monitors AR aging, sends progressive follow-up sequences for every outstanding invoice." },
     { rank: 6, name: "Supply Hawk ★ KEEP", dept: "Finance / Ops", desc: "Tracks per-unit supplier costs over time, fires alerts when prices quietly drift upward." },
     { rank: 7, name: "Intake Qualification Agent", dept: "Sales", desc: "Asks qualifying questions via SMS/email when a lead comes in, scores them, routes to the right rep or tier." },
-    { rank: 8, name: "Staff Performance Monitor", dept: "Sales / Ops", desc: "Tracks rep activity — call volume, follow-up rate, close rate — and surfaces coaching opportunities." },
+    { rank: 8, name: "Staff Performance Monitor", dept: "Sales / Ops", desc: "Tracks rep activity - call volume, follow-up rate, close rate - and surfaces coaching opportunities." },
     { rank: 9, name: "Membership Renewal Agent", dept: "Revenue", desc: "Monitors subscription/membership expiry, fires personalized renewal campaigns before lapse." },
     { rank: 10, name: "Review Request Agent", dept: "Marketing", desc: "After a completed job or appointment, automatically requests a review on the right platform at the right moment." },
     { rank: 11, name: "Onboarding Concierge Agent", dept: "Operations", desc: "Automates document collection, kickoff scheduling, and intro communications for every new client." },
     { rank: 12, name: "Job Completion Billing Agent", dept: "Finance / Field", desc: "Detects when a job is marked complete, triggers invoice creation and delivery automatically." },
     { rank: 13, name: "Referral Campaign Agent", dept: "Marketing", desc: "Identifies your happiest clients and triggers an automated referral ask at the optimal moment." },
-    { rank: 14, name: "Competitive Intelligence Agent", dept: "Strategy", desc: "Monitors competitor pricing, reviews, and job postings — surfaces a weekly digest to leadership." },
+    { rank: 14, name: "Competitive Intelligence Agent", dept: "Strategy", desc: "Monitors competitor pricing, reviews, and job postings - surfaces a weekly digest to leadership." },
     { rank: 15, name: "Content Distribution Agent", dept: "Marketing", desc: "Takes one piece of content and redistributes it across every channel in the right format automatically." },
   ];
 
@@ -37,19 +37,19 @@ export function AgentPlanningDoc() {
       name: "Membership Renewal Agent",
       industry: "HEALTH & WELLNESS",
       industryColor: "bg-pink-100 text-pink-800",
-      desc: "Most practices have 20–40% of their revenue sitting in a client list no one is following up with. This agent scans your database daily, flags anyone dormant past a set threshold, and fires a personalized reactivation sequence across SMS and email — automatically, without anyone on your team touching it.",
+      desc: "Most practices have 20–40% of their revenue sitting in a client list no one is following up with. This agent scans your database daily, flags anyone dormant past a set threshold, and fires a personalized reactivation sequence across SMS and email - automatically, without anyone on your team touching it.",
     },
     {
       name: "Intake Qualification Agent",
       industry: "REAL ESTATE",
       industryColor: "bg-blue-100 text-blue-800",
-      desc: "The moment a buyer, seller, or tenant inquiry lands — regardless of channel — this agent asks the right qualifying questions, scores the lead, and routes it to the right person with full context already attached. No more chasing cold leads your team already touched once and forgot.",
+      desc: "The moment a buyer, seller, or tenant inquiry lands - regardless of channel - this agent asks the right qualifying questions, scores the lead, and routes it to the right person with full context already attached. No more chasing cold leads your team already touched once and forgot.",
     },
     {
       name: "Staff Performance Monitor",
       industry: "PROFESSIONAL SERVICES",
       industryColor: "bg-purple-100 text-purple-800",
-      desc: "Tracks every rep, every proposal, every follow-up cycle — and surfaces exactly where deals are stalling, who's underperforming, and what the gap is between your best closer and everyone else. Weekly digests delivered automatically, no manual reporting required.",
+      desc: "Tracks every rep, every proposal, every follow-up cycle - and surfaces exactly where deals are stalling, who's underperforming, and what the gap is between your best closer and everyone else. Weekly digests delivered automatically, no manual reporting required.",
     },
   ];
 
@@ -68,7 +68,7 @@ export function AgentPlanningDoc() {
 
         {/* Section 1: Industries */}
         <section className="mb-12">
-          <h2 className="mb-4 text-xl font-bold uppercase tracking-widest border-b-4 border-black pb-2">Industries — Stack Ranked</h2>
+          <h2 className="mb-4 text-xl font-bold uppercase tracking-widest border-b-4 border-black pb-2">Industries - Stack Ranked</h2>
           <div className="overflow-hidden border-4 border-black">
             {industries.map((ind, i) => (
               <div key={i} className={`flex items-start gap-4 p-4 border-b-2 border-black last:border-b-0 ${i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
@@ -86,7 +86,7 @@ export function AgentPlanningDoc() {
 
         {/* Section 2: 15 Agents */}
         <section className="mb-12">
-          <h2 className="mb-4 text-xl font-bold uppercase tracking-widest border-b-4 border-black pb-2">15 Custom AI Agent Ideas — Stack Ranked</h2>
+          <h2 className="mb-4 text-xl font-bold uppercase tracking-widest border-b-4 border-black pb-2">15 Custom AI Agent Ideas - Stack Ranked</h2>
           <div className="overflow-hidden border-4 border-black">
             {agents.map((agent, i) => (
               <div key={i} className={`flex items-start gap-4 p-4 border-b-2 border-black last:border-b-0 ${agent.name.includes("★") ? "bg-[hsl(47,100%,50%)]" : i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
