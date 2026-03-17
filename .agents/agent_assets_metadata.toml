@@ -36,3 +36,9 @@ id = "0ZDpN84wYYBfheZfchOIb"
 uri = "file://artifacts/firehose-replica/public/rozeta-icon-1024.png"
 type = "image"
 title = "Rozeta Icon — PNG 1024×1024"
+
+[[outputs]]
+id = "03FUyt2tNIQUBPrE85398"
+uri = "file://BRAND.md"
+type = "text"
+title = "Rozeta Labs — Brand & Design System"
