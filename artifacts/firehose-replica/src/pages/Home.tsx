@@ -785,7 +785,7 @@ function PricingModel() {
     <section className="border-b-4 border-black bg-[hsl(46,100%,96%)] px-6 py-24 sm:px-12">
       <div className="mx-auto max-w-6xl">
         <div className="mb-4 inline-block border-4 border-black bg-black px-4 py-2 text-sm font-bold tracking-widest uppercase text-[hsl(47,100%,50%)] shadow-neo-sm">
-          The Model
+          Pricing
         </div>
         <h2 className="text-5xl font-bold tracking-tighter uppercase sm:text-6xl lg:text-7xl">
           A Costco Membership
@@ -793,7 +793,7 @@ function PricingModel() {
           For AI.
         </h2>
         <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed opacity-60">
-          Costco charges you a flat fee to get in the door. Then everything inside is at cost — no markup, no games. That's exactly how we work.
+          Costco charges you a flat fee to get in the door. Everything inside is deeply discounted — no agency markups, no retainer games. That's exactly how we work.
         </p>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
@@ -826,11 +826,13 @@ function PricingModel() {
             <div className="mb-2 inline-block border-4 border-black bg-[hsl(47,100%,50%)] px-3 py-1 text-xs font-bold uppercase tracking-widest">
               Level 2 & 3 Projects
             </div>
-            <div className="mt-4 flex items-end gap-2">
-              <span className="text-7xl font-extrabold tracking-tighter leading-none">At Cost</span>
+            <div className="mt-4">
+              <span className="text-7xl font-extrabold tracking-tighter leading-none block">Member</span>
+              <span className="text-7xl font-extrabold tracking-tighter leading-none block">Rate</span>
+              <span className="mt-1 block text-sm font-bold italic opacity-50">deeply discounted</span>
             </div>
             <p className="mt-3 text-base font-bold leading-snug opacity-60">
-              Like Costco bulk pricing — the heavy-lift AI work is priced at roughly half what you'd pay a traditional consultancy.
+              Members get deeply discounted rates on all Level 2 &amp; 3 work — roughly half what you'd pay a traditional consultancy or AI agency.
             </p>
             <div className="mt-8 space-y-3">
               {projectIncludes.map((item) => (
