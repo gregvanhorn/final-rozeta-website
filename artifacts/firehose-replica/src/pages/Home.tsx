@@ -143,12 +143,12 @@ function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
-            <div className="rozeta-logo-icon flex h-9 w-9 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-[3px_3px_0px_0px_#000]">
+            <div className="rozeta-logo-icon flex h-9 w-9 items-center justify-center border-4 border-black bg-[hsl(0,85%,70%)] shadow-[3px_3px_0px_0px_#000]">
               <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden="true">
                 {/* Outer diamond */}
                 <polygon points="10,1 19,10 10,19 1,10" fill="black" />
                 {/* Inner diamond cutout — yellow shows through */}
-                <polygon points="10,5 15,10 10,15 5,10" fill="hsl(47,100%,50%)" />
+                <polygon points="10,5 15,10 10,15 5,10" fill="hsl(0,85%,70%)" />
               </svg>
             </div>
             <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
@@ -173,7 +173,7 @@ function Navbar() {
             </a>
             <a
               href="#signup"
-              className="inline-flex items-center gap-1 border-4 border-black bg-[hsl(47,100%,50%)] px-4 py-2 text-sm font-bold tracking-wide uppercase shadow-neo-sm transition-all duration-100 hover:bg-yellow-400 active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
+              className="inline-flex items-center gap-1 border-4 border-black bg-[hsl(0,85%,70%)] px-4 py-2 text-sm font-bold tracking-wide uppercase shadow-neo-sm transition-all duration-100 hover:bg-yellow-400 active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
             >
               Get Started
             </a>
@@ -206,7 +206,7 @@ function Navbar() {
             <a href="#login" onClick={() => setOpen(false)} className="border-b-2 border-black py-3 text-sm font-bold tracking-wide uppercase">
               Log in
             </a>
-            <a href="#signup" onClick={() => setOpen(false)} className="mt-3 inline-flex items-center justify-center gap-1 border-4 border-black bg-[hsl(47,100%,50%)] px-4 py-3 text-sm font-bold tracking-wide uppercase shadow-neo-sm">
+            <a href="#signup" onClick={() => setOpen(false)} className="mt-3 inline-flex items-center justify-center gap-1 border-4 border-black bg-[hsl(0,85%,70%)] px-4 py-3 text-sm font-bold tracking-wide uppercase shadow-neo-sm">
               Get Started
             </a>
           </div>
@@ -271,7 +271,7 @@ function Hero() {
 
       {/* Decorative shapes — only visible on wider screens */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/3 right-1/4 h-20 w-20 border-4 border-black bg-[hsl(47,100%,50%)] opacity-30 hidden sm:block" />
+        <div className="absolute top-1/3 right-1/4 h-20 w-20 border-4 border-black bg-[hsl(0,85%,70%)] opacity-30 hidden sm:block" />
         <div className="absolute top-1/4 left-[25%] h-16 w-16 rotate-12 border-4 border-black bg-[hsl(46,50%,88%)] opacity-30 hidden sm:block" />
       </div>
 
@@ -286,7 +286,7 @@ function Hero() {
             </span>
             <span className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-5xl leading-[0.9] font-bold tracking-tighter uppercase sm:text-7xl lg:text-8xl">
               <span>Business Is Missing</span>
-              <span className="relative inline-block -rotate-1 border-4 border-black bg-[hsl(47,100%,50%)] px-4 shadow-neo-md">
+              <span className="relative inline-block -rotate-1 border-4 border-black bg-[hsl(0,85%,70%)] px-4 shadow-neo-md">
                 An AI Team
               </span>
             </span>
@@ -299,7 +299,7 @@ function Hero() {
           <div className="mt-12 flex flex-col items-center gap-4">
             <a
               href="#signup"
-              className="group animate-neo-pulse inline-flex h-16 items-center justify-center gap-2 border-4 border-black bg-[hsl(47,100%,50%)] px-10 text-lg font-bold tracking-wide uppercase shadow-neo-md transition-all duration-100 hover:bg-yellow-400 active:translate-x-[3px] active:translate-y-[3px] active:shadow-none"
+              className="group animate-neo-pulse inline-flex h-16 items-center justify-center gap-2 border-4 border-black bg-[hsl(0,85%,70%)] px-10 text-lg font-bold tracking-wide uppercase shadow-neo-md transition-all duration-100 hover:bg-yellow-400 active:translate-x-[3px] active:translate-y-[3px] active:shadow-none"
             >
               Get Started Now
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -319,7 +319,7 @@ function WhySection() {
     {
       level: "Level 1",
       title: "Automation",
-      iconBg: "bg-[hsl(0,85%,70%)]",
+      iconBg: "bg-[hsl(47,100%,50%)]",
       icon: <Zap className="h-7 w-7 stroke-black stroke-[2px]" />,
       body: "Your business runs on manual processes right now. Someone has to remember to follow up. Someone has to send the confirmation. Someone has to chase the estimate. Level 1 replaces all of that with rules-based systems — when a lead comes in, this happens. When an estimate goes unanswered for 7 days, this fires. No human required.",
       callout: "This is low-hanging fruit that can be identified and tackled quickly. Your first automation is usually live within the first 7 days of engagement.",
@@ -335,7 +335,7 @@ function WhySection() {
     {
       level: "Level 3",
       title: "Autonomous Operations",
-      iconBg: "bg-[hsl(47,100%,50%)]",
+      iconBg: "bg-[hsl(0,85%,70%)]",
       icon: <Bot className="h-7 w-7 stroke-black stroke-[2px]" />,
       body: "This is where your business stops reacting and starts running ahead of problems. AI agents monitor your pipeline, flag anomalies, identify opportunities, and take action without being asked. Your dispatcher doesn't build the schedule — the system drafts it. Your estimator doesn't start from scratch — the system builds the first version from the job photos. Your owner doesn't pull the weekly report — it's in his inbox every Monday morning before he wakes up.",
       callout: "This is the version of your business that runs without you in it.",
@@ -343,7 +343,7 @@ function WhySection() {
   ];
 
   return (
-    <section className="relative border-b-4 border-black bg-[hsl(47,100%,50%)]">
+    <section className="relative border-b-4 border-black bg-[hsl(0,85%,70%)]">
       <div className="bg-halftone absolute inset-0 opacity-10" />
       <div className="relative mx-auto max-w-7xl px-6 py-24">
 
@@ -353,7 +353,7 @@ function WhySection() {
         </div>
         <h2 className="text-5xl font-bold tracking-tighter uppercase sm:text-6xl lg:text-7xl">
           Not all automation{" "}
-          <span className="inline-block -rotate-1 border-4 border-black bg-[hsl(0,85%,70%)] px-3 shadow-neo-md">
+          <span className="inline-block -rotate-1 border-4 border-black bg-[hsl(47,100%,50%)] px-3 shadow-neo-md">
             is created equal
           </span>
         </h2>
@@ -409,7 +409,7 @@ function StreamDemo() {
           </div>
           <h2 className="text-4xl font-bold tracking-tighter uppercase text-white sm:text-5xl lg:text-6xl">
             Our proven{" "}
-            <span className="ml-3 inline-block border-4 border-white bg-[hsl(47,100%,50%)] px-3 text-black shadow-[6px_6px_0px_0px_rgba(255,255,255,0.8)]">
+            <span className="ml-3 inline-block border-4 border-white bg-[hsl(0,85%,70%)] px-3 text-black shadow-[6px_6px_0px_0px_rgba(255,255,255,0.8)]">
               revenue recovery
             </span>
             {" "}system
@@ -426,7 +426,7 @@ function StreamDemo() {
               onClick={() => handleTab(i)}
               className={`group border-4 border-black p-5 text-left transition-all duration-100 ${
                 activeIndex === i
-                  ? "bg-[hsl(47,100%,50%)] shadow-neo-md translate-x-[-2px] translate-y-[-2px]"
+                  ? "bg-[hsl(0,85%,70%)] shadow-neo-md translate-x-[-2px] translate-y-[-2px]"
                   : "bg-white hover:-translate-x-[1px] hover:-translate-y-[1px] hover:shadow-neo-sm"
               }`}
             >
@@ -461,7 +461,7 @@ function EmbedOrg() {
         {/* Header */}
         <h2 className="text-5xl font-bold tracking-tighter text-white uppercase sm:text-6xl lg:text-7xl">
           We embed{" "}
-          <span className="inline-block border-4 border-black bg-[hsl(47,100%,50%)] px-3 text-black shadow-[6px_6px_0px_0px_rgba(255,255,255,0.5)]">
+          <span className="inline-block border-4 border-black bg-[hsl(0,85%,70%)] px-3 text-black shadow-[6px_6px_0px_0px_rgba(255,255,255,0.5)]">
             into your org
           </span>
         </h2>
@@ -479,7 +479,7 @@ function EmbedOrg() {
               className="border-4 border-white bg-black p-6 shadow-[5px_5px_0px_0px_rgba(255,255,255,0.15)] transition-colors hover:bg-white/5"
             >
               <div className="mb-4 flex items-center gap-3">
-                <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center border-4 border-white bg-[hsl(47,100%,50%)] text-black">
+                <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center border-4 border-white bg-[hsl(0,85%,70%)] text-black">
                   {dept.icon}
                 </div>
                 <span className="text-sm font-bold tracking-widest text-white uppercase">
@@ -487,7 +487,7 @@ function EmbedOrg() {
                 </span>
               </div>
               <div className="mb-4 h-px bg-white/20" />
-              <p className="mb-1 text-xs font-bold tracking-widest text-[hsl(47,100%,50%)] uppercase">
+              <p className="mb-1 text-xs font-bold tracking-widest text-[hsl(0,85%,70%)] uppercase">
                 What we look for:
               </p>
               <p className="text-sm font-medium leading-relaxed text-white/70">
@@ -497,7 +497,7 @@ function EmbedOrg() {
           ))}
 
           {/* Closing CTA card */}
-          <div className="border-4 border-[hsl(47,100%,50%)] bg-[hsl(47,100%,50%)] p-6 shadow-[5px_5px_0px_0px_rgba(255,200,0,0.3)] sm:col-span-2 lg:col-span-3">
+          <div className="border-4 border-[hsl(0,85%,70%)] bg-[hsl(0,85%,70%)] p-6 shadow-[5px_5px_0px_0px_rgba(255,200,0,0.3)] sm:col-span-2 lg:col-span-3">
             <p className="text-xl font-bold uppercase text-black">
               Nothing is off-limits.
             </p>
@@ -521,7 +521,7 @@ function Features() {
         </div>
         <h2 className="text-4xl font-bold tracking-tighter uppercase sm:text-5xl lg:text-6xl">
           Custom Built{" "}
-          <span className="inline-block border-4 border-black bg-[hsl(47,100%,50%)] px-3 shadow-neo-sm">
+          <span className="inline-block border-4 border-black bg-[hsl(0,85%,70%)] px-3 shadow-neo-sm">
             AI Agents
           </span>
         </h2>
@@ -535,10 +535,10 @@ function Features() {
               key={i}
               className="group border-4 border-black bg-white p-8 shadow-neo-md transition-all duration-200 hover:-translate-y-2 hover:shadow-neo-lg"
             >
-              <div className="mb-4 inline-block border-4 border-black bg-black px-3 py-1 text-xs font-bold tracking-widest text-[hsl(47,100%,50%)] uppercase">
+              <div className="mb-4 inline-block border-4 border-black bg-black px-3 py-1 text-xs font-bold tracking-widest text-[hsl(0,85%,70%)] uppercase">
                 {f.industry}
               </div>
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-neo-sm">
+              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center border-4 border-black bg-[hsl(0,85%,70%)] shadow-neo-sm">
                 {f.icon}
               </div>
               <h3 className="text-lg font-bold tracking-tight uppercase">{f.title}</h3>
@@ -556,7 +556,7 @@ function OurProcess() {
     <section className="relative border-b-4 border-black bg-[hsl(46,100%,96%)]">
       <div className="relative mx-auto max-w-7xl px-6 py-24">
         <div className="mb-12">
-          <div className="mb-4 inline-block border-4 border-black bg-[hsl(47,100%,50%)] px-4 py-2 text-sm font-bold tracking-widest uppercase shadow-neo-sm">
+          <div className="mb-4 inline-block border-4 border-black bg-[hsl(0,85%,70%)] px-4 py-2 text-sm font-bold tracking-widest uppercase shadow-neo-sm">
             Our Process
           </div>
           <h2 className="text-4xl font-bold tracking-tighter uppercase sm:text-5xl lg:text-6xl">
@@ -574,7 +574,7 @@ function OurProcess() {
               key={step.id}
               className="flex gap-6 border-4 border-black bg-white p-6 shadow-neo-sm"
             >
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] text-sm font-bold shadow-[3px_3px_0_0_#000]">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center border-4 border-black bg-[hsl(0,85%,70%)] text-sm font-bold shadow-[3px_3px_0_0_#000]">
                 {i + 1}
               </div>
               <div>
@@ -613,7 +613,7 @@ function AISection() {
             <div className="flex shrink-0 flex-col gap-3 sm:flex-row lg:flex-col">
               <a
                 href="#get-key"
-                className="inline-flex items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] px-5 py-3 text-sm font-bold tracking-wide uppercase shadow-neo-sm transition-all duration-100 hover:bg-yellow-400 active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
+                className="inline-flex items-center justify-center border-4 border-black bg-[hsl(0,85%,70%)] px-5 py-3 text-sm font-bold tracking-wide uppercase shadow-neo-sm transition-all duration-100 hover:bg-yellow-400 active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
               >
                 Get API Key
               </a>
@@ -638,7 +638,7 @@ function CTA() {
       <div className="relative mx-auto max-w-7xl px-6 py-24 text-center">
         <h2 className="text-4xl font-bold tracking-tighter text-white uppercase sm:text-5xl lg:text-6xl">
           Start streaming{" "}
-          <span className="mx-3 inline-block border-4 border-white bg-[hsl(47,100%,50%)] px-3 text-black shadow-[6px_6px_0px_0px_#fff]">
+          <span className="mx-3 inline-block border-4 border-white bg-[hsl(0,85%,70%)] px-3 text-black shadow-[6px_6px_0px_0px_#fff]">
             today
           </span>
         </h2>
@@ -648,7 +648,7 @@ function CTA() {
         <div className="mt-12">
           <a
             href="#signup"
-            className="group animate-neo-pulse inline-flex items-center gap-3 border-4 border-white bg-[hsl(47,100%,50%)] px-10 py-5 text-xl font-bold tracking-wide text-black uppercase shadow-[8px_8px_0px_0px_#fff] transition-all duration-100 hover:bg-yellow-400 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none"
+            className="group animate-neo-pulse inline-flex items-center gap-3 border-4 border-white bg-[hsl(0,85%,70%)] px-10 py-5 text-xl font-bold tracking-wide text-black uppercase shadow-[8px_8px_0px_0px_#fff] transition-all duration-100 hover:bg-yellow-400 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none"
           >
             Get Started Now
             <ArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-1" />
@@ -666,10 +666,10 @@ function Footer() {
         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
-            <div className="rozeta-logo-icon flex h-10 w-10 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] shadow-[3px_3px_0px_0px_#000]">
+            <div className="rozeta-logo-icon flex h-10 w-10 items-center justify-center border-4 border-black bg-[hsl(0,85%,70%)] shadow-[3px_3px_0px_0px_#000]">
               <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden="true">
                 <polygon points="10,1 19,10 10,19 1,10" fill="black" />
-                <polygon points="10,5 15,10 10,15 5,10" fill="hsl(47,100%,50%)" />
+                <polygon points="10,5 15,10 10,15 5,10" fill="hsl(0,85%,70%)" />
               </svg>
             </div>
             <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
@@ -684,7 +684,7 @@ function Footer() {
                 <a
                   key={link}
                   href={`#${link.toLowerCase()}`}
-                  className="text-sm font-bold tracking-wide uppercase underline decoration-2 underline-offset-2 hover:bg-[hsl(47,100%,50%)]/30"
+                  className="text-sm font-bold tracking-wide uppercase underline decoration-2 underline-offset-2 hover:bg-[hsl(0,85%,70%)]/30"
                 >
                   {link}
                 </a>
@@ -701,13 +701,13 @@ function ProblemSection() {
   const problems = [
     {
       icon: <Puzzle className="h-7 w-7 stroke-black stroke-[2px]" />,
-      iconBg: "bg-[hsl(47,100%,50%)]",
+      iconBg: "bg-[hsl(0,85%,70%)]",
       headline: "You don't know what you don't know.",
       body: "AI is moving fast and the gap between what you're doing now and what's possible is growing - but you don't have time to map it. You need someone who can walk into your operation, see what you can't see, and tell you exactly where AI creates leverage. That person doesn't exist on your team.",
     },
     {
       icon: <Target className="h-7 w-7 stroke-black stroke-[2px]" />,
-      iconBg: "bg-[hsl(0,85%,70%)]",
+      iconBg: "bg-[hsl(47,100%,50%)]",
       headline: "The market is full of AI companies that don't understand your business.",
       body: "You've seen the pitches - agencies selling generic automations, consultants who've never run a P&L, dev shops that can build anything but don't know what to build. The problem isn't finding someone who knows AI. It's finding someone who knows AI and understands how a small business actually operates. That barely exists.",
     },
@@ -776,7 +776,7 @@ function PricingModel() {
   return (
     <section className="border-b-4 border-black bg-[hsl(46,100%,96%)] px-6 py-24 sm:px-12">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-4 inline-block border-4 border-black bg-black px-4 py-2 text-sm font-bold tracking-widest uppercase text-[hsl(47,100%,50%)] shadow-neo-sm">
+        <div className="mb-4 inline-block border-4 border-black bg-black px-4 py-2 text-sm font-bold tracking-widest uppercase text-[hsl(0,85%,70%)] shadow-neo-sm">
           The Model
         </div>
         <h2 className="text-5xl font-bold tracking-tighter uppercase sm:text-6xl lg:text-7xl">
@@ -790,8 +790,8 @@ function PricingModel() {
 
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
           {/* Membership Card */}
-          <div className="relative border-4 border-black bg-[hsl(47,100%,50%)] p-8 shadow-neo-lg">
-            <div className="mb-2 inline-block border-4 border-black bg-black px-3 py-1 text-xs font-bold uppercase tracking-widest text-[hsl(47,100%,50%)]">
+          <div className="relative border-4 border-black bg-[hsl(0,85%,70%)] p-8 shadow-neo-lg">
+            <div className="mb-2 inline-block border-4 border-black bg-black px-3 py-1 text-xs font-bold uppercase tracking-widest text-[hsl(0,85%,70%)]">
               Level 1 Membership
             </div>
             <div className="mt-4 flex items-end gap-2">
@@ -805,7 +805,7 @@ function PricingModel() {
               {membershipIncludes.map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <div className="mt-0.5 flex-shrink-0 border-2 border-black bg-black p-0.5">
-                    <Check className="h-4 w-4 stroke-[hsl(47,100%,50%)] stroke-[3px]" />
+                    <Check className="h-4 w-4 stroke-[hsl(0,85%,70%)] stroke-[3px]" />
                   </div>
                   <span className="text-sm font-bold leading-snug">{item}</span>
                 </div>
@@ -815,7 +815,7 @@ function PricingModel() {
 
           {/* Project Pricing Card */}
           <div className="border-4 border-black bg-white p-8 shadow-neo-lg">
-            <div className="mb-2 inline-block border-4 border-black bg-[hsl(47,100%,50%)] px-3 py-1 text-xs font-bold uppercase tracking-widest">
+            <div className="mb-2 inline-block border-4 border-black bg-[hsl(0,85%,70%)] px-3 py-1 text-xs font-bold uppercase tracking-widest">
               Level 2 & 3 Projects
             </div>
             <div className="mt-4 flex items-end gap-2">
@@ -828,7 +828,7 @@ function PricingModel() {
               {projectIncludes.map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <div className="mt-0.5 flex-shrink-0 border-2 border-black bg-black p-0.5">
-                    <Check className="h-4 w-4 stroke-[hsl(47,100%,50%)] stroke-[3px]" />
+                    <Check className="h-4 w-4 stroke-[hsl(0,85%,70%)] stroke-[3px]" />
                   </div>
                   <span className="text-sm font-bold leading-snug opacity-70">{item}</span>
                 </div>
@@ -843,7 +843,7 @@ function PricingModel() {
         </div>
 
         <div className="mt-8 border-4 border-black bg-black px-6 py-4 shadow-neo-sm">
-          <p className="text-center text-sm font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">
+          <p className="text-center text-sm font-extrabold uppercase tracking-widest text-[hsl(0,85%,70%)]">
             No contracts. No retainers. Just results — or you cancel anytime.
           </p>
         </div>
