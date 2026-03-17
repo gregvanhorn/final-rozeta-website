@@ -804,7 +804,7 @@ function ProblemSection() {
         <h2 className="text-5xl font-bold tracking-tighter uppercase text-white sm:text-6xl lg:text-7xl">
           You know AI is the next lever.
           <br />
-          <span className="text-4xl sm:text-5xl lg:text-6xl opacity-80">You just can't find the right team to pull it.</span>
+          But you don't know where to start.
         </h2>
         <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed text-white/70">
           You're running a real operation. You've got the team, the revenue, the systems. But AI transformation keeps landing on the backburner — because you don't have time to figure out what's possible, what's worth building, or who can actually do it inside your business.
