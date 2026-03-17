@@ -827,8 +827,7 @@ function PricingModel() {
               Level 2 & 3 Projects
             </div>
             <div className="mt-4">
-              <span className="text-7xl font-extrabold tracking-tighter leading-none block">Member</span>
-              <span className="text-7xl font-extrabold tracking-tighter leading-none block">Rate</span>
+              <span className="text-5xl font-extrabold tracking-tighter leading-none block sm:text-6xl">Member Rate</span>
               <span className="mt-1 block text-sm font-bold italic opacity-50">deeply discounted</span>
             </div>
             <p className="mt-3 text-base font-bold leading-snug opacity-60">
