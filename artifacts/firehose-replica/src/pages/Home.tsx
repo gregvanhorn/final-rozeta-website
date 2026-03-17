@@ -4,6 +4,7 @@ import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, Zap, Br
 const ROTATING_WORDS = [
   "Home Service", "Franchise", "Private Equity",
   "Service", "Real Estate", "Health & Wellness",
+  "Consulting", "Accounting",
 ];
 
 const USE_CASES = [
