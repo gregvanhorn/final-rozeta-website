@@ -129,6 +129,29 @@ const FEATURES = [
 ];
 
 
+function FloatingCTA() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 500);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <a
+      href="#signup"
+      className={`fixed bottom-5 right-5 z-50 sm:hidden flex items-center gap-2 border-4 border-black bg-[hsl(47,100%,50%)] px-5 py-3 text-sm font-bold tracking-wide uppercase shadow-[4px_4px_0px_0px_#000] transition-all duration-200 active:translate-x-[2px] active:translate-y-[2px] active:shadow-none ${
+        visible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0 pointer-events-none"
+      }`}
+    >
+      Get Started
+      <ArrowRight className="h-4 w-4" />
+    </a>
+  );
+}
+
 function Navbar() {
   const [open, setOpen] = useState(false);
   const navLinks = [
@@ -825,6 +848,7 @@ function PricingModel() {
 export default function Home() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-[hsl(46,100%,96%)] font-sans text-[hsl(0,0%,5%)]">
+      <FloatingCTA />
       <Navbar />
       <div className="h-16" />
       <Hero />
