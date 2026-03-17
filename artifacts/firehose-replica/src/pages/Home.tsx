@@ -105,8 +105,8 @@ const FEATURES = [
   {
     icon: <TrendingUp className="h-6 w-6" />,
     industry: "HOME SERVICES",
-    title: "Price Hawk",
-    description: "Most owners don't realize their supplier costs have quietly crept up until it's already cost them thousands. Price Hawk maintains a live database of every invoice from every supplier — normalized across formats — and fires an alert the moment a line item drifts upward. When you're about to place a supply order, it tells you exactly where to buy each item to hit the lowest total cost.",
+    title: "Supply Hawk",
+    description: "Most owners don't realize their supplier costs have quietly crept up until it's already cost them thousands. Supply Hawk maintains a live database of every invoice from every supplier — normalized across formats — and fires an alert the moment a line item drifts upward. When you're about to place a supply order, it tells you exactly where to buy each item to hit the lowest total cost.",
   },
   {
     icon: <Sparkles className="h-6 w-6" />,

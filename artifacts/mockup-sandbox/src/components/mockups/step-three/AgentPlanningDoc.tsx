@@ -14,7 +14,7 @@ export function AgentPlanningDoc() {
     { rank: 3, name: "No-Show Recovery Agent", dept: "Operations", desc: "Detects missed appointments, fires rescheduling sequences within minutes before the slot goes cold." },
     { rank: 4, name: "Churn Prediction Agent", dept: "Customer Success", desc: "Monitors engagement signals, flags at-risk accounts before they leave, triggers retention campaigns." },
     { rank: 5, name: "Invoice Follow-Up Agent", dept: "Finance", desc: "Monitors AR aging, sends progressive follow-up sequences for every outstanding invoice." },
-    { rank: 6, name: "Price Hawk ★ KEEP", dept: "Finance / Ops", desc: "Tracks per-unit supplier costs over time, fires alerts when prices quietly drift upward." },
+    { rank: 6, name: "Supply Hawk ★ KEEP", dept: "Finance / Ops", desc: "Tracks per-unit supplier costs over time, fires alerts when prices quietly drift upward." },
     { rank: 7, name: "Intake Qualification Agent", dept: "Sales", desc: "Asks qualifying questions via SMS/email when a lead comes in, scores them, routes to the right rep or tier." },
     { rank: 8, name: "Staff Performance Monitor", dept: "Sales / Ops", desc: "Tracks rep activity — call volume, follow-up rate, close rate — and surfaces coaching opportunities." },
     { rank: 9, name: "Membership Renewal Agent", dept: "Revenue", desc: "Monitors subscription/membership expiry, fires personalized renewal campaigns before lapse." },
@@ -28,7 +28,7 @@ export function AgentPlanningDoc() {
 
   const cards = [
     {
-      name: "Price Hawk",
+      name: "Supply Hawk",
       industry: "HOME SERVICES",
       industryColor: "bg-orange-100 text-orange-800",
       desc: "Keep the name, rewrite the copy to be sharper and Rozeta Labs-branded. Monitors per-unit supplier costs over time, fires alerts when prices quietly drift upward.",
