@@ -32,7 +32,7 @@ export function LogoExplorer2() {
       ),
     },
     {
-      name: "Lightning Diamond",
+      name: "Lightning in Diamond",
       svg: (
         <svg viewBox="0 0 40 40" fill="none" className="h-full w-full">
           <polygon
@@ -243,7 +243,7 @@ export function LogoExplorer2() {
           {[
             { n: "Spiral Vortex", why: "Inward pull — \"pulling revenue back in.\" Clean logarithmic coil. Bold at any scale, classic mark energy." },
             { n: "Grid Highlight", why: "3x3 grid with filled center = \"we find the one thing that matters.\" Data/systems visual, extremely clean." },
-            { n: "Lightning Diamond", why: "Speed + energy inside a diamond frame. \"Fast action, structured approach.\" High-impact merch mark." },
+            { n: "Lightning in Diamond", why: "Speed + energy inside a diamond frame. \"Fast action, structured approach.\" High-impact merch mark." },
             { n: "Angular Infinity", why: "Geometric ∞ with sharp angles, not the soft rounded cliche. Continuous improvement, infinite loop of optimization." },
             { n: "Bar Chart Rising", why: "Direct visual metaphor — revenue going up. Four ascending bars = growth trajectory. Instantly understood." },
             { n: "Skeleton Key", why: "\"We unlock the revenue already sitting in your business.\" Classic key silhouette, bold and embroidery-perfect." },
