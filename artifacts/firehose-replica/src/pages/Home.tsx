@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, Zap, Brain, Crown, TrendingUp, Truck, HardHat, Headphones, Megaphone, DollarSign, Check, AlertTriangle, Clock, Users } from "lucide-react";
+import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, X, Menu, Zap, Brain, Crown, TrendingUp, Truck, HardHat, Headphones, Megaphone, DollarSign, Check, Puzzle, Target, Rocket } from "lucide-react";
 
 const ROTATING_WORDS = [
   "Home Service", "Franchise", "Private Equity",
@@ -776,22 +776,22 @@ function Footer() {
 function ProblemSection() {
   const problems = [
     {
-      icon: <Clock className="h-7 w-7 stroke-black stroke-[2px]" />,
+      icon: <Puzzle className="h-7 w-7 stroke-black stroke-[2px]" />,
       iconBg: "bg-[hsl(47,100%,50%)]",
-      headline: "Placeholder Headline One",
-      body: "This is a placeholder for a problem statement. The content will be filled in later. The design and layout are what matter right now.",
+      headline: "You don't know what you don't know.",
+      body: "You're not behind. You're busy running a business that works. But AI is moving so fast that the gap between \"what you're doing now\" and \"what's possible\" is getting wider every month — and you don't have time to map it. You're not looking for a chatbot. You're looking for someone who can walk into your operation, see what you can't see, and tell you exactly where AI creates leverage you haven't thought of yet. That person doesn't exist on your team, and you haven't found them outside of it either.",
     },
     {
-      icon: <AlertTriangle className="h-7 w-7 stroke-black stroke-[2px]" />,
+      icon: <Target className="h-7 w-7 stroke-black stroke-[2px]" />,
       iconBg: "bg-[hsl(0,85%,70%)]",
-      headline: "Placeholder Headline Two",
-      body: "This is a placeholder for a second problem statement. The content will be filled in later. The design and layout are what matter right now.",
+      headline: "The market is full of AI companies that don't understand your business.",
+      body: "You've seen the pitches. Agencies selling generic automations. Consultants who've never run a P&L. Dev shops that can build anything but don't know what to build. The problem isn't finding someone who knows AI. It's finding someone who knows AI and understands how a small business actually operates — the messy handoffs, the tribal knowledge, the ten tools that don't talk to each other, the decisions that still run through one person's gut. You need a team that speaks both languages. That barely exists.",
     },
     {
-      icon: <Users className="h-7 w-7 stroke-black stroke-[2px]" />,
+      icon: <Rocket className="h-7 w-7 stroke-black stroke-[2px]" />,
       iconBg: "bg-[hsl(260,60%,75%)]",
-      headline: "Placeholder Headline Three",
-      body: "This is a placeholder for a third problem statement. The content will be filled in later. The design and layout are what matter right now.",
+      headline: "You're leaving transformation on the table because there's no one to own it.",
+      body: "It's not that you don't believe in AI. It's that there's no one in your org whose job it is to figure out what to build, build it, and keep optimizing it. You're not going to hire a full-time AI person. You're not going to do it yourself. And you're definitely not going to hand your operation to some agency that's never been inside a business like yours. So it sits. Quarter after quarter, the thing you know could change your business just doesn't get done — because nobody owns it.",
     },
   ];
 
@@ -802,12 +802,12 @@ function ProblemSection() {
           Sound Familiar?
         </div>
         <h2 className="text-5xl font-bold tracking-tighter uppercase text-white sm:text-6xl lg:text-7xl">
-          Placeholder
+          You know AI is the next lever.
           <br />
-          Problem Section.
+          <span className="text-4xl sm:text-5xl lg:text-6xl opacity-80">You just can't find the right team to pull it.</span>
         </h2>
         <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed text-white/70">
-          This section will speak directly to the SMB owner's lived experience. Content to be written — the aesthetic is what's being validated here.
+          You're running a real operation. You've got the team, the revenue, the systems. But AI transformation keeps landing on the backburner — because you don't have time to figure out what's possible, what's worth building, or who can actually do it inside your business.
         </p>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-3">
@@ -819,7 +819,7 @@ function ProblemSection() {
               <div className={`mb-5 inline-flex items-center justify-center border-4 border-black p-3 ${p.iconBg}`}>
                 {p.icon}
               </div>
-              <h3 className="text-xl font-extrabold uppercase tracking-tight">{p.headline}</h3>
+              <h3 className="text-base font-extrabold uppercase tracking-tight leading-snug">{p.headline}</h3>
               <p className="mt-3 text-sm font-bold leading-relaxed opacity-60">{p.body}</p>
             </div>
           ))}

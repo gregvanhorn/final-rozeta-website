@@ -1,0 +1,15 @@
+Badge: "SOUND FAMILIAR?"
+Headline:
+YOU KNOW AI IS THE NEXT LEVER.
+YOU JUST CAN'T FIND THE RIGHT TEAM TO PULL IT.
+Subheader: "You're running a real operation. You've got the team, the revenue, the systems. But AI transformation keeps landing on the backburner — because you don't have time to figure out what's possible, what's worth building, or who can actually do it inside your business."
+
+Card 1 — Yellow icon tile (Puzzle icon)
+YOU DON'T KNOW WHAT YOU DON'T KNOW.
+You're not behind. You're busy running a business that works. But AI is moving so fast that the gap between "what you're doing now" and "what's possible" is getting wider every month — and you don't have time to map it. You're not looking for a chatbot. You're looking for someone who can walk into your operation, see what you can't see, and tell you exactly where AI creates leverage you haven't thought of yet. That person doesn't exist on your team, and you haven't found them outside of it either.
+Card 2 — Pink/red icon tile (Search/Target icon)
+THE MARKET IS FULL OF AI COMPANIES THAT DON'T UNDERSTAND YOUR BUSINESS.
+You've seen the pitches. Agencies selling generic automations. Consultants who've never run a P&L. Dev shops that can build anything but don't know what to build. The problem isn't finding someone who knows AI. It's finding someone who knows AI and understands how a small business actually operates — the messy handoffs, the tribal knowledge, the ten tools that don't talk to each other, the decisions that still run through one person's gut. You need a team that speaks both languages. That barely exists.
+Card 3 — Purple icon tile (Rocket/Horizon icon)
+YOU'RE LEAVING TRANSFORMATION ON THE TABLE BECAUSE THERE'S NO ONE TO OWN IT.
+It's not that you don't believe in AI. It's that there's no one in your org whose job it is to figure out what to build, build it, and keep optimizing it. You're not going to hire a full-time AI person. You're not going to do it yourself. And you're definitely not going to hand your operation to some agency that's never been inside a business like yours. So it sits. Quarter after quarter, the thing you know could change your business just doesn't get done — because nobody owns it.
