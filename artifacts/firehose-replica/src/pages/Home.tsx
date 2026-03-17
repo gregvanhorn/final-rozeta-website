@@ -644,6 +644,7 @@ function Footer() {
               </svg>
             </div>
             <span className="text-xl font-bold tracking-tight uppercase">Rozeta Labs</span>
+            <span className="text-sm font-bold opacity-40">&copy; 2026</span>
           </a>
 
           <div className="flex flex-col items-center gap-2 sm:items-end">
