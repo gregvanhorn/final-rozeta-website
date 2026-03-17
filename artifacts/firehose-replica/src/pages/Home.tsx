@@ -769,11 +769,12 @@ function PricingModel() {
     "Dedicated implementation team",
     "Cross-org process audit",
     "First automation live within 7 days",
-    "Ongoing monitoring & optimization",
+    "Unlimited maintenance, monitoring, and optimization",
     "Direct Slack access to your team",
   ];
 
   const projectIncludes = [
+    "Everything above, plus...",
     "Custom AI agent development",
     "Deep integration & data work",
     "Multi-system orchestration",
@@ -790,7 +791,7 @@ function PricingModel() {
         <h2 className="text-5xl font-bold tracking-tighter uppercase sm:text-6xl lg:text-7xl">
           A Costco Membership
           <br />
-          For AI.
+          For AI
         </h2>
         <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed opacity-60">
           Costco charges you a flat fee to get in the door. Everything inside is deeply discounted — no agency markups, no retainer games. That's exactly how we work.
