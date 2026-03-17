@@ -932,10 +932,10 @@ export default function Home() {
       <Hero />
       <ProblemSection />
       <WhySection />
-      <PricingModel />
       <StreamDemo />
       <EmbedOrg />
       <Features />
+      <PricingModel />
       <CodeExample />
       <OurProcess />
       <AISection />
