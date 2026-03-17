@@ -138,7 +138,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 border-b-4 border-black bg-white">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b-4 border-black bg-white">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -826,6 +826,7 @@ export default function Home() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-[hsl(46,100%,96%)] font-sans text-[hsl(0,0%,5%)]">
       <Navbar />
+      <div className="h-16" />
       <Hero />
       <ProblemSection />
       <WhySection />
