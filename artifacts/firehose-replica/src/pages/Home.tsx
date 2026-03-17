@@ -648,9 +648,6 @@ function Footer() {
           </a>
 
           <div className="flex flex-col items-center gap-2 sm:items-end">
-            <p className="text-sm font-bold tracking-wide">
-              Rozeta Labs
-            </p>
             <div className="flex items-center gap-4">
               {["Privacy", "Terms", "Docs", "Status"].map((link) => (
                 <a
