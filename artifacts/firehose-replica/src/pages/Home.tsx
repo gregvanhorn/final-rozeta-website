@@ -605,13 +605,13 @@ function CTA() {
       <div className="bg-dots-neo absolute inset-0 opacity-10" />
       <div className="relative mx-auto max-w-7xl px-6 py-24 text-center">
         <h2 className="text-4xl font-bold tracking-tighter text-white uppercase sm:text-5xl lg:text-6xl">
-          Start streaming{" "}
+          Transform Your Business{" "}
           <span className="mx-3 inline-block border-4 border-white bg-[hsl(47,100%,50%)] px-3 text-black shadow-[6px_6px_0px_0px_#fff]">
-            today
+            Today
           </span>
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-xl font-bold text-white/70">
-          Sign up for free and start streaming web data in minutes.
+          Your first automation goes live in 14 days — or you don't pay a cent.
         </p>
         <div className="mt-12">
           <a
