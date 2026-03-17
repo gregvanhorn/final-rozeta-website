@@ -1,0 +1,12 @@
+{
+  "buildCommand": "pnpm --filter @workspace/firehose-replica build",
+  "outputDirectory": "artifacts/firehose-replica/dist/public",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "env": {
+    "BASE_PATH": "/"
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
