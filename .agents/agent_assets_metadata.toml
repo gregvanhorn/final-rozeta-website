@@ -71,10 +71,10 @@ title = "Wordmark — PNG 1800×240"
 id = "hoJN1zKyUoUpNl33c9yfS"
 uri = "file://artifacts/firehose-replica/public/logos/rozeta-combined.svg"
 type = "image"
-title = "Combined — SVG"
+title = "Combined — SVG (transparent)"
 
 [[outputs]]
 id = "qyT64qP1ZUGtfv118Nzrf"
 uri = "file://artifacts/firehose-replica/public/logos/rozeta-combined.png"
 type = "image"
-title = "Combined — PNG 2280×628"
+title = "Combined — PNG 2120×480 (transparent)"
