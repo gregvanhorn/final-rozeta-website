@@ -690,7 +690,7 @@ function PricingModel() {
         <div className="mt-14 grid gap-6 lg:grid-cols-3 items-start">
 
           {/* Level 1 — Foundation */}
-          <div className="relative flex flex-col border-4 border-black bg-[hsl(47,100%,50%)] p-8 shadow-neo-lg">
+          <div className="relative flex flex-col border-4 border-black bg-white p-8 shadow-neo-lg">
             <div className="mb-2 inline-block border-4 border-black bg-black px-3 py-1 text-xs font-bold uppercase tracking-widest text-[hsl(47,100%,50%)]">
               Level 1 - Foundation
             </div>
@@ -715,11 +715,11 @@ function PricingModel() {
           </div>
 
           {/* Level 2 — Intelligence */}
-          <div className="relative flex flex-col border-4 border-black bg-white p-8 shadow-neo-lg">
+          <div className="relative flex flex-col border-4 border-black bg-[hsl(47,100%,50%)] p-8 shadow-neo-lg">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap border-4 border-black bg-[hsl(0,85%,70%)] px-4 py-1 text-xs font-bold uppercase tracking-widest shadow-neo-sm">
               Most Popular
             </div>
-            <div className="mb-2 inline-block border-4 border-black bg-[hsl(47,100%,50%)] px-3 py-1 text-xs font-bold uppercase tracking-widest text-black">
+            <div className="mb-2 inline-block border-4 border-black bg-black px-3 py-1 text-xs font-bold uppercase tracking-widest text-[hsl(47,100%,50%)]">
               Level 2 - Intelligence
             </div>
             <div className="mt-4 flex items-end gap-2">
