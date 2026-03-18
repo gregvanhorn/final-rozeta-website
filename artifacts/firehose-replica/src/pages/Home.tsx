@@ -628,28 +628,90 @@ function ProblemSection() {
   );
 }
 
+function PricingCard({
+  badge,
+  badgeBg,
+  badgeText,
+  cardBg,
+  price,
+  priceColor,
+  subheader,
+  subheaderOpacity,
+  items,
+  itemCheckBg,
+  itemCheckStroke,
+  itemTextClass,
+  featured,
+}: {
+  badge: string;
+  badgeBg: string;
+  badgeText: string;
+  cardBg: string;
+  price: string;
+  priceColor?: string;
+  subheader: string;
+  subheaderOpacity: string;
+  items: string[];
+  itemCheckBg: string;
+  itemCheckStroke: string;
+  itemTextClass: string;
+  featured?: boolean;
+}) {
+  return (
+    <div className={`relative flex flex-col border-4 border-black ${cardBg} p-8 shadow-neo-lg`}>
+      {featured && (
+        <div className="absolute -top-4 left-1/2 -translate-x-1/2 border-4 border-black bg-[hsl(0,85%,70%)] px-4 py-1 text-xs font-bold uppercase tracking-widest shadow-neo-sm whitespace-nowrap">
+          Most Popular
+        </div>
+      )}
+      <div className={`mb-2 inline-block border-4 border-black ${badgeBg} px-3 py-1 text-xs font-bold uppercase tracking-widest ${badgeText}`}>
+        {badge}
+      </div>
+      <div className="mt-4 flex items-end gap-2">
+        <span className={`text-6xl font-extrabold tracking-tighter leading-none ${priceColor ?? ""}`}>{price}</span>
+        <span className={`mb-2 text-lg font-bold uppercase ${priceColor ?? ""}`}>/month</span>
+      </div>
+      <p className={`mt-3 text-sm font-bold leading-snug ${subheaderOpacity}`}>{subheader}</p>
+      <div className="mt-8 flex-1 space-y-3">
+        {items.map((item) => (
+          <div key={item} className="flex items-start gap-3">
+            <div className={`mt-0.5 flex-shrink-0 border-2 border-black ${itemCheckBg} p-0.5`}>
+              <Check className={`h-4 w-4 ${itemCheckStroke} stroke-[3px]`} />
+            </div>
+            <span className={`text-sm font-bold leading-snug ${itemTextClass}`}>{item}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function PricingModel() {
-  const membershipIncludes = [
+  const tier1 = [
     "Unlimited Level 1 automations",
-    "Dedicated implementation team",
+    "Deeply discounted Level 2 & 3 implementations",
     "Cross-org process audit",
     "First automation live within 7 days",
     "Unlimited maintenance, monitoring, and optimization",
-    "Direct Slack access to your team",
+    "Access to membership community and team trainings",
   ];
 
-  const projectIncludes = [
-    "Everything above, plus...",
-    "Custom AI agent development",
-    "Deep integration & data work",
-    "Multi-system orchestration",
-    "Priced per project - no retainers",
-    "More than 50% off typical consulting rates",
+  const tier2 = [
+    "Everything in Level 1, plus...",
+    "6 custom AI agent buildouts per year",
+    "Unlimited Level 1 & 2 automations",
+    "Prioritized SLAs",
+  ];
+
+  const tier3 = [
+    "Everything in Level 2, plus...",
+    "Unlimited custom AI agent buildouts",
+    "Unlimited Level 1, 2 & 3 automations",
   ];
 
   return (
     <section id="pricing" className="border-b-4 border-black bg-[hsl(46,100%,96%)] px-6 py-24 sm:px-12">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
         <div className="mb-4 inline-block border-4 border-black bg-black px-4 py-2 text-sm font-bold tracking-widest uppercase text-[hsl(47,100%,50%)] shadow-neo-sm">
           Pricing
         </div>
@@ -662,58 +724,48 @@ function PricingModel() {
           Costco charges you a flat fee to get in the door. Everything inside is deeply discounted - no agency markups, no retainer games. That's exactly how we work.
         </p>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-2">
-          {/* Membership Card */}
-          <div className="relative border-4 border-black bg-[hsl(47,100%,50%)] p-8 shadow-neo-lg">
-            <div className="mb-2 inline-block border-4 border-black bg-black px-3 py-1 text-xs font-bold uppercase tracking-widest text-[hsl(47,100%,50%)]">
-              Level 1 Membership
-            </div>
-            <div className="mt-4 flex items-end gap-2">
-              <span className="text-7xl font-extrabold tracking-tighter leading-none">$500</span>
-              <span className="mb-2 text-xl font-bold uppercase">/month</span>
-            </div>
-            <p className="mt-3 text-base font-bold opacity-70">
-              One flat fee. Unlimited Level 1 automations. Your whole operation.
-            </p>
-            <div className="mt-8 space-y-3">
-              {membershipIncludes.map((item) => (
-                <div key={item} className="flex items-start gap-3">
-                  <div className="mt-0.5 flex-shrink-0 border-2 border-black bg-black p-0.5">
-                    <Check className="h-4 w-4 stroke-[hsl(47,100%,50%)] stroke-[3px]" />
-                  </div>
-                  <span className="text-sm font-bold leading-snug">{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Project Pricing Card */}
-          <div className="border-4 border-black bg-white p-8 shadow-neo-lg">
-            <div className="mb-2 inline-block border-4 border-black bg-[hsl(47,100%,50%)] px-3 py-1 text-xs font-bold uppercase tracking-widest">
-              Level 2 & 3 Projects
-            </div>
-            <div className="mt-4">
-              <span className="text-5xl font-extrabold tracking-tighter leading-none block sm:text-6xl">Member Rate</span>
-            </div>
-            <p className="mt-3 text-base font-bold leading-snug opacity-60">
-              Members get deeply discounted rates on all Level 2 &amp; 3 work - more than 50% off what you'd pay a traditional consultancy or AI agency.
-            </p>
-            <div className="mt-8 space-y-3">
-              {projectIncludes.map((item) => (
-                <div key={item} className="flex items-start gap-3">
-                  <div className="mt-0.5 flex-shrink-0 border-2 border-black bg-black p-0.5">
-                    <Check className="h-4 w-4 stroke-[hsl(47,100%,50%)] stroke-[3px]" />
-                  </div>
-                  <span className="text-sm font-bold leading-snug opacity-70">{item}</span>
-                </div>
-              ))}
-            </div>
-            <div className="mt-8 border-t-4 border-black pt-6">
-              <p className="text-sm font-extrabold uppercase tracking-wide opacity-50">
-                Membership required. No surprise invoices.
-              </p>
-            </div>
-          </div>
+        <div className="mt-14 grid gap-6 lg:grid-cols-3">
+          <PricingCard
+            badge="Level 1 Membership"
+            badgeBg="bg-black"
+            badgeText="text-[hsl(47,100%,50%)]"
+            cardBg="bg-[hsl(47,100%,50%)]"
+            price="$500"
+            subheader="One flat fee. Unlimited Level 1 automations."
+            subheaderOpacity="opacity-70"
+            items={tier1}
+            itemCheckBg="bg-black"
+            itemCheckStroke="stroke-[hsl(47,100%,50%)]"
+            itemTextClass=""
+          />
+          <PricingCard
+            badge="Level 2 Membership"
+            badgeBg="bg-[hsl(47,100%,50%)]"
+            badgeText="text-black"
+            cardBg="bg-white"
+            price="$2,000"
+            subheader="Level 1, plus intelligent automations and custom agent builds."
+            subheaderOpacity="opacity-60"
+            items={tier2}
+            itemCheckBg="bg-black"
+            itemCheckStroke="stroke-[hsl(47,100%,50%)]"
+            itemTextClass="opacity-80"
+            featured
+          />
+          <PricingCard
+            badge="Level 3 Membership"
+            badgeBg="bg-[hsl(47,100%,50%)]"
+            badgeText="text-black"
+            cardBg="bg-black"
+            price="$4,000"
+            priceColor="text-[hsl(47,100%,50%)]"
+            subheader="Unlimited everything. Your business runs without you in it."
+            subheaderOpacity="text-white/60"
+            items={tier3}
+            itemCheckBg="bg-[hsl(47,100%,50%)]"
+            itemCheckStroke="stroke-black"
+            itemTextClass="text-white"
+          />
         </div>
 
         <div className="mt-8 border-4 border-black bg-black px-6 py-4 shadow-neo-sm">
