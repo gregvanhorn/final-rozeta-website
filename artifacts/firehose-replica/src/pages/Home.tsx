@@ -637,7 +637,7 @@ function PricingModel() {
     "First automation live within 7 days, guaranteed",
     "Unlimited maintenance and monitoring of deployed automations",
     "Access to Rozeta community and team training library",
-    "Additional buildouts available at project rate",
+    "Additional buildouts available at discounted project rate",
   ];
 
   const tier2 = [
