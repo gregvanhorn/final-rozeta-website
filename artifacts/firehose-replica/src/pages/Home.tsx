@@ -701,12 +701,24 @@ function PricingModel() {
     "6 custom AI agent buildouts per year",
     "Unlimited Level 1 & 2 automations",
     "Prioritized SLAs",
+    "Deeply discounted Level 3 implementations",
+    "Cross-org process audit",
+    "First automation live within 7 days",
+    "Unlimited maintenance, monitoring, and optimization",
+    "Access to membership community and team trainings",
   ];
 
   const tier3 = [
     "Everything in Level 2, plus...",
     "Unlimited custom AI agent buildouts",
     "Unlimited Level 1, 2 & 3 automations",
+    "6 custom AI agent buildouts per year",
+    "Prioritized SLAs",
+    "Deeply discounted Level 3 implementations",
+    "Cross-org process audit",
+    "First automation live within 7 days",
+    "Unlimited maintenance, monitoring, and optimization",
+    "Access to membership community and team trainings",
   ];
 
   return (
