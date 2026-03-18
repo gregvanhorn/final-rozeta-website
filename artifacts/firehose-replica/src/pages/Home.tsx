@@ -645,7 +645,6 @@ function PricingModel() {
     "Unlimited Level 1 and Level 2 automations (multi-step n8n workflows with AI decision branching)",
     "Prioritized SLAs - faster response times",
     "Additional Level 3 implementations available at discounted project rate",
-    "Quarterly strategy session - 60-min review of automation ROI and roadmap",
   ];
 
   const tier3 = [
@@ -653,7 +652,6 @@ function PricingModel() {
     "Unlimited custom AI agent buildouts (no cap - full embedded team)",
     "Unlimited Level 1, 2, and 3 automations (including complex multi-system orchestration)",
     "Full cross-org operations mapping and quarterly re-audit",
-    "Monthly strategy session with Greg or Hunter (working session, not just a check-in)",
     "Dedicated implementation engineer assigned to the account",
     "First-priority SLAs across all active projects",
     "Custom training and SOPs delivered to client's team",
