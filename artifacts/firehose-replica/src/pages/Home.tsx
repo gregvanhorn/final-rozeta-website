@@ -769,7 +769,7 @@ function PricingModel() {
 
         <div className="mt-8 border-4 border-black bg-black px-6 py-4 shadow-neo-sm">
           <p className="text-center text-sm font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">
-            No contracts. No retainers. Just results - or you cancel anytime.
+            Month-to-month. No long-term lock-in. We earn your business every 30 days.
           </p>
         </div>
       </div>
