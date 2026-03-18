@@ -628,98 +628,49 @@ function ProblemSection() {
   );
 }
 
-function PricingCard({
-  badge,
-  badgeBg,
-  badgeText,
-  cardBg,
-  price,
-  priceColor,
-  subheader,
-  subheaderOpacity,
-  items,
-  itemCheckBg,
-  itemCheckStroke,
-  itemTextClass,
-  featured,
-}: {
-  badge: string;
-  badgeBg: string;
-  badgeText: string;
-  cardBg: string;
-  price: string;
-  priceColor?: string;
-  subheader: string;
-  subheaderOpacity: string;
-  items: string[];
-  itemCheckBg: string;
-  itemCheckStroke: string;
-  itemTextClass: string;
-  featured?: boolean;
-}) {
-  return (
-    <div className={`relative flex flex-col border-4 border-black ${cardBg} p-8 shadow-neo-lg`}>
-      {featured && (
-        <div className="absolute -top-4 left-1/2 -translate-x-1/2 border-4 border-black bg-[hsl(0,85%,70%)] px-4 py-1 text-xs font-bold uppercase tracking-widest shadow-neo-sm whitespace-nowrap">
-          Most Popular
-        </div>
-      )}
-      <div className={`mb-2 inline-block border-4 border-black ${badgeBg} px-3 py-1 text-xs font-bold uppercase tracking-widest ${badgeText}`}>
-        {badge}
-      </div>
-      <div className="mt-4 flex items-end gap-2">
-        <span className={`text-6xl font-extrabold tracking-tighter leading-none ${priceColor ?? ""}`}>{price}</span>
-        <span className={`mb-2 text-lg font-bold uppercase ${priceColor ?? ""}`}>/month</span>
-      </div>
-      <p className={`mt-3 text-sm font-bold leading-snug ${subheaderOpacity}`}>{subheader}</p>
-      <div className="mt-8 flex-1 space-y-3">
-        {items.map((item) => (
-          <div key={item} className="flex items-start gap-3">
-            <div className={`mt-0.5 flex-shrink-0 border-2 border-black ${itemCheckBg} p-0.5`}>
-              <Check className={`h-4 w-4 ${itemCheckStroke} stroke-[3px]`} />
-            </div>
-            <span className={`text-sm font-bold leading-snug ${itemTextClass}`}>{item}</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 function PricingModel() {
   const tier1 = [
-    "Unlimited Level 1 automations",
-    "Deeply discounted Level 2 & 3 implementations",
-    "Cross-org process audit",
-    "First automation live within 7 days",
-    "Unlimited maintenance, monitoring, and optimization",
-    "Access to membership community and team trainings",
+    "Unlimited Level 1 automations (Zapier/Make trigger-based, single-step logic)",
+    "Revenue recovery stack built in week one: speed-to-lead engine, dead proposal reactivation, open pipeline follow-up sequences",
+    "Initial operations intake - we map your highest-cost manual processes before we build anything",
+    "First automation live within 7 days, guaranteed",
+    "Unlimited maintenance and monitoring of deployed automations",
+    "Access to Rozeta community and team training library",
+    "Level 2 agent builds available at project rate: $1,500-$3,500 depending on scope",
   ];
 
   const tier2 = [
     "Everything in Level 1, plus...",
-    "6 custom AI agent buildouts per year",
-    "Unlimited Level 1 & 2 automations",
-    "Prioritized SLAs",
-    "Deeply discounted Level 3 implementations",
-    "Cross-org process audit",
-    "First automation live within 7 days",
-    "Unlimited maintenance, monitoring, and optimization",
-    "Access to membership community and team trainings",
+    "6 custom AI agent buildouts per year (one roughly every 8 weeks)",
+    "Unlimited Level 1 and Level 2 automations (multi-step n8n workflows with AI decision branching)",
+    "Prioritized SLAs - faster response times, dedicated Slack channel",
+    "Level 3 implementations available at project rate: $3,000-$7,000",
+    "Quarterly strategy session - 60-min review of automation ROI and roadmap",
   ];
 
   const tier3 = [
     "Everything in Level 2, plus...",
-    "Unlimited custom AI agent buildouts",
-    "Unlimited Level 1, 2 & 3 automations",
-    "6 custom AI agent buildouts per year",
-    "Prioritized SLAs",
-    "Deeply discounted Level 3 implementations",
-    "Cross-org process audit",
-    "First automation live within 7 days",
-    "Unlimited maintenance, monitoring, and optimization",
-    "Access to membership community and team trainings",
+    "Unlimited custom AI agent buildouts (no cap - full embedded team)",
+    "Unlimited Level 1, 2, and 3 automations (including complex multi-system orchestration)",
+    "Full cross-org operations mapping and quarterly re-audit",
+    "Monthly strategy session with Greg or Hunter (working session, not just a check-in)",
+    "Dedicated implementation engineer assigned to the account",
+    "First-priority SLAs across all active projects",
+    "Custom training and SOPs delivered to client's team",
   ];
+
+  const checkIcon = (stroke: string) => (
+    <div className={`mt-0.5 flex-shrink-0 border-2 border-black bg-black p-0.5`}>
+      <Check className={`h-4 w-4 ${stroke} stroke-[3px]`} />
+    </div>
+  );
+
+  const yellowCheck = checkIcon("stroke-[hsl(47,100%,50%)]");
+  const blackCheck = (
+    <div className="mt-0.5 flex-shrink-0 border-2 border-black bg-[hsl(47,100%,50%)] p-0.5">
+      <Check className="h-4 w-4 stroke-black stroke-[3px]" />
+    </div>
+  );
 
   return (
     <section id="pricing" className="border-b-4 border-black bg-[hsl(46,100%,96%)] px-6 py-24 sm:px-12">
@@ -736,48 +687,86 @@ function PricingModel() {
           Costco charges you a flat fee to get in the door. Everything inside is deeply discounted - no agency markups, no retainer games. That's exactly how we work.
         </p>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-3">
-          <PricingCard
-            badge="Level 1 Membership"
-            badgeBg="bg-black"
-            badgeText="text-[hsl(47,100%,50%)]"
-            cardBg="bg-[hsl(47,100%,50%)]"
-            price="$500"
-            subheader="One flat fee. Unlimited Level 1 automations."
-            subheaderOpacity="opacity-70"
-            items={tier1}
-            itemCheckBg="bg-black"
-            itemCheckStroke="stroke-[hsl(47,100%,50%)]"
-            itemTextClass=""
-          />
-          <PricingCard
-            badge="Level 2 Membership"
-            badgeBg="bg-[hsl(47,100%,50%)]"
-            badgeText="text-black"
-            cardBg="bg-white"
-            price="$2,000"
-            subheader="Level 1, plus intelligent automations and custom agent builds."
-            subheaderOpacity="opacity-60"
-            items={tier2}
-            itemCheckBg="bg-black"
-            itemCheckStroke="stroke-[hsl(47,100%,50%)]"
-            itemTextClass="opacity-80"
-            featured
-          />
-          <PricingCard
-            badge="Level 3 Membership"
-            badgeBg="bg-[hsl(47,100%,50%)]"
-            badgeText="text-black"
-            cardBg="bg-black"
-            price="$4,000"
-            priceColor="text-[hsl(47,100%,50%)]"
-            subheader="Unlimited everything. Your business runs without you in it."
-            subheaderOpacity="text-white/60"
-            items={tier3}
-            itemCheckBg="bg-[hsl(47,100%,50%)]"
-            itemCheckStroke="stroke-black"
-            itemTextClass="text-white"
-          />
+        <div className="mt-14 grid gap-6 lg:grid-cols-3 items-start">
+
+          {/* Level 1 — Foundation */}
+          <div className="relative flex flex-col border-4 border-black bg-[hsl(47,100%,50%)] p-8 shadow-neo-lg">
+            <div className="mb-2 inline-block border-4 border-black bg-black px-3 py-1 text-xs font-bold uppercase tracking-widest text-[hsl(47,100%,50%)]">
+              Level 1 - Foundation
+            </div>
+            <div className="mt-4 flex items-end gap-2">
+              <span className="text-6xl font-extrabold tracking-tighter leading-none">$997</span>
+              <span className="mb-2 text-lg font-bold uppercase">/month</span>
+            </div>
+            <p className="mt-1 text-sm font-bold opacity-60">+ $1,500 one-time setup fee</p>
+            <p className="mt-3 text-sm font-bold opacity-70">Your first real automations. Proven fast.</p>
+            <div className="mt-6 space-y-3 flex-1">
+              {tier1.map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  {yellowCheck}
+                  <span className="text-sm font-bold leading-snug">{item}</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8 border-t-4 border-black pt-5">
+              <p className="text-xs font-bold uppercase tracking-widest opacity-60">Annual option</p>
+              <p className="mt-1 text-sm font-bold">$9,970/year - save ~$1,000. No setup fee.</p>
+            </div>
+          </div>
+
+          {/* Level 2 — Intelligence */}
+          <div className="relative flex flex-col border-4 border-black bg-white p-8 shadow-neo-lg">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap border-4 border-black bg-[hsl(0,85%,70%)] px-4 py-1 text-xs font-bold uppercase tracking-widest shadow-neo-sm">
+              Most Popular
+            </div>
+            <div className="mb-2 inline-block border-4 border-black bg-[hsl(47,100%,50%)] px-3 py-1 text-xs font-bold uppercase tracking-widest text-black">
+              Level 2 - Intelligence
+            </div>
+            <div className="mt-4 flex items-end gap-2">
+              <span className="text-6xl font-extrabold tracking-tighter leading-none">$2,500</span>
+              <span className="mb-2 text-lg font-bold uppercase">/month</span>
+            </div>
+            <p className="mt-1 text-sm font-bold opacity-40">No setup fee.</p>
+            <p className="mt-3 text-sm font-bold opacity-70">Everything in Level 1, plus AI agents built for you.</p>
+            <div className="mt-6 space-y-3 flex-1">
+              {tier2.map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  {yellowCheck}
+                  <span className="text-sm font-bold leading-snug opacity-80">{item}</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8 border-t-4 border-black pt-5">
+              <p className="text-xs font-bold uppercase tracking-widest opacity-60">Annual option</p>
+              <p className="mt-1 text-sm font-bold">$27,000/year - save ~$3,000. No setup fee.</p>
+            </div>
+          </div>
+
+          {/* Level 3 — Transformation */}
+          <div className="relative flex flex-col border-4 border-black bg-black p-8 shadow-neo-lg">
+            <div className="mb-2 inline-block border-4 border-[hsl(47,100%,50%)] bg-[hsl(47,100%,50%)] px-3 py-1 text-xs font-bold uppercase tracking-widest text-black">
+              Level 3 - Transformation
+            </div>
+            <div className="mt-4 flex items-end gap-2">
+              <span className="text-6xl font-extrabold tracking-tighter leading-none text-[hsl(47,100%,50%)]">$4,500</span>
+              <span className="mb-2 text-lg font-bold uppercase text-[hsl(47,100%,50%)]">/month</span>
+            </div>
+            <p className="mt-1 text-sm font-bold text-white/40">No setup fee.</p>
+            <p className="mt-3 text-sm font-bold text-white/70">An embedded AI team. Unlimited builds. Full-org leverage.</p>
+            <div className="mt-6 space-y-3 flex-1">
+              {tier3.map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  {blackCheck}
+                  <span className="text-sm font-bold leading-snug text-white">{item}</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8 border-t-4 border-[hsl(47,100%,50%)] pt-5">
+              <p className="text-xs font-bold uppercase tracking-widest text-white/40">Annual option</p>
+              <p className="mt-1 text-sm font-bold text-white">$48,600/year - save ~$5,400. No setup fee.</p>
+            </div>
+          </div>
+
         </div>
 
         <div className="mt-8 border-4 border-black bg-black px-6 py-4 shadow-neo-sm">
