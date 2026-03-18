@@ -1,0 +1,31 @@
+kind = "slides"
+previewPath = "/rozeta-sales-deck/"
+title = "Rozeta Labs Sales Deck"
+version = "1.0.0"
+id = "artifacts/rozeta-sales-deck"
+router = "path"
+
+[[integratedSkills]]
+name = "slides"
+version = "1.0.0"
+
+[[services]]
+localPort = 19963
+name = "web"
+paths = ["/rozeta-sales-deck/"]
+
+[services.development]
+run = "pnpm --filter @workspace/rozeta-sales-deck run dev"
+
+[services.env]
+PORT = "19963"
+BASE_PATH = "/rozeta-sales-deck/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/rozeta-sales-deck", "run", "build"]
+publicDir = "artifacts/rozeta-sales-deck/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
