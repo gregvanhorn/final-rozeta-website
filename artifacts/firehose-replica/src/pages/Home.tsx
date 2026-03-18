@@ -641,7 +641,7 @@ function PricingModel() {
 
   const tier2 = [
     "Everything in Level 1, plus...",
-    "6 custom AI agent buildouts per year (one roughly every 8 weeks)",
+    "12 custom AI agent buildouts per year (one roughly every 4 weeks)",
     "Unlimited Level 1 and Level 2 automations (multi-step n8n workflows with AI decision branching)",
     "Prioritized SLAs - faster response times, dedicated Slack channel",
     "Level 3 implementations available at project rate: $3,000-$7,000",
