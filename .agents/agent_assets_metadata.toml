@@ -47,13 +47,13 @@ title = "Rozeta Labs — Brand & Design System"
 id = "gavhOPyX4YaguqcejA6-O"
 uri = "file://artifacts/firehose-replica/public/logos/rozeta-icon.svg"
 type = "image"
-title = "Icon — SVG (transparent bg)"
+title = "Icon — SVG"
 
 [[outputs]]
 id = "lM6ytIt4ViMoXiS27ab_c"
 uri = "file://artifacts/firehose-replica/public/logos/rozeta-icon.png"
 type = "image"
-title = "Icon — PNG 752×752 (transparent bg)"
+title = "Icon — PNG 752×752"
 
 [[outputs]]
 id = "G2LfYA__sRUOSvwe052PX"
