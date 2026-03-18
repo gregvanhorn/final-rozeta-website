@@ -111,22 +111,22 @@ const FEATURES = [
     description: "Most owners don't realize their supplier costs have quietly crept up until it's already cost them thousands. Supply Hawk maintains a live database of every invoice from every supplier - normalized across formats - and fires an alert the moment a line item drifts upward. When you're about to place a supply order, it tells you exactly where to buy each item to hit the lowest total cost.",
   },
   {
-    icon: <Sparkles className="h-6 w-6" />,
-    industry: "FRANCHISE",
-    title: "Upsell Detection Agent",
-    description: "Reads job notes, field photos, and crew reports in real time. When it detects language or imagery indicating an unaddressed problem - a cracked component, a worn part, a safety risk - it flags the upsell opportunity with a suggested line item before the crew leaves the site. Revenue that used to walk out the door gets captured automatically.",
+    icon: <DollarSign className="h-6 w-6" />,
+    industry: "HOME SERVICES",
+    title: "The Margin Autopsy",
+    description: "This agent builds a profit fingerprint for every job type, crew, lead source, and geography over time. It's not just \"what did this job make.\" It answers: which combinations of variables predict margin erosion before the job starts. Owner gets a pre-job risk score on every estimate above a certain size. That's predictive, not retrospective.",
   },
   {
     icon: <Brain className="h-6 w-6" />,
-    industry: "HEALTH & WELLNESS",
-    title: "Client Sentiment Trajectory Agent",
-    description: "Reads every inbound email, text, and support ticket from each client. Tracks sentiment over time - not just flagging complaints, but detecting when a previously satisfied client starts trending negative. Fires an internal alert with a summary of exactly what shifted and which interactions caused it. Catches churn before it becomes a cancellation.",
+    industry: "CONSULTING",
+    title: "The Context Engine",
+    description: "Every time a key employee leaves, a business loses years of undocumented knowledge — client quirks, vendor negotiations, why decisions were made. This agent continuously ingests call recordings, emails, SOPs, and CRM notes across the entire business and builds a queryable knowledge base. Anyone on the team can ask \"what did we agree with this client last spring?\" and get an answer in seconds.",
   },
   {
-    icon: <DollarSign className="h-6 w-6" />,
+    icon: <Target className="h-6 w-6" />,
     industry: "PROFESSIONAL SERVICES",
-    title: "Job Profitability Forensics Agent",
-    description: "After every engagement closes, pulls actual hours, materials, subcontractor costs, change orders, and payment data - and calculates true profit vs. estimate. Over time, surfaces which job types, lead sources, and client segments are margin-makers vs. margin-killers. Most owners think they know. They don't.",
+    title: "The Deal Room",
+    description: "Your CRM shows deal stage. This agent shows deal health. It cross-references email response latency, meeting attendance, proposal open rates, stakeholder engagement patterns, and competitor mention signals — and builds a real-time probability score for every open opportunity. It flags deals that look active but are actually dying, and surfaces the specific friction point.",
   },
 ];
 
