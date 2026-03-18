@@ -1,16 +1,15 @@
 <svg viewBox="0 0 376 376" xmlns="http://www.w3.org/2000/svg" width="376" height="376">
-  <defs>
-    <filter id="neo" x="-5%" y="-5%" width="120%" height="120%">
-      <feDropShadow dx="16" dy="16" stdDeviation="0" flood-color="black" flood-opacity="1"/>
-    </filter>
-  </defs>
-  <g filter="url(#neo)">
-    <rect x="0" y="0" width="360" height="360" fill="black"/>
-    <rect x="14" y="14" width="332" height="332" fill="hsl(47,100%,50%)"/>
-    <line x1="88"  y1="161" x2="88"  y2="219" stroke="black" stroke-width="24" stroke-linecap="round"/>
-    <line x1="136" y1="116" x2="136" y2="264" stroke="black" stroke-width="24" stroke-linecap="round"/>
-    <line x1="180" y1="56"  x2="180" y2="324" stroke="black" stroke-width="24" stroke-linecap="round"/>
-    <line x1="224" y1="116" x2="224" y2="264" stroke="black" stroke-width="24" stroke-linecap="round"/>
-    <line x1="272" y1="161" x2="272" y2="219" stroke="black" stroke-width="24" stroke-linecap="round"/>
-  </g>
+  <!-- Shadow: only the exposed right strip + bottom strip + corner -->
+  <rect x="360" y="16"  width="16" height="344" fill="black"/>
+  <rect x="16"  y="360" width="344" height="16" fill="black"/>
+  <rect x="360" y="360" width="16" height="16" fill="black"/>
+  <!-- Main icon box -->
+  <rect x="0" y="0" width="360" height="360" fill="black"/>
+  <rect x="14" y="14" width="332" height="332" fill="hsl(47,100%,50%)"/>
+  <!-- Waveform bars -->
+  <line x1="88"  y1="161" x2="88"  y2="219" stroke="black" stroke-width="24" stroke-linecap="round"/>
+  <line x1="136" y1="116" x2="136" y2="264" stroke="black" stroke-width="24" stroke-linecap="round"/>
+  <line x1="180" y1="56"  x2="180" y2="324" stroke="black" stroke-width="24" stroke-linecap="round"/>
+  <line x1="224" y1="116" x2="224" y2="264" stroke="black" stroke-width="24" stroke-linecap="round"/>
+  <line x1="272" y1="161" x2="272" y2="219" stroke="black" stroke-width="24" stroke-linecap="round"/>
 </svg>
