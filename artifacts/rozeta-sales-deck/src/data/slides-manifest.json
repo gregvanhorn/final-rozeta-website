@@ -1,122 +1,122 @@
 [
-  {
-    "id": "rl-0000-0000-0000-000000000001",
-    "position": 1,
-    "filepath": "src/pages/slides/Slide01Title.tsx",
-    "title": "Rozeta Labs",
-    "description": "Company title slide — Revenue Recovery for SMBs.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "rl-0000-0000-0000-000000000002",
-    "position": 2,
-    "filepath": "src/pages/slides/Slide02Agenda.tsx",
-    "title": "Agenda",
-    "description": "What we'll cover in this session.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "rl-0000-0000-0000-000000000003",
-    "position": 3,
-    "filepath": "src/pages/slides/Slide03Hook.tsx",
-    "title": "The Money Leak",
-    "description": "You're losing money between the lead and the job.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "rl-0000-0000-0000-000000000004",
-    "position": 4,
-    "filepath": "src/pages/slides/Slide04Questions.tsx",
-    "title": "Four Questions",
-    "description": "Before we show you anything.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "rl-0000-0000-0000-000000000005",
-    "position": 5,
-    "filepath": "src/pages/slides/Slide05Leaks.tsx",
-    "title": "Six Revenue Leaks",
-    "description": "Where your money walks out the door.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "rl-0000-0000-0000-000000000006",
-    "position": 6,
-    "filepath": "src/pages/slides/Slide06Dollar.tsx",
-    "title": "Put a Number on It",
-    "description": "Revenue leak calculator.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "rl-0000-0000-0000-000000000007",
-    "position": 7,
-    "filepath": "src/pages/slides/Slide07Tried.tsx",
-    "title": "What You've Tried",
-    "description": "Why it didn't stick.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "rl-0000-0000-0000-000000000008",
-    "position": 8,
-    "filepath": "src/pages/slides/Slide08LifeAfter.tsx",
-    "title": "Life After Rozeta",
-    "description": "What your business looks like when the leaks are plugged.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "rl-0000-0000-0000-000000000009",
-    "position": 9,
-    "filepath": "src/pages/slides/Slide09Blueprint.tsx",
-    "title": "The Blueprint",
-    "description": "Five systems. All running without you.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "rl-0000-0000-0000-000000000010",
-    "position": 10,
-    "filepath": "src/pages/slides/Slide10Objections.tsx",
-    "title": "Objections",
-    "description": "What we hear most at this point.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "rl-0000-0000-0000-000000000011",
-    "position": 11,
-    "filepath": "src/pages/slides/Slide11Offer.tsx",
-    "title": "The Offer",
-    "description": "One price. Everything included. No contract.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "rl-0000-0000-0000-000000000012",
-    "position": 12,
-    "filepath": "src/pages/slides/Slide12Bonuses.tsx",
-    "title": "The Bonuses",
-    "description": "Three bonuses included at no charge.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "rl-0000-0000-0000-000000000013",
-    "position": 13,
-    "filepath": "src/pages/slides/Slide13Guarantee.tsx",
-    "title": "Our Guarantees",
-    "description": "If we don't perform, you don't pay.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "rl-0000-0000-0000-000000000014",
-    "position": 14,
-    "filepath": "src/pages/slides/Slide14Next.tsx",
-    "title": "What Comes Next",
-    "description": "Beyond month one.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "rl-0000-0000-0000-000000000015",
-    "position": 15,
-    "filepath": "src/pages/slides/Slide15Close.tsx",
-    "title": "The Close",
-    "description": "Next steps.",
-    "speakerNotes": ""
-  }
+	{
+		"id": "rl-0000-0000-0000-000000000001",
+		"position": 1,
+		"filepath": "src/pages/slides/Slide01Title.tsx",
+		"title": "Rozeta Labs",
+		"description": "Company title slide — Revenue Recovery for SMBs.",
+		"speakerNotes": ""
+	},
+	{
+		"id": "rl-0000-0000-0000-000000000002",
+		"position": 2,
+		"filepath": "src/pages/slides/Slide02Agenda.tsx",
+		"title": "Agenda",
+		"description": "What we'll cover in this session.",
+		"speakerNotes": ""
+	},
+	{
+		"id": "rl-0000-0000-0000-000000000003",
+		"position": 3,
+		"filepath": "src/pages/slides/Slide03Hook.tsx",
+		"title": "The Money Leak",
+		"description": "You're losing money between the lead and the job.",
+		"speakerNotes": ""
+	},
+	{
+		"id": "rl-0000-0000-0000-000000000004",
+		"position": 4,
+		"filepath": "src/pages/slides/Slide04Questions.tsx",
+		"title": "Four Questions",
+		"description": "Before we show you anything.",
+		"speakerNotes": ""
+	},
+	{
+		"id": "rl-0000-0000-0000-000000000005",
+		"position": 6,
+		"filepath": "src/pages/slides/Slide05Leaks.tsx",
+		"title": "Six Revenue Leaks",
+		"description": "Where your money walks out the door.",
+		"speakerNotes": ""
+	},
+	{
+		"id": "rl-0000-0000-0000-000000000006",
+		"position": 5,
+		"filepath": "src/pages/slides/Slide06Dollar.tsx",
+		"title": "Put a Number on It",
+		"description": "Revenue leak calculator.",
+		"speakerNotes": ""
+	},
+	{
+		"id": "rl-0000-0000-0000-000000000007",
+		"position": 7,
+		"filepath": "src/pages/slides/Slide07Tried.tsx",
+		"title": "What You've Tried",
+		"description": "Why it didn't stick.",
+		"speakerNotes": ""
+	},
+	{
+		"id": "rl-0000-0000-0000-000000000008",
+		"position": 8,
+		"filepath": "src/pages/slides/Slide08LifeAfter.tsx",
+		"title": "Life After Rozeta",
+		"description": "What your business looks like when the leaks are plugged.",
+		"speakerNotes": ""
+	},
+	{
+		"id": "rl-0000-0000-0000-000000000009",
+		"position": 9,
+		"filepath": "src/pages/slides/Slide09Blueprint.tsx",
+		"title": "The Blueprint",
+		"description": "Five systems. All running without you.",
+		"speakerNotes": ""
+	},
+	{
+		"id": "rl-0000-0000-0000-000000000010",
+		"position": 10,
+		"filepath": "src/pages/slides/Slide10Objections.tsx",
+		"title": "Objections",
+		"description": "What we hear most at this point.",
+		"speakerNotes": ""
+	},
+	{
+		"id": "rl-0000-0000-0000-000000000011",
+		"position": 11,
+		"filepath": "src/pages/slides/Slide11Offer.tsx",
+		"title": "The Offer",
+		"description": "One price. Everything included. No contract.",
+		"speakerNotes": ""
+	},
+	{
+		"id": "rl-0000-0000-0000-000000000012",
+		"position": 12,
+		"filepath": "src/pages/slides/Slide12Bonuses.tsx",
+		"title": "The Bonuses",
+		"description": "Three bonuses included at no charge.",
+		"speakerNotes": ""
+	},
+	{
+		"id": "rl-0000-0000-0000-000000000013",
+		"position": 13,
+		"filepath": "src/pages/slides/Slide13Guarantee.tsx",
+		"title": "Our Guarantees",
+		"description": "If we don't perform, you don't pay.",
+		"speakerNotes": ""
+	},
+	{
+		"id": "rl-0000-0000-0000-000000000014",
+		"position": 14,
+		"filepath": "src/pages/slides/Slide14Next.tsx",
+		"title": "What Comes Next",
+		"description": "Beyond month one.",
+		"speakerNotes": ""
+	},
+	{
+		"id": "rl-0000-0000-0000-000000000015",
+		"position": 15,
+		"filepath": "src/pages/slides/Slide15Close.tsx",
+		"title": "The Close",
+		"description": "Next steps.",
+		"speakerNotes": ""
+	}
 ]
