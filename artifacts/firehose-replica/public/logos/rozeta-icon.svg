@@ -4,15 +4,9 @@
       <feDropShadow dx="16" dy="16" stdDeviation="0" flood-color="black" flood-opacity="1"/>
     </filter>
   </defs>
-  <!-- Yellow canvas fill — no transparent edges -->
-  <rect x="0" y="0" width="376" height="376" fill="hsl(47,100%,50%)"/>
-  <!-- Icon group with drop-shadow filter -->
   <g filter="url(#neo)">
-    <!-- Black border box -->
     <rect x="0" y="0" width="360" height="360" fill="black"/>
-    <!-- Yellow interior -->
     <rect x="14" y="14" width="332" height="332" fill="hsl(47,100%,50%)"/>
-    <!-- Waveform bars -->
     <line x1="88"  y1="161" x2="88"  y2="219" stroke="black" stroke-width="24" stroke-linecap="round"/>
     <line x1="136" y1="116" x2="136" y2="264" stroke="black" stroke-width="24" stroke-linecap="round"/>
     <line x1="180" y1="56"  x2="180" y2="324" stroke="black" stroke-width="24" stroke-linecap="round"/>
