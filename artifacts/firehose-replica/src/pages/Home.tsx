@@ -644,7 +644,7 @@ function PricingModel() {
     "12 custom AI agent buildouts per year (one roughly every 4 weeks)",
     "Unlimited Level 1 and Level 2 automations (multi-step n8n workflows with AI decision branching)",
     "Prioritized SLAs - faster response times",
-    "Level 3 implementations available at project rate: $3,000-$7,000",
+    "Additional Level 3 implementations available at discounted project rate",
     "Quarterly strategy session - 60-min review of automation ROI and roadmap",
   ];
 
