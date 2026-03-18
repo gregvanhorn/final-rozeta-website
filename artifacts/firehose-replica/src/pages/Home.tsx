@@ -637,7 +637,7 @@ function PricingModel() {
     "First automation live within 7 days, guaranteed",
     "Unlimited maintenance and monitoring of deployed automations",
     "Access to Rozeta community and team training library",
-    "Level 2 and 3 agent builds available at project rate: $1,500-$5,500 depending on scope",
+    "Additional buildouts available at project rate",
   ];
 
   const tier2 = [
