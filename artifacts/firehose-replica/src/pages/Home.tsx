@@ -595,7 +595,11 @@ function ProblemSection() {
           Sound Familiar?
         </div>
         <h2 className="text-5xl font-bold tracking-tighter uppercase text-white sm:text-6xl lg:text-7xl">
-          You know AI is the next lever. But you don't know where to start.
+          You know AI is the{" "}
+          <span className="inline-block -rotate-1 border-4 border-black bg-[hsl(0,85%,70%)] px-3 text-black shadow-neo-md">
+            growth lever.
+          </span>{" "}
+          But you don't know where to start.
         </h2>
         <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed text-white/70">
           You're running a real operation. You've got the team, the revenue, the systems. But AI transformation keeps landing on the backburner - because you don't have time to figure out what's possible, what's worth building, or who can actually do it inside your business.
