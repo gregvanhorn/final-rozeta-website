@@ -6,7 +6,7 @@ import Footer from "@/components/shared/Footer";
 const ROTATING_WORDS = [
   "Home Service", "Franchise", "Private Equity",
   "Service", "Real Estate", "Health & Wellness",
-  "Consulting", "Accounting",
+  "Consulting", "Accounting", "Professional Services",
 ];
 
 const USE_CASES = [
