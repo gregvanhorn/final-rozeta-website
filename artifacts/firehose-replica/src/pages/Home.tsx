@@ -630,7 +630,8 @@ function ProblemSection() {
 
 function PricingModel() {
   const tier1 = [
-    "Unlimited Level 1 automations (Zapier/Make trigger-based, single-step logic)",
+    "Unlimited Level 1 and Level 2 automations",
+    "3 custom AI agent buildouts per year",
     "Revenue recovery stack built in week one: speed-to-lead engine, dead proposal reactivation, open pipeline follow-up sequences",
     "Initial operations intake - we map your highest-cost manual processes before we build anything",
     "First automation live within 7 days, guaranteed",
