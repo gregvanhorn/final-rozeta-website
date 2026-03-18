@@ -1,13 +1,15 @@
 <svg viewBox="0 0 376 376" xmlns="http://www.w3.org/2000/svg" width="376" height="376">
-  <!-- Yellow fills entire canvas — no transparent edges -->
   <rect x="0" y="0" width="376" height="376" fill="hsl(47,100%,50%)"/>
-  <!-- Neo shadow (black, offset 16px right+down) -->
+  <!-- Neo shadow -->
   <rect x="16" y="16" width="360" height="360" fill="black"/>
-  <!-- Main box (black border) -->
+  <!-- Main border box -->
   <rect x="0" y="0" width="360" height="360" fill="black"/>
+  <!-- Patch the two exposed yellow corners -->
+  <rect x="360" y="0"   width="16" height="16" fill="black"/>
+  <rect x="0"   y="360" width="16" height="16" fill="black"/>
   <!-- Yellow interior -->
   <rect x="14" y="14" width="332" height="332" fill="hsl(47,100%,50%)"/>
-  <!-- Waveform bars (center x=180, y=180 of inner box) -->
+  <!-- Waveform bars -->
   <line x1="88"  y1="161" x2="88"  y2="219" stroke="black" stroke-width="24" stroke-linecap="round"/>
   <line x1="136" y1="116" x2="136" y2="264" stroke="black" stroke-width="24" stroke-linecap="round"/>
   <line x1="180" y1="56"  x2="180" y2="324" stroke="black" stroke-width="24" stroke-linecap="round"/>
