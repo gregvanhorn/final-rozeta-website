@@ -597,7 +597,7 @@ function ProblemSection() {
         <h2 className="text-5xl font-bold tracking-tighter uppercase text-white sm:text-6xl lg:text-7xl">
           You know AI is the{" "}
           <span className="inline-block -rotate-1 border-4 border-black bg-[hsl(0,85%,70%)] px-3 text-black shadow-neo-md">
-            growth lever.
+            next growth lever.
           </span>{" "}
           But you don't know where to start.
         </h2>
