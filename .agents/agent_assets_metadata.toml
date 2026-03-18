@@ -47,13 +47,13 @@ title = "Rozeta Labs — Brand & Design System"
 id = "gavhOPyX4YaguqcejA6-O"
 uri = "file://artifacts/firehose-replica/public/logos/rozeta-icon.svg"
 type = "image"
-title = "Icon — SVG"
+title = "Icon — SVG (transparent bg)"
 
 [[outputs]]
 id = "lM6ytIt4ViMoXiS27ab_c"
 uri = "file://artifacts/firehose-replica/public/logos/rozeta-icon.png"
 type = "image"
-title = "Icon — PNG (752×752)"
+title = "Icon — PNG 752×752 (transparent bg)"
 
 [[outputs]]
 id = "G2LfYA__sRUOSvwe052PX"
@@ -65,7 +65,7 @@ title = "Wordmark (ROZETA LABS) — SVG"
 id = "gNFYnmlB_1a3qfya7wQzg"
 uri = "file://artifacts/firehose-replica/public/logos/rozeta-wordmark.png"
 type = "image"
-title = "Wordmark (ROZETA LABS) — PNG (1800×400)"
+title = "Wordmark (ROZETA LABS) — PNG 1800×400"
 
 [[outputs]]
 id = "hoJN1zKyUoUpNl33c9yfS"
@@ -77,4 +77,4 @@ title = "Combined (Icon + ROZETA LABS) — SVG"
 id = "qyT64qP1ZUGtfv118Nzrf"
 uri = "file://artifacts/firehose-replica/public/logos/rozeta-combined.png"
 type = "image"
-title = "Combined (Icon + ROZETA LABS) — PNG (2120×480)"
+title = "Combined (Icon + ROZETA LABS) — PNG 2120×480"
