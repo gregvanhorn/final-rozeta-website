@@ -1,221 +1,134 @@
-const Y = "hsl(47,100%,50%)";
+import type { ReactNode } from "react";
+
+const YELLOW = "hsl(47,100%,50%)";
 
 const leftItems = [
-  { label: "Zapier / n8n (tools only, no builds included)", cost: "~$500/mo" },
-  { label: "Automation specialist to build & maintain flows", cost: "$5,000–8,000/mo" },
-  { label: "12 custom AI agents at consultant rates ($5–15K each)", cost: "$5,000–15,000/mo" },
-  { label: "Ongoing monitoring, maintenance & iteration", cost: "$2,000+/mo" },
+  { label: "Zapier / N8N (Tools Only, No Builds Included)", cost: "~$500/Mo" },
+  { label: "Automation Specialist To Build & Maintain Flows", cost: "$5,000–8,000/Mo" },
+  { label: "12 Custom AI Agents At Consultant Rates ($5–15K Each)", cost: "$5,000–15,000/Mo" },
+  { label: "Ongoing Monitoring, Maintenance & Iteration", cost: "$2,000+/Mo" },
 ];
 
 const automations = [
-  "Speed-to-lead engine — respond in 60 seconds",
-  "Dead estimate reactivation — 7/14/21/30-day sequences",
-  "No-show & cancellation recovery",
-  "Pipeline follow-up automation",
-  "Invoice & collections follow-up",
-  "+ every other leak we find in your business",
+  "Speed-To-Lead Engine — Respond In 60 Seconds",
+  "Dead Estimate Reactivation — 7/14/21/30-Day Sequences",
+  "No-Show & Cancellation Recovery",
+  "Pipeline Follow-Up Automation",
+  "Invoice & Collections Follow-Up",
+  "+ Every Other Leak We Find In Your Business",
 ];
 
 const agents = [
-  "Supply Hawk — live supplier cost intelligence",
-  "The Margin Autopsy — pre-job profit risk scoring",
-  "The Context Engine — queryable institutional memory",
-  "The Deal Room — real-time pipeline health scoring",
-  "+ 8 more agents built around your specific workflows",
+  "Supply Hawk — Live Supplier Cost Intelligence",
+  "The Margin Autopsy — Pre-Job Profit Risk Scoring",
+  "The Context Engine — Queryable Institutional Memory",
+  "The Deal Room — Real-Time Pipeline Health Scoring",
+  "+ 8 More Agents Built Around Your Specific Workflows",
 ];
 
 const extras = [
-  "Setup, configuration & integration",
-  "Unlimited maintenance & monitoring",
-  "Monthly plain-language performance reports",
-  "Direct team access — no account managers",
+  "Setup, Configuration & Integration",
+  "Unlimited Maintenance & Monitoring",
+  "Monthly Plain-Language Performance Reports",
+  "Direct Team Access — No Account Managers",
 ];
 
-function XIcon() {
+function XMark() {
   return (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-      <rect width="16" height="16" fill="#ef4444" />
-      <line x1="4" y1="4" x2="12" y2="12" stroke="white" strokeWidth="2.5" strokeLinecap="square" />
-      <line x1="12" y1="4" x2="4" y2="12" stroke="white" strokeWidth="2.5" strokeLinecap="square" />
-    </svg>
-  );
-}
-
-function CheckIcon({ dark }: { dark?: boolean }) {
-  return (
-    <div
-      style={{
-        flexShrink: 0,
-        marginTop: 2,
-        width: 18,
-        height: 18,
-        background: dark ? "#000" : Y,
-        border: "2px solid #000",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
+    <div className="mt-0.5 flex-shrink-0 flex h-5 w-5 items-center justify-center border-2 border-black bg-red-500">
       <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-        <polyline points="1.5,5 4,7.5 8.5,2" stroke={dark ? Y : "#000"} strokeWidth="2.2" strokeLinecap="square" strokeLinejoin="miter" />
+        <line x1="2" y1="2" x2="8" y2="8" stroke="white" strokeWidth="2" strokeLinecap="square" />
+        <line x1="8" y1="2" x2="2" y2="8" stroke="white" strokeWidth="2" strokeLinecap="square" />
       </svg>
     </div>
   );
 }
 
-function BlockLabel({ text, dark }: { text: string; dark?: boolean }) {
+function CheckMark({ onDark }: { onDark?: boolean }) {
   return (
     <div
-      style={{
-        display: "inline-block",
-        background: dark ? Y : "#000",
-        color: dark ? "#000" : Y,
-        border: "3px solid #000",
-        padding: "4px 12px",
-        fontSize: 10,
-        fontWeight: 800,
-        letterSpacing: "0.12em",
-        textTransform: "uppercase",
-        marginBottom: 12,
-      }}
+      className={`mt-0.5 flex-shrink-0 flex h-5 w-5 items-center justify-center border-2 border-black ${onDark ? "bg-black" : "bg-[hsl(47,100%,50%)]"}`}
     >
-      {text}
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+        <polyline
+          points="1.5,5 4,7.5 8.5,2"
+          stroke={onDark ? YELLOW : "#000"}
+          strokeWidth="2.2"
+          strokeLinecap="square"
+          strokeLinejoin="miter"
+        />
+      </svg>
+    </div>
+  );
+}
+
+function BlockTag({ children, onDark }: { children: ReactNode; onDark?: boolean }) {
+  return (
+    <div
+      className={`mb-3 inline-block border-2 border-black px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest ${onDark ? "bg-[hsl(47,100%,50%)] text-black" : "bg-black text-[hsl(47,100%,50%)]"}`}
+    >
+      {children}
     </div>
   );
 }
 
 export function ValueComparison() {
-  const shadow = "5px 5px 0px 0px #000";
-  const shadowSm = "3px 3px 0px 0px #000";
-
   return (
-    <div
-      style={{
-        fontFamily: "'Space Grotesk', sans-serif",
-        background: "hsl(46,100%,96%)",
-        minHeight: "100vh",
-        padding: "80px 48px",
-        color: "#0d0d0d",
-      }}
+    <section
+      className="min-h-screen bg-[hsl(46,100%,96%)] px-8 py-20"
+      style={{ fontFamily: "'Space Grotesk', sans-serif" }}
     >
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap');
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-      `}</style>
+      <div className="mx-auto max-w-7xl">
 
-      {/* Section header */}
-      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+        {/* Section label */}
         <div
-          style={{
-            display: "inline-block",
-            background: "#000",
-            color: Y,
-            border: "4px solid #000",
-            padding: "6px 16px",
-            fontSize: 11,
-            fontWeight: 800,
-            letterSpacing: "0.15em",
-            textTransform: "uppercase",
-            boxShadow: shadowSm,
-            marginBottom: 20,
-          }}
+          className="mb-5 inline-block border-4 border-black bg-black px-4 py-2 text-xs font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]"
+          style={{ boxShadow: "3px 3px 0px 0px #000" }}
         >
           The Math
         </div>
 
-        <h2
-          style={{
-            fontSize: 64,
-            fontWeight: 800,
-            letterSpacing: "-0.03em",
-            lineHeight: 1.05,
-            textTransform: "uppercase",
-            marginBottom: 12,
-          }}
-        >
-          What $2,500 a month
+        {/* Headline */}
+        <h2 className="text-6xl font-extrabold uppercase tracking-tighter leading-[1.02] lg:text-7xl">
+          What $2,500 A Month
           <br />
-          actually buys you.
+          Actually Buys You.
         </h2>
 
-        <p
-          style={{
-            fontSize: 18,
-            fontWeight: 600,
-            opacity: 0.55,
-            maxWidth: 600,
-            lineHeight: 1.55,
-            marginBottom: 56,
-          }}
-        >
-          Stack it up against what you'd pay piecing this together yourself — and that's before accounting for the time it takes to manage three vendors and a freelancer.
+        {/* Subtext */}
+        <p className="mb-14 mt-4 max-w-xl text-base font-bold uppercase tracking-wide leading-relaxed opacity-50">
+          Stack It Up Against What You'd Pay Piecing This Together Yourself — Before Accounting For The Time It Takes To Manage Three Vendors And A Freelancer.
         </p>
 
-        {/* Two-column comparison */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr auto 1fr", gap: 0, alignItems: "stretch" }}>
+        {/* Main comparison — left | VS | right */}
+        <div className="grid items-stretch gap-0" style={{ gridTemplateColumns: "1fr auto 1fr" }}>
 
           {/* LEFT — Without Rozeta */}
           <div
-            style={{
-              background: "#000",
-              border: "4px solid #000",
-              padding: "40px 36px",
-              boxShadow: shadow,
-              display: "flex",
-              flexDirection: "column",
-            }}
+            className="flex flex-col border-4 border-black bg-black p-10"
+            style={{ boxShadow: "6px 6px 0px 0px rgba(0,0,0,0.3)" }}
           >
-            <div
-              style={{
-                display: "inline-block",
-                background: "#fff",
-                color: "#000",
-                border: "3px solid #fff",
-                padding: "4px 12px",
-                fontSize: 10,
-                fontWeight: 800,
-                letterSpacing: "0.12em",
-                textTransform: "uppercase",
-                marginBottom: 16,
-                alignSelf: "flex-start",
-              }}
-            >
+            <div className="mb-4 inline-block self-start border-2 border-white bg-white px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest text-black">
               Without Rozeta
             </div>
 
-            <p
-              style={{
-                fontSize: 22,
-                fontWeight: 800,
-                color: "#fff",
-                textTransform: "uppercase",
-                letterSpacing: "-0.01em",
-                marginBottom: 32,
-                lineHeight: 1.2,
-              }}
-            >
-              What you'd piece together on your own
+            <p className="mb-8 text-xl font-extrabold uppercase tracking-tight text-white leading-snug">
+              What You'd Piece Together
+              <br />On Your Own
             </p>
 
-            <div style={{ display: "flex", flexDirection: "column", gap: 16, flex: 1 }}>
+            <div className="flex flex-1 flex-col gap-3">
               {leftItems.map((item, i) => (
                 <div
                   key={i}
-                  style={{
-                    display: "flex",
-                    alignItems: "flex-start",
-                    gap: 12,
-                    background: "rgba(255,255,255,0.04)",
-                    border: "2px solid rgba(255,255,255,0.12)",
-                    padding: "14px 16px",
-                  }}
+                  className="flex items-start gap-3 border-2 border-white/10 bg-white/5 p-4"
                 >
-                  <XIcon />
-                  <div style={{ flex: 1 }}>
-                    <p style={{ fontSize: 13, fontWeight: 600, color: "rgba(255,255,255,0.75)", lineHeight: 1.4 }}>
+                  <XMark />
+                  <div>
+                    <p className="mb-1 text-[11px] font-bold uppercase tracking-wide text-white/55 leading-snug">
                       {item.label}
                     </p>
-                    <p style={{ fontSize: 15, fontWeight: 800, color: "#fff", marginTop: 4 }}>
+                    <p className="text-lg font-extrabold uppercase tracking-tighter text-white">
                       {item.cost}
                     </p>
                   </div>
@@ -223,54 +136,25 @@ export function ValueComparison() {
               ))}
             </div>
 
-            {/* Total */}
-            <div
-              style={{
-                marginTop: 28,
-                background: "rgba(255,255,255,0.08)",
-                border: `3px solid ${Y}`,
-                padding: "20px 20px",
-              }}
-            >
-              <p style={{ fontSize: 11, fontWeight: 800, color: Y, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 6 }}>
-                Total equivalent cost
+            {/* Total callout */}
+            <div className="mt-6 border-4 border-[hsl(47,100%,50%)] bg-white/5 p-5">
+              <p className="mb-1 text-[10px] font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">
+                Total Equivalent Cost
               </p>
-              <p style={{ fontSize: 36, fontWeight: 800, color: "#fff", letterSpacing: "-0.02em", lineHeight: 1 }}>
-                $10,000–20,000+
-                <span style={{ fontSize: 18, fontWeight: 700, opacity: 0.6 }}>/mo</span>
+              <p className="text-4xl font-extrabold uppercase tracking-tighter text-white leading-none">
+                $10,000–20,000+<span className="text-xl opacity-60">/Mo</span>
               </p>
-              <p style={{ fontSize: 12, fontWeight: 600, color: "rgba(255,255,255,0.45)", marginTop: 6 }}>
-                And it's still cobbled together. Across 3+ vendors. Owned by nobody.
+              <p className="mt-2 text-[11px] font-bold uppercase tracking-wide text-white/40">
+                And It's Still Cobbled Together. Across 3+ Vendors. Owned By Nobody.
               </p>
             </div>
           </div>
 
           {/* VS BADGE */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              padding: "0 16px",
-              zIndex: 10,
-            }}
-          >
+          <div className="flex items-center justify-center px-5">
             <div
-              style={{
-                background: Y,
-                border: "4px solid #000",
-                width: 52,
-                height: 52,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: 14,
-                fontWeight: 800,
-                letterSpacing: "0.05em",
-                textTransform: "uppercase",
-                boxShadow: "3px 3px 0px 0px #000",
-                flexShrink: 0,
-              }}
+              className="flex h-14 w-14 flex-shrink-0 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] text-sm font-extrabold uppercase tracking-widest"
+              style={{ boxShadow: "3px 3px 0px 0px #000" }}
             >
               VS
             </div>
@@ -278,126 +162,67 @@ export function ValueComparison() {
 
           {/* RIGHT — With Rozeta */}
           <div
-            style={{
-              background: Y,
-              border: "4px solid #000",
-              padding: "40px 36px",
-              boxShadow: shadow,
-              display: "flex",
-              flexDirection: "column",
-            }}
+            className="flex flex-col border-4 border-black bg-[hsl(47,100%,50%)] p-10"
+            style={{ boxShadow: "6px 6px 0px 0px rgba(0,0,0,0.3)" }}
           >
-            <div
-              style={{
-                display: "inline-block",
-                background: "#000",
-                color: Y,
-                border: "3px solid #000",
-                padding: "4px 12px",
-                fontSize: 10,
-                fontWeight: 800,
-                letterSpacing: "0.12em",
-                textTransform: "uppercase",
-                marginBottom: 16,
-                alignSelf: "flex-start",
-              }}
-            >
+            <div className="mb-4 inline-block self-start border-2 border-black bg-black px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">
               With Rozeta — Level 2
             </div>
 
-            <p
-              style={{
-                fontSize: 22,
-                fontWeight: 800,
-                color: "#000",
-                textTransform: "uppercase",
-                letterSpacing: "-0.01em",
-                marginBottom: 32,
-                lineHeight: 1.2,
-              }}
-            >
-              One team. One bill.
-              <br />Everything built for you.
+            <p className="mb-8 text-xl font-extrabold uppercase tracking-tight text-black leading-snug">
+              One Team. One Bill.
+              <br />Everything Built For You.
             </p>
 
-            {/* Block 1 — Automations */}
-            <div
-              style={{
-                background: "rgba(0,0,0,0.06)",
-                border: "3px solid #000",
-                padding: "20px 20px",
-                marginBottom: 16,
-              }}
-            >
-              <BlockLabel text="Unlimited Automation Layer — Level 1 + 2" dark />
-              <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            {/* Block 1 — Automation Layer */}
+            <div className="mb-4 border-4 border-black bg-black/10 p-5">
+              <BlockTag onDark>Unlimited Automation Layer — Level 1 + 2</BlockTag>
+              <div className="flex flex-col gap-2">
                 {automations.map((item, i) => (
-                  <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
-                    <CheckIcon dark />
-                    <span style={{ fontSize: 13, fontWeight: 600, color: "#000", lineHeight: 1.4 }}>{item}</span>
+                  <div key={i} className="flex items-start gap-3">
+                    <CheckMark onDark />
+                    <span className="text-[11px] font-bold uppercase tracking-wide text-black leading-snug">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Block 2 — AI Agents */}
-            <div
-              style={{
-                background: "rgba(0,0,0,0.06)",
-                border: "3px solid #000",
-                padding: "20px 20px",
-                marginBottom: 16,
-              }}
-            >
-              <BlockLabel text="12 Custom AI Agents / Year — Level 3" dark />
-              <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            <div className="mb-4 border-4 border-black bg-black/10 p-5">
+              <BlockTag onDark>12 Custom AI Agents / Year — Level 3</BlockTag>
+              <div className="flex flex-col gap-2">
                 {agents.map((item, i) => (
-                  <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
-                    <CheckIcon dark />
-                    <span style={{ fontSize: 13, fontWeight: 600, color: "#000", lineHeight: 1.4 }}>{item}</span>
+                  <div key={i} className="flex items-start gap-3">
+                    <CheckMark onDark />
+                    <span className="text-[11px] font-bold uppercase tracking-wide text-black leading-snug">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Block 3 — Everything included */}
-            <div
-              style={{
-                background: "rgba(0,0,0,0.06)",
-                border: "3px solid #000",
-                padding: "16px 20px",
-                marginBottom: 28,
-              }}
-            >
-              <BlockLabel text="Everything included" dark />
-              <div style={{ display: "flex", flexDirection: "column", gap: 7 }}>
+            <div className="mb-6 border-4 border-black bg-black/10 p-5">
+              <BlockTag onDark>Everything Included</BlockTag>
+              <div className="flex flex-col gap-2">
                 {extras.map((item, i) => (
-                  <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
-                    <CheckIcon dark />
-                    <span style={{ fontSize: 13, fontWeight: 600, color: "#000", lineHeight: 1.4 }}>{item}</span>
+                  <div key={i} className="flex items-start gap-3">
+                    <CheckMark onDark />
+                    <span className="text-[11px] font-bold uppercase tracking-wide text-black leading-snug">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Price callout */}
-            <div
-              style={{
-                background: "#000",
-                border: "3px solid #000",
-                padding: "20px 20px",
-                marginTop: "auto",
-              }}
-            >
-              <p style={{ fontSize: 11, fontWeight: 800, color: Y, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 6 }}>
-                All-in monthly price
+            <div className="mt-auto border-4 border-black bg-black p-5">
+              <p className="mb-1 text-[10px] font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">
+                All-In Monthly Price
               </p>
-              <p style={{ fontSize: 36, fontWeight: 800, color: "#fff", letterSpacing: "-0.02em", lineHeight: 1 }}>
-                $2,500
-                <span style={{ fontSize: 18, fontWeight: 700, opacity: 0.6 }}>/mo</span>
+              <p className="text-4xl font-extrabold uppercase tracking-tighter text-white leading-none">
+                $2,500<span className="text-xl opacity-60">/Mo</span>
               </p>
-              <p style={{ fontSize: 12, fontWeight: 600, color: "rgba(255,255,255,0.5)", marginTop: 6 }}>
-                No setup fee. No lock-in. One team owns all of it.
+              <p className="mt-2 text-[11px] font-bold uppercase tracking-wide text-white/50">
+                No Setup Fee. No Lock-In. One Team Owns All Of It.
               </p>
             </div>
           </div>
@@ -405,63 +230,46 @@ export function ValueComparison() {
 
         {/* Bottom callout strip */}
         <div
-          style={{
-            marginTop: 6,
-            background: "#000",
-            border: "4px solid #000",
-            padding: "28px 40px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: 24,
-            boxShadow: shadow,
-          }}
+          className="mt-1.5 flex items-center justify-between gap-8 border-4 border-black bg-black px-10 py-7"
+          style={{ boxShadow: "6px 6px 0px 0px rgba(0,0,0,0.3)" }}
         >
-          <div style={{ display: "flex", alignItems: "baseline", gap: 24 }}>
+          <div className="flex items-baseline gap-8">
             <div>
-              <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 2 }}>
+              <p className="mb-1 text-[10px] font-extrabold uppercase tracking-widest text-white/40">
                 Without Rozeta
               </p>
-              <p style={{ fontSize: 40, fontWeight: 800, color: "rgba(255,255,255,0.35)", letterSpacing: "-0.03em", lineHeight: 1, textDecoration: "line-through" }}>
-                $10K–20K+<span style={{ fontSize: 18 }}>/mo</span>
+              <p className="text-4xl font-extrabold uppercase tracking-tighter text-white/30 line-through leading-none">
+                $10K–20K+<span className="text-xl">/Mo</span>
               </p>
             </div>
-            <div
-              style={{
-                background: Y,
-                border: "3px solid " + Y,
-                color: "#000",
-                padding: "6px 14px",
-                fontSize: 13,
-                fontWeight: 800,
-                letterSpacing: "0.05em",
-                textTransform: "uppercase",
-              }}
-            >
-              vs
+
+            <div className="border-2 border-[hsl(47,100%,50%)] bg-[hsl(47,100%,50%)] px-3 py-1.5 text-xs font-extrabold uppercase tracking-widest text-black">
+              VS
             </div>
+
             <div>
-              <p style={{ fontSize: 10, fontWeight: 700, color: Y, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 2 }}>
+              <p className="mb-1 text-[10px] font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">
                 With Rozeta Level 2
               </p>
-              <p style={{ fontSize: 40, fontWeight: 800, color: "#fff", letterSpacing: "-0.03em", lineHeight: 1 }}>
-                $2,500<span style={{ fontSize: 18, opacity: 0.6 }}>/mo</span>
+              <p className="text-4xl font-extrabold uppercase tracking-tighter text-white leading-none">
+                $2,500<span className="text-xl opacity-60">/Mo</span>
               </p>
             </div>
           </div>
 
-          <div style={{ borderLeft: "3px solid rgba(255,255,255,0.15)", paddingLeft: 32, maxWidth: 320 }}>
-            <p style={{ fontSize: 20, fontWeight: 800, color: "#fff", textTransform: "uppercase", letterSpacing: "-0.01em", lineHeight: 1.2 }}>
-              That's the depth.
+          <div className="max-w-xs border-l-4 border-white/20 pl-8">
+            <p className="text-xl font-extrabold uppercase tracking-tight text-white leading-snug">
+              That's The Depth.
               <br />
-              <span style={{ color: Y }}>That's the math.</span>
+              <span className="text-[hsl(47,100%,50%)]">That's The Math.</span>
             </p>
-            <p style={{ fontSize: 13, fontWeight: 600, color: "rgba(255,255,255,0.45)", marginTop: 8, lineHeight: 1.5 }}>
-              Month-to-month. We earn your business every 30 days.
+            <p className="mt-2 text-[11px] font-bold uppercase tracking-wide text-white/40">
+              Month-To-Month. We Earn Your Business Every 30 Days.
             </p>
           </div>
         </div>
+
       </div>
-    </div>
+    </section>
   );
 }
