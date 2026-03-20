@@ -1,4 +1,12 @@
 export default function Footer() {
+  const footerLinks = [
+    { label: "Industries", href: "/industries" },
+    { label: "Automations", href: "/automations" },
+    { label: "Compare", href: "/compare" },
+    { label: "Guides", href: "/guides" },
+    { label: "Contact", href: "/contact" },
+  ];
+
   return (
     <footer className="border-b-4 border-black bg-[hsl(46,50%,88%)]">
       <div className="mx-auto max-w-7xl px-6 py-12">
@@ -19,13 +27,13 @@ export default function Footer() {
 
           <div className="flex flex-col items-center gap-2 sm:items-end">
             <div className="flex items-center gap-4">
-              {["Privacy", "Terms", "Docs", "Status"].map((link) => (
+              {footerLinks.map((link) => (
                 <a
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
+                  key={link.href}
+                  href={link.href}
                   className="text-sm font-bold tracking-wide uppercase underline decoration-2 underline-offset-2 hover:bg-[hsl(47,100%,50%)]/30"
                 >
-                  {link}
+                  {link.label}
                 </a>
               ))}
             </div>

@@ -1,9 +1,11 @@
 import { useEffect } from "react";
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
+import MarketingLayout from "@/components/shared/MarketingLayout";
+import SeoHead from "@/components/shared/SeoHead";
+import { getPageByPath } from "@/lib/site-manifest";
 
 const BOOKING_URL = "https://api.leadconnectorhq.com/widget/booking/x1rvrRKGnhrlgJ8rGOpg";
 const BOOKING_SCRIPT = "https://link.msgsndr.com/js/form_embed.js";
+const contactPage = getPageByPath("/contact");
 
 export default function BookCall() {
   useEffect(() => {
@@ -18,9 +20,8 @@ export default function BookCall() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[hsl(46,100%,96%)] font-sans text-[hsl(0,0%,5%)]">
-      <Navbar />
-      <div className="h-16" />
+    <MarketingLayout>
+      {contactPage ? <SeoHead page={contactPage} canonicalPath="/contact" /> : null}
 
       <section className="relative border-b-4 border-black bg-black">
         <div className="bg-dots-neo absolute inset-0 opacity-10" />
@@ -46,8 +47,6 @@ export default function BookCall() {
           />
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </MarketingLayout>
   );
 }
