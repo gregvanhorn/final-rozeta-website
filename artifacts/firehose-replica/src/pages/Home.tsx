@@ -794,10 +794,10 @@ const vcAutomations = [
 ];
 
 const vcAgents = [
-  "Supply Hawk — Live Supplier Cost Intelligence",
-  "The Margin Autopsy — Pre-Job Profit Risk Scoring",
-  "The Context Engine — Queryable Institutional Memory",
-  "The Deal Room — Real-Time Pipeline Health Scoring",
+  "Supply Hawk — Live Supplier Cost Intelligence (Example)",
+  "The Margin Autopsy — Pre-Job Profit Risk Scoring (Example)",
+  "The Context Engine — Queryable Institutional Memory (Example)",
+  "The Deal Room — Real-Time Pipeline Health Scoring (Example)",
   "+ 8 More Agents Built Around Your Specific Workflows",
 ];
 
