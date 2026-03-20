@@ -778,8 +778,8 @@ function PricingModel() {
 }
 
 const vcLeftItems = [
-  { label: "Zapier / N8N (Tools Only, No Builds Included)", cost: "~$500/mo" },
-  { label: "Automation Specialist To Build & Maintain Flows", cost: "$5,000–8,000/mo" },
+  { label: "Zapier / Make / N8N (Tools Only, No Builds Included)", cost: "$200–$500/mo" },
+  { label: "Automation Specialist To Build & Maintain Flows", cost: "$2,000–$8,000/mo" },
   { label: "12 Custom AI Agents At Consultant Rates ($5–15K Each)", cost: "$5,000–15,000/mo" },
   { label: "Ongoing Monitoring, Maintenance & Iteration", cost: "$2,000+/mo" },
 ];
