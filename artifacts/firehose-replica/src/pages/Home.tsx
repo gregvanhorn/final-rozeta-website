@@ -877,7 +877,7 @@ function VCLeftPanel() {
           Total Equivalent Cost
         </p>
         <p className="text-3xl font-extrabold uppercase tracking-tighter text-white leading-none lg:text-4xl">
-          $10,000–20,000+<span className="text-lg opacity-60 lg:text-xl">/mo</span>
+          $9,000–20,000+<span className="text-lg opacity-60 lg:text-xl">/mo</span>
         </p>
         <p className="mt-2 text-[11px] font-bold uppercase tracking-wide text-white/40">
           And It's Still Cobbled Together. Across 3+ Vendors. Owned By Nobody.
@@ -1004,7 +1004,7 @@ function ValueComparison() {
               <div className="flex-1">
                 <p className="text-[10px] font-extrabold uppercase tracking-widest text-white/40 mb-1">Without Rozeta</p>
                 <p className="text-2xl font-extrabold uppercase tracking-tighter text-white/30 line-through leading-none">
-                  $10K–20K+<span className="text-base">/mo</span>
+                  $9K–20K+<span className="text-base">/mo</span>
                 </p>
               </div>
               <div className="border-2 border-[hsl(47,100%,50%)] bg-[hsl(47,100%,50%)] px-2 py-1 text-xs font-extrabold uppercase tracking-widest text-black flex-shrink-0">
@@ -1046,7 +1046,7 @@ function ValueComparison() {
             <div>
               <p className="mb-1 text-[10px] font-extrabold uppercase tracking-widest text-white/40">Without Rozeta</p>
               <p className="text-4xl font-extrabold uppercase tracking-tighter text-white/30 line-through leading-none">
-                $10K–20K+<span className="text-xl">/mo</span>
+                $9K–20K+<span className="text-xl">/mo</span>
               </p>
             </div>
             <div className="border-2 border-[hsl(47,100%,50%)] bg-[hsl(47,100%,50%)] px-3 py-1.5 text-xs font-extrabold uppercase tracking-widest text-black">
