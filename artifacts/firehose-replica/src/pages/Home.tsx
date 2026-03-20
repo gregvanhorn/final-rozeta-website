@@ -847,9 +847,109 @@ function VCBlockTag({ children, onDark }: { children: ReactNode; onDark?: boolea
   );
 }
 
-function ValueComparison() {
+function VCLeftPanel() {
   return (
-    <section className="border-b-4 border-black bg-[hsl(46,100%,96%)] px-6 py-24 sm:px-12">
+    <div className="flex flex-col border-4 border-black bg-black p-6 shadow-neo-md lg:p-10">
+      <div className="mb-4 inline-block self-start border-2 border-white bg-white px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest text-black">
+        Without Rozeta
+      </div>
+      <p className="mb-6 text-xl font-extrabold uppercase tracking-tight text-white leading-snug">
+        What You'd Piece Together
+        <br />On Your Own
+      </p>
+      <div className="flex flex-1 flex-col gap-2 lg:gap-3">
+        {vcLeftItems.map((item, i) => (
+          <div key={i} className="flex items-start gap-3 border-2 border-white/10 bg-white/5 p-3 lg:p-4">
+            <VCXMark />
+            <div>
+              <p className="mb-1 text-[11px] font-bold uppercase tracking-wide text-white/55 leading-snug">
+                {item.label}
+              </p>
+              <p className="text-base font-extrabold uppercase tracking-tighter text-white lg:text-lg">
+                {item.cost}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="mt-5 border-4 border-[hsl(47,100%,50%)] bg-white/5 p-4 lg:mt-6 lg:p-5">
+        <p className="mb-1 text-[10px] font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">
+          Total Equivalent Cost
+        </p>
+        <p className="text-3xl font-extrabold uppercase tracking-tighter text-white leading-none lg:text-4xl">
+          $10,000–20,000+<span className="text-lg opacity-60 lg:text-xl">/mo</span>
+        </p>
+        <p className="mt-2 text-[11px] font-bold uppercase tracking-wide text-white/40">
+          And It's Still Cobbled Together. Across 3+ Vendors. Owned By Nobody.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function VCRightPanel() {
+  return (
+    <div className="flex flex-col border-4 border-black bg-[hsl(47,100%,50%)] p-6 shadow-neo-md lg:p-10">
+      <div className="mb-4 inline-block self-start border-2 border-black bg-black px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">
+        With Rozeta — Level 2
+      </div>
+      <p className="mb-6 text-xl font-extrabold uppercase tracking-tight text-black leading-snug">
+        One Team. One Bill.
+        <br />Everything Built For You.
+      </p>
+      <div className="mb-3 border-4 border-black bg-black/10 p-4 lg:mb-4 lg:p-5">
+        <VCBlockTag onDark>Unlimited Automation Layer — Level 1 + 2</VCBlockTag>
+        <div className="flex flex-col gap-2">
+          {vcAutomations.map((item, i) => (
+            <div key={i} className="flex items-start gap-3">
+              <VCCheckMark onDark />
+              <span className="text-[11px] font-bold uppercase tracking-wide text-black leading-snug">{item}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="mb-3 border-4 border-black bg-black/10 p-4 lg:mb-4 lg:p-5">
+        <VCBlockTag onDark>12 Custom AI Agents / Year — Level 3</VCBlockTag>
+        <div className="flex flex-col gap-2">
+          {vcAgents.map((item, i) => (
+            <div key={i} className="flex items-start gap-3">
+              <VCCheckMark onDark />
+              <span className="text-[11px] font-bold uppercase tracking-wide text-black leading-snug">{item}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="mb-5 border-4 border-black bg-black/10 p-4 lg:mb-6 lg:p-5">
+        <VCBlockTag onDark>Everything Included</VCBlockTag>
+        <div className="flex flex-col gap-2">
+          {vcExtras.map((item, i) => (
+            <div key={i} className="flex items-start gap-3">
+              <VCCheckMark onDark />
+              <span className="text-[11px] font-bold uppercase tracking-wide text-black leading-snug">{item}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="mt-auto border-4 border-black bg-black p-4 lg:p-5">
+        <p className="mb-1 text-[10px] font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">
+          All-In Monthly Price
+        </p>
+        <p className="text-3xl font-extrabold uppercase tracking-tighter text-white leading-none lg:text-4xl">
+          $2,500<span className="text-lg opacity-60 lg:text-xl">/mo</span>
+        </p>
+        <p className="mt-2 text-[11px] font-bold uppercase tracking-wide text-white/50">
+          No Setup Fee. No Lock-In. One Team Owns All Of It.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function ValueComparison() {
+  const [activeTab, setActiveTab] = useState<"without" | "with">("with");
+
+  return (
+    <section className="border-b-4 border-black bg-[hsl(46,100%,96%)] px-6 py-16 sm:px-12 lg:py-24">
       <div className="mx-auto max-w-7xl">
 
         {/* Section label */}
@@ -865,152 +965,100 @@ function ValueComparison() {
         </h2>
 
         {/* Subtext */}
-        <p className="mb-14 mt-4 max-w-xl text-base font-bold uppercase tracking-wide leading-relaxed opacity-50">
+        <p className="mb-10 mt-4 max-w-xl text-base font-bold uppercase tracking-wide leading-relaxed opacity-50 lg:mb-14">
           Stack It Up Against What You'd Pay Piecing This Together Yourself — Before Accounting For The Time It Takes To Manage Three Vendors And A Freelancer.
         </p>
 
-        {/* Main comparison — left | VS | right */}
-        <div className="grid items-stretch gap-0" style={{ gridTemplateColumns: "1fr auto 1fr" }}>
-
-          {/* LEFT — Without Rozeta */}
-          <div className="flex flex-col border-4 border-black bg-black p-8 shadow-neo-md lg:p-10">
-            <div className="mb-4 inline-block self-start border-2 border-white bg-white px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest text-black">
-              Without Rozeta
-            </div>
-
-            <p className="mb-8 text-xl font-extrabold uppercase tracking-tight text-white leading-snug">
-              What You'd Piece Together
-              <br />On Your Own
-            </p>
-
-            <div className="flex flex-1 flex-col gap-3">
-              {vcLeftItems.map((item, i) => (
-                <div key={i} className="flex items-start gap-3 border-2 border-white/10 bg-white/5 p-4">
-                  <VCXMark />
-                  <div>
-                    <p className="mb-1 text-[11px] font-bold uppercase tracking-wide text-white/55 leading-snug">
-                      {item.label}
-                    </p>
-                    <p className="text-lg font-extrabold uppercase tracking-tighter text-white">
-                      {item.cost}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Total callout */}
-            <div className="mt-6 border-4 border-[hsl(47,100%,50%)] bg-white/5 p-5">
-              <p className="mb-1 text-[10px] font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">
-                Total Equivalent Cost
-              </p>
-              <p className="text-4xl font-extrabold uppercase tracking-tighter text-white leading-none">
-                $10,000–20,000+<span className="text-xl opacity-60">/mo</span>
-              </p>
-              <p className="mt-2 text-[11px] font-bold uppercase tracking-wide text-white/40">
-                And It's Still Cobbled Together. Across 3+ Vendors. Owned By Nobody.
-              </p>
-            </div>
+        {/* ── MOBILE: tab toggle ── */}
+        <div className="lg:hidden">
+          {/* Tab bar */}
+          <div className="mb-0 grid grid-cols-2 border-4 border-black shadow-neo-sm">
+            <button
+              onClick={() => setActiveTab("without")}
+              className={`py-3 text-xs font-extrabold uppercase tracking-widest transition-colors ${
+                activeTab === "without"
+                  ? "bg-black text-[hsl(47,100%,50%)]"
+                  : "bg-white text-black/50"
+              }`}
+            >
+              ✕ Without Rozeta
+            </button>
+            <button
+              onClick={() => setActiveTab("with")}
+              className={`py-3 text-xs font-extrabold uppercase tracking-widest transition-colors ${
+                activeTab === "with"
+                  ? "bg-[hsl(47,100%,50%)] text-black"
+                  : "bg-white text-black/50"
+              }`}
+            >
+              ✓ With Rozeta
+            </button>
           </div>
 
-          {/* VS BADGE */}
-          <div className="flex items-center justify-center px-4 lg:px-6">
-            <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] text-sm font-extrabold uppercase tracking-widest shadow-neo-sm">
-              VS
-            </div>
-          </div>
+          {/* Active panel */}
+          {activeTab === "without" ? <VCLeftPanel /> : <VCRightPanel />}
 
-          {/* RIGHT — With Rozeta */}
-          <div className="flex flex-col border-4 border-black bg-[hsl(47,100%,50%)] p-8 shadow-neo-md lg:p-10">
-            <div className="mb-4 inline-block self-start border-2 border-black bg-black px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">
-              With Rozeta — Level 2
-            </div>
-
-            <p className="mb-8 text-xl font-extrabold uppercase tracking-tight text-black leading-snug">
-              One Team. One Bill.
-              <br />Everything Built For You.
-            </p>
-
-            {/* Block 1 — Automation Layer */}
-            <div className="mb-4 border-4 border-black bg-black/10 p-5">
-              <VCBlockTag onDark>Unlimited Automation Layer — Level 1 + 2</VCBlockTag>
-              <div className="flex flex-col gap-2">
-                {vcAutomations.map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <VCCheckMark onDark />
-                    <span className="text-[11px] font-bold uppercase tracking-wide text-black leading-snug">{item}</span>
-                  </div>
-                ))}
+          {/* Mobile bottom strip */}
+          <div className="mt-1.5 border-4 border-black bg-black p-5 shadow-neo-md">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="flex-1">
+                <p className="text-[10px] font-extrabold uppercase tracking-widest text-white/40 mb-1">Without Rozeta</p>
+                <p className="text-2xl font-extrabold uppercase tracking-tighter text-white/30 line-through leading-none">
+                  $10K–20K+<span className="text-base">/mo</span>
+                </p>
+              </div>
+              <div className="border-2 border-[hsl(47,100%,50%)] bg-[hsl(47,100%,50%)] px-2 py-1 text-xs font-extrabold uppercase tracking-widest text-black flex-shrink-0">
+                VS
+              </div>
+              <div className="flex-1 text-right">
+                <p className="text-[10px] font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)] mb-1">With Rozeta</p>
+                <p className="text-2xl font-extrabold uppercase tracking-tighter text-white leading-none">
+                  $2,500<span className="text-base opacity-60">/mo</span>
+                </p>
               </div>
             </div>
-
-            {/* Block 2 — AI Agents */}
-            <div className="mb-4 border-4 border-black bg-black/10 p-5">
-              <VCBlockTag onDark>12 Custom AI Agents / Year — Level 3</VCBlockTag>
-              <div className="flex flex-col gap-2">
-                {vcAgents.map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <VCCheckMark onDark />
-                    <span className="text-[11px] font-bold uppercase tracking-wide text-black leading-snug">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Block 3 — Everything included */}
-            <div className="mb-6 border-4 border-black bg-black/10 p-5">
-              <VCBlockTag onDark>Everything Included</VCBlockTag>
-              <div className="flex flex-col gap-2">
-                {vcExtras.map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <VCCheckMark onDark />
-                    <span className="text-[11px] font-bold uppercase tracking-wide text-black leading-snug">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Price callout */}
-            <div className="mt-auto border-4 border-black bg-black p-5">
-              <p className="mb-1 text-[10px] font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">
-                All-In Monthly Price
+            <div className="border-t-2 border-white/10 pt-4">
+              <p className="text-base font-extrabold uppercase tracking-tight text-white leading-snug">
+                That's The Depth.{" "}
+                <span className="text-[hsl(47,100%,50%)]">That's The Math.</span>
               </p>
-              <p className="text-4xl font-extrabold uppercase tracking-tighter text-white leading-none">
-                $2,500<span className="text-xl opacity-60">/mo</span>
-              </p>
-              <p className="mt-2 text-[11px] font-bold uppercase tracking-wide text-white/50">
-                No Setup Fee. No Lock-In. One Team Owns All Of It.
+              <p className="mt-1 text-[11px] font-bold uppercase tracking-wide text-white/40">
+                Month-To-Month. We Earn Your Business Every 30 Days.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Bottom callout strip */}
-        <div className="mt-1.5 flex flex-wrap items-center justify-between gap-8 border-4 border-black bg-black px-8 py-7 shadow-neo-md lg:px-10">
-          <div className="flex items-baseline gap-6 lg:gap-8">
+        {/* ── DESKTOP: side-by-side grid ── */}
+        <div className="hidden lg:grid lg:items-stretch lg:gap-0" style={{ gridTemplateColumns: "1fr auto 1fr" }}>
+          <VCLeftPanel />
+          <div className="flex items-center justify-center px-6">
+            <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center border-4 border-black bg-[hsl(47,100%,50%)] text-sm font-extrabold uppercase tracking-widest shadow-neo-sm">
+              VS
+            </div>
+          </div>
+          <VCRightPanel />
+        </div>
+
+        {/* Desktop bottom callout strip */}
+        <div className="mt-1.5 hidden flex-wrap items-center justify-between gap-8 border-4 border-black bg-black px-10 py-7 shadow-neo-md lg:flex">
+          <div className="flex items-baseline gap-8">
             <div>
-              <p className="mb-1 text-[10px] font-extrabold uppercase tracking-widest text-white/40">
-                Without Rozeta
-              </p>
+              <p className="mb-1 text-[10px] font-extrabold uppercase tracking-widest text-white/40">Without Rozeta</p>
               <p className="text-4xl font-extrabold uppercase tracking-tighter text-white/30 line-through leading-none">
                 $10K–20K+<span className="text-xl">/mo</span>
               </p>
             </div>
-
             <div className="border-2 border-[hsl(47,100%,50%)] bg-[hsl(47,100%,50%)] px-3 py-1.5 text-xs font-extrabold uppercase tracking-widest text-black">
               VS
             </div>
-
             <div>
-              <p className="mb-1 text-[10px] font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">
-                With Rozeta Level 2
-              </p>
+              <p className="mb-1 text-[10px] font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">With Rozeta Level 2</p>
               <p className="text-4xl font-extrabold uppercase tracking-tighter text-white leading-none">
                 $2,500<span className="text-xl opacity-60">/mo</span>
               </p>
             </div>
           </div>
-
           <div className="max-w-xs border-l-4 border-white/20 pl-8">
             <p className="text-xl font-extrabold uppercase tracking-tight text-white leading-snug">
               That's The Depth.
