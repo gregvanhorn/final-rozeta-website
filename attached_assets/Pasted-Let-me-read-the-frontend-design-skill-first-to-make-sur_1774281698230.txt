@@ -1,0 +1,89 @@
+Let me read the frontend design skill first to make sure I nail the visual approach.The request here is actually about copy/content strategy, not building a new frontend. Let me think about this clearly — Greg wants to rewrite the card content to speak more generally without naming specific agents/apps, while keeping the existing visual structure intact. This is a copywriting job, not a coding job.
+
+Here's how I'd approach the rewrite:
+
+---
+
+**The core insight:** Instead of naming specific agents/apps, you describe *categories of capability* with evocative, outcome-focused language — so the prospect self-inserts their own problem into the slot. You're selling the *type of thinking*, not the deliverable.
+
+---
+
+Here's a full rewrite for both tracks:
+
+---
+
+**Section headline + subtext** — keep as-is, it's strong. The italic caveat is also fine.
+
+---
+
+### AI Agents Track
+
+Instead of naming specific agents, describe the *function archetype* each card represents. Four archetypes that cover most SMB use cases:
+
+---
+
+**Card 1: Cost & Margin Intelligence**
+*Any industry where materials, labor, or supplier pricing affect profitability*
+
+Watches your numbers so you don't have to. Monitors costs across suppliers, job types, or vendors — normalizes the data, spots drift, and surfaces the signal before it hits your P&L. You find out about a margin problem before the invoice arrives, not after the job closes.
+
+---
+
+**Card 2: Pre-Decision Risk Scoring**
+*Any business making bets — on jobs, deals, hires, or projects*
+
+Builds a fingerprint for every outcome you care about, then scores new decisions against it. Before you commit resources, you get a probability — not a gut feeling. The agent learns what your best outcomes actually looked like, and tells you whether this one looks like those.
+
+---
+
+**Card 3: Institutional Memory**
+*Any team that runs on calls, emails, documents, and conversations*
+
+Your business generates knowledge constantly. Most of it disappears. This agent ingests it — recordings, emails, notes, SOPs, CRM data — and makes it queryable. Any team member can ask what was decided, agreed, or discovered, and get an answer in seconds instead of digging through inboxes.
+
+---
+
+**Card 4: Pipeline & Relationship Health**
+*Any business with a sales cycle, client base, or ongoing relationships*
+
+Reads the signals buried in your communication patterns — response times, engagement, activity gaps, tone shifts — and builds a live health score for every relationship or opportunity. Tells you which ones need attention before they go quiet.
+
+---
+
+### Custom Applications Track
+
+Three archetype cards covering the main *types* of custom apps SMBs need:
+
+---
+
+**Card 1: Estimation & Proposal Tools**
+*Built around how you actually price and sell*
+
+A custom front-end for generating quotes, proposals, or scopes — wired into your real numbers. Not a template with blanks. Pulls live costs, applies your margin logic, and outputs a professional deliverable in under two minutes. Your process, automated.
+
+---
+
+**Card 2: Operations & Scheduling Dashboards**
+*Built for the people running the work, not reading about it*
+
+A real-time view of whatever your team needs to coordinate — jobs, crews, assets, inventory, capacity. Drag-and-drop assignment. Automated notifications. Live status. Built specifically around how your operation runs, not how a software company imagined it might.
+
+---
+
+**Card 3: Client & Stakeholder Portals**
+*Built to eliminate the check-in call*
+
+A branded, login-gated environment where clients, partners, or stakeholders see exactly what you want them to see — status, documents, approvals, messages. Keeps communication organized and on your terms. Eliminates the "where are we on this?" thread entirely.
+
+---
+
+**Why this works:**
+
+- Every card describes a *type of problem* any SMB could have — not a specific solution for a specific vertical
+- The prospect reads the card and thinks "we have that problem" rather than "we're not in home services"
+- You still sound concrete and capable — not vague or hand-wavy
+- The card structure stays identical, just the content swaps
+
+You could optionally add a small tag under each card like *"Built for your industry, your data, your team"* to reinforce that these are frameworks, not fixed products.
+
+Want me to also rewrite the badge labels or section framing, or does this give you enough to work with?

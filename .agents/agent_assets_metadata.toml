@@ -1,0 +1,86 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "Mffa7BOqENFk4zGXjOGM7"
+uri = "file://.local/subheader-copy-options.md"
+type = "text"
+title = "Hero Subheader Copy Options — All 26 Variations"
+
+[[outputs]]
+id = "gUS8u8uTFTotPs9HN1zmt"
+uri = "file://.local/step-three-agents.md"
+type = "text"
+title = "Step Three: Custom AI Agents — Planning Reference (Updated)"
+
+[[outputs]]
+id = "61P5Z8iPo9GIRL1i75Qkx"
+uri = "file://.local/rozeta-labs-website-brief.md"
+type = "text"
+title = "Rozeta Labs — Website Brief"
+
+[[outputs]]
+id = "lbcAnr7GHP75cjW3imPtM"
+uri = "file://artifacts/firehose-replica/public/rozeta-icon.svg"
+type = "image"
+title = "Rozeta Icon — SVG"
+
+[[outputs]]
+id = "zO2uPtW_yi4tG_LewHZFT"
+uri = "file://artifacts/firehose-replica/public/rozeta-icon-512.png"
+type = "image"
+title = "Rozeta Icon — PNG 512×512"
+
+[[outputs]]
+id = "0ZDpN84wYYBfheZfchOIb"
+uri = "file://artifacts/firehose-replica/public/rozeta-icon-1024.png"
+type = "image"
+title = "Rozeta Icon — PNG 1024×1024"
+
+[[outputs]]
+id = "03FUyt2tNIQUBPrE85398"
+uri = "file://BRAND.md"
+type = "text"
+title = "Rozeta Labs — Brand & Design System"
+
+[[outputs]]
+id = "gavhOPyX4YaguqcejA6-O"
+uri = "file://artifacts/firehose-replica/public/logos/rozeta-icon.svg"
+type = "image"
+title = "Icon — SVG"
+
+[[outputs]]
+id = "lM6ytIt4ViMoXiS27ab_c"
+uri = "file://artifacts/firehose-replica/public/logos/rozeta-icon.png"
+type = "image"
+title = "Icon — PNG 628×628"
+
+[[outputs]]
+id = "G2LfYA__sRUOSvwe052PX"
+uri = "file://artifacts/firehose-replica/public/logos/rozeta-wordmark.svg"
+type = "image"
+title = "Wordmark — SVG"
+
+[[outputs]]
+id = "gNFYnmlB_1a3qfya7wQzg"
+uri = "file://artifacts/firehose-replica/public/logos/rozeta-wordmark.png"
+type = "image"
+title = "Wordmark — PNG 1800×240"
+
+[[outputs]]
+id = "hoJN1zKyUoUpNl33c9yfS"
+uri = "file://artifacts/firehose-replica/public/logos/rozeta-combined.svg"
+type = "image"
+title = "Combined — SVG (transparent)"
+
+[[outputs]]
+id = "qyT64qP1ZUGtfv118Nzrf"
+uri = "file://artifacts/firehose-replica/public/logos/rozeta-combined.png"
+type = "image"
+title = "Combined — PNG 2120×480 (transparent)"
+
+[[outputs]]
+id = "yoSkPi6ncgnPr43e3Jhw4"
+uri = "file://artifacts/firehose-replica/HOME_PAGE_OVERVIEW.md"
+type = "text"
+title = "Rozeta Labs — Homepage Overview"

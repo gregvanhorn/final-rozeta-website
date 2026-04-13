@@ -1,0 +1,479 @@
+Got it. Full slide-by-slide brief written for an LLM to build directly. Every element specified — what goes on the slide, what stays off, exact copy, exact layout instructions.
+
+---
+
+## Rozeta Labs Sales Deck — LLM Build Brief
+
+**13 slides. 16:9 format. Visual theme: warm greige background (#D9D5CC), bold black typography, electric blue (#4169E1) border and accent, lime green (#C5E24A) as pop color, charcoal (#2D2D2D) for dark elements. Every slide has a thin blue border on all four edges. Footer: "Rozeta Labs" left, slide number right.**
+
+---
+
+### SLIDE 1 — COVER
+
+**What goes on the slide:**
+
+Top left, small spaced caps label in blue:
+`REVENUE RECOVERY`
+
+Center left, massive black headline in two lines:
+`You're losing money`
+`between the lead and the job.`
+
+Blue underline rule beneath the headline.
+
+Below the underline, one line of body text in dark gray:
+`We find exactly where. We fix it. You keep the revenue.`
+
+Bottom left, blue filled rectangle button:
+`LET'S FIND YOUR LEAK`
+
+Right side decorative elements: stacked ellipses (wireframe), lime green blob shape, charcoal 4-pointed star. These are geometric, not illustrative.
+
+**What does NOT go on this slide:** No logo parade. No "about us." No agenda slide. No tagline. No subheading explaining what Rozeta Labs is.
+
+---
+
+### SLIDE 2 — THE FOUR QUESTIONS
+
+**What goes on the slide:**
+
+Top left, small spaced caps label in blue:
+`BEFORE WE SHOW YOU ANYTHING`
+
+Left side, large bold black headline:
+`We have four questions.`
+
+Blue underline rule beneath headline.
+
+Below, four question rows. Each row has a small lime green square bullet on the left and the question text to the right. Questions in black, 14–16pt:
+
+1. What's your current close rate on estimates?
+2. How fast does your team respond to a new inbound lead?
+3. When did you last follow up on a quote from 30 days ago?
+4. How many hours a week do you spend on things your team should be handling?
+
+Bottom of slide, one italic line in dark gray:
+`Your answers determine everything we show you next.`
+
+**What does NOT go on this slide:** No answers. No checkboxes. No "here's what most operators say." No Rozeta content at all. This slide is entirely their problem space.
+
+---
+
+### SLIDE 3 — THE SIX REVENUE LEAKS
+
+**What goes on the slide:**
+
+Top left, small spaced caps label in blue:
+`THE 6 REVENUE LEAKS`
+
+Left side headline in large bold black:
+`Where your money walks`
+`out the door.`
+
+Blue underline rule beneath headline.
+
+Right side: 3×2 grid of six cards. Cards alternate between lime green, off-white, and charcoal backgrounds. Each card contains:
+- A numbered badge top left (01 through 06) in contrasting color
+- Bold card title
+- One-line description beneath
+
+Card content:
+
+**01 — Speed-to-Lead Failure** (lime green card, black text)
+`35% of leads never get a callback in the first hour.`
+
+**02 — Estimate Graveyard** (off-white card, black text)
+`$50K–$150K in open quotes dying in silence.`
+
+**03 — No-Show & Cancellation Bleed** (charcoal card, white text)
+`Booked jobs ghosting with zero recovery system.`
+
+**04 — Owner as Bottleneck** (off-white card, black text)
+`Every decision flows through one person.`
+
+**05 — Invisible Pipeline** (charcoal card, white text)
+`No close rate. No data. Running on gut feel.`
+
+**06 — Zero Retention Engine** (lime green card, black text)
+`Completed jobs that never become reviews or referrals.`
+
+**What does NOT go on this slide:** No solutions. No mention of Rozeta systems. No "here's how we fix this." This slide is diagnosis only.
+
+---
+
+### SLIDE 4 — THE DOLLAR LABEL
+
+**What goes on the slide:**
+
+Top left, small spaced caps label in blue:
+`HERE'S WHAT THAT COSTS YOU`
+
+Left side headline in large bold black:
+`Put a number on it.`
+
+Blue underline rule.
+
+Center, a simple two-column input table with five rows. Left column is the label. Right column is a blank fill-in field (underlined blank line or empty box):
+
+| | Your number |
+|---|---|
+| Leads per month | _______ |
+| Current close rate | _______ % |
+| Average job value | $ _______ |
+| Revenue leaking monthly | $ _______ |
+| Revenue leaking annually | $ _______ |
+
+Below the table, one italic line in dark gray:
+`Most operators discover $8,000–$22,000/month in recoverable revenue in this exercise.`
+
+**What does NOT go on this slide:** No pre-filled numbers. No "here's the industry average." No Rozeta mention. The numbers they say out loud become the anchor for the rest of the call.
+
+---
+
+### SLIDE 5 — WHAT YOU'VE ALREADY TRIED
+
+**What goes on the slide:**
+
+Top left, small spaced caps label in blue:
+`THE PROBLEM ISN'T EFFORT`
+
+Left side headline in large bold black:
+`You've tried to fix this.`
+`Here's why it didn't stick.`
+
+Blue underline rule.
+
+Center, a two-column table. Left column header: `What operators typically try` — right column header: `Why it doesn't stick`
+
+| What operators typically try | Why it doesn't stick |
+|---|---|
+| Hire someone to follow up | They inherited the broken process |
+| Buy a CRM | Nobody used it consistently |
+| Hire a marketing agency | Drove leads into a leaky bucket |
+| Set manual reminders | Fell apart when things got busy |
+| Try to handle it yourself | You're already the bottleneck |
+
+Below the table, one bold line in black:
+`The problem isn't effort. It's infrastructure.`
+
+**What does NOT go on this slide:** No mention of Rozeta. No "here's what we do differently." No solution reveal. This slide exists to validate their experience and establish that the problem is systemic.
+
+---
+
+### SLIDE 6 — LIFE AFTER ROZETA
+
+**What goes on the slide:**
+
+Top left, small spaced caps label in blue:
+`WHAT CHANGES`
+
+Full-width large bold black headline:
+`What your business looks like`
+`when the leaks are plugged.`
+
+Blue underline rule.
+
+Below, four scenario blocks stacked or in a 2×2 grid. Each block has a small blue dash or arrow on the left and one short scenario in black body text:
+
+Block 1:
+`A lead comes in at 11pm. By 11:00:47 they have a response. Your competitor never had a chance.`
+
+Block 2:
+`It's been 32 days since you sent that $18,000 estimate. The system has touched that prospect four times. They just replied.`
+
+Block 3:
+`You left at 4:30. Dispatch handled the afternoon. Nobody called you.`
+
+Block 4:
+`You finished 11 jobs last week. 8 left a Google review. You didn't ask a single one of them.`
+
+**What does NOT go on this slide:** No system names. No mention of AI or automation. No "here's how we do it." No features. This slide is purely the outcome — the vacation, not the plane.
+
+---
+
+### SLIDE 7 — THE REVENUE RECOVERY BLUEPRINT
+
+**What goes on the slide:**
+
+Top left, small spaced caps label in blue:
+`THE REVENUE RECOVERY BLUEPRINT`
+
+Left side headline in large bold black:
+`Five systems.`
+`All running without you.`
+
+Below headline, one italic line in dark gray:
+`Custom-built for your business. Live in 14 days.`
+
+Right side: Five stacked horizontal rows, full width. Each row is a colored block containing:
+- Black numbered badge on far left
+- System name in bold
+- Italic tag line describing what it eliminates
+- Arrow indicator on far right
+
+Row content and colors:
+
+**01 — 60-Second Response Engine** (lime green row)
+`Eliminates: Speed-to-Lead Failure`
+
+**02 — Dead Estimate Reactivation Sequence** (off-white row, black border)
+`Eliminates: Estimate Graveyard`
+
+**03 — No-Show Recovery Protocol** (charcoal row, white text)
+`Eliminates: Cancellation Bleed`
+
+**04 — Owner Liberation System** (off-white row, black border)
+`Eliminates: Owner Bottleneck`
+
+**05 — Repeat Revenue Reactivation Campaign** (blue row, white text)
+`Eliminates: Zero Retention`
+
+**What does NOT go on this slide:** No explanation of how each system works. No mention of Zapier, n8n, Make, GoHighLevel, or any tool. No pricing yet. The named systems do the credibility work — specific names feel real.
+
+---
+
+### SLIDE 8 — OBJECTIONS
+
+**What goes on the slide:**
+
+Top left, small spaced caps label in blue:
+`BEFORE YOU ASK`
+
+Left side headline in large bold black:
+`What we hear most`
+`at this point.`
+
+Blue underline rule.
+
+Five objection blocks stacked vertically. Each block has two parts: the objection in a dark red or charcoal pill/label on the left, and the answer in body text to the right or below.
+
+**Objection 1:**
+Label: `"We already have a CRM."`
+Answer: `We build on top of it. The problem isn't the tool — it's that nobody uses it consistently. We automate the consistency.`
+
+**Objection 2:**
+Label: `"We've tried agencies before."`
+Answer: `Agencies drive traffic. We fix what happens after. Different category entirely.`
+
+**Objection 3:**
+Label: `"How fast will we see results?"`
+Answer: `Most clients see measurable recovery in the first 30 days. First system is live in 14 days.`
+
+**Objection 4:**
+Label: `"What if it doesn't work?"`
+Answer: `See the next slide.`
+
+**Objection 5:**
+Label: `"Our team won't adopt new technology."`
+Answer: `Your team doesn't use it. It runs without them. Nothing changes in their daily process.`
+
+**What does NOT go on this slide:** No defensive language. No "but" or "however." No apology. Present framing: "Before we get to pricing, here are the five things we hear most often at this point in the conversation."
+
+---
+
+### SLIDE 9 — THE OFFER
+
+**What goes on the slide:**
+
+Top left, small spaced caps label in blue:
+`THE OFFER`
+
+Left side headline in large bold black:
+`One price.`
+`Everything included.`
+`No contract.`
+
+Blue underline rule.
+
+Below headline, a lime green filled rectangle containing the price in very large black type:
+`$2,500`
+Smaller text below it inside the box: `/month`
+
+Below the price box, five bullet rows with blue dash bullets:
+- All 5 systems custom-built for your business
+- Ongoing maintenance and optimization every month
+- Monthly performance report
+- Direct Slack access — no account managers
+- Cancel any time — 30 days notice
+
+Right side: Charcoal filled panel containing comparison table in white text:
+
+Header in white: `What you'd pay separately`
+
+Four rows:
+| Role | Cost |
+|---|---|
+| Operations Manager | $6,500/mo |
+| Marketing Agency | $3,000/mo |
+| CRM Consultant | $2,000/mo |
+| AI Vendor Stack | $1,800/mo |
+
+Bottom of charcoal panel, lime green filled bar:
+`Total if hired separately: $13,300+/mo`
+
+Center between left and right panels, blue circle badge:
+`VS`
+
+**What does NOT go on this slide:** No explanation of the comparison. No "that means you save..." Just the two numbers. Let them do the math. Silence after this slide is a buying signal — do not fill it.
+
+---
+
+### SLIDE 10 — THE BONUSES
+
+**What goes on the slide:**
+
+Top left, small spaced caps label in blue:
+`WHEN YOU START TODAY`
+
+Full-width headline in large bold black:
+`Three bonuses.`
+`Included at no charge.`
+
+Below, three equal-width column cards side by side. Each card has:
+- A colored header bar (lime green / charcoal / blue alternating) with bold label and system name
+- White body card below with description text
+- Colored footer bar at bottom with value statement
+
+**Card 1 (lime green header):**
+Label: `BONUS 01`
+Name: `90-Day Revenue Leak Audit`
+Body: `Before we build anything, we run a full diagnostic of your pipeline — every channel, every drop-off. Most clients find a leak they had no idea existed.`
+Footer: `✓ $2,000 value — included free`
+
+**Card 2 (charcoal header, white text):**
+Label: `BONUS 02`
+Name: `The SMB Automation Playbook`
+Body: `20 highest-ROI automation plays for home services operators. Pre-built templates, trigger logic, and frameworks built from real engagements — not theory.`
+Footer: `✓ $900 value — included free`
+
+**Card 3 (blue header, white text):**
+Label: `BONUS 03`
+Name: `Priority Onboarding — Live in 14 Days`
+Body: `Your first system is built and running within 14 days of kickoff — or month one is free. Most agencies take 60–90 days. We don't.`
+Footer: `✓ $1,200 value — included free`
+
+**What does NOT go on this slide:** No explanation of why they're free. No apology for the price. These are stated as confident additions, not concessions.
+
+---
+
+### SLIDE 11 — THE GUARANTEE STACK
+
+**What goes on the slide:**
+
+Top left, small spaced caps label in blue:
+`OUR GUARANTEES`
+
+Full-width headline in large bold black:
+`If we don't perform,`
+`you don't pay.`
+
+Blue underline rule.
+
+Below, four guarantee cards in a 2×2 grid. Each card has:
+- Black top-left square with a white checkmark
+- Bold guarantee name to the right of the checkmark
+- One-sentence guarantee description below
+
+**Card 1 (lime green background):**
+Name: `Jobs or Free`
+Description: `2+ additional booked jobs in 30 days — or we keep working at no charge until you get them.`
+
+**Card 2 (charcoal background, white text):**
+Name: `Live in 14 Days`
+Description: `First system running in 14 calendar days of kickoff — or month one is free.`
+
+**Card 3 (off-white background, black border):**
+Name: `Month-to-Month`
+Description: `No contracts. No lock-in. Cancel with 30 days notice at any time, for any reason.`
+
+**Card 4 (blue background, white text):**
+Name: `We Find the Leak`
+Description: `We identify one measurable revenue leak in the first session — or it costs you nothing.`
+
+**What does NOT go on this slide:** No asterisks. No fine print language. No "terms and conditions apply." State each guarantee in plain English as a confident commitment.
+
+---
+
+### SLIDE 12 — WHAT COMES NEXT
+
+**What goes on the slide:**
+
+Top left, small spaced caps label in blue:
+`BEYOND MONTH ONE`
+
+Left side headline in large bold black:
+`Month one is`
+`the foundation.`
+
+Blue underline rule.
+
+Below headline, body text in black, 14pt:
+`Once the Revenue Recovery Blueprint is running, most clients start asking about the next layer. We're ready when you are.`
+
+Right side: Three stacked horizontal blocks showing the progression. Each block has a numbered badge and a two-line description:
+
+**Block 1 (lime green):**
+Badge: `LEVEL 1`
+Title: `Automation`
+Description: `Fast wins. Immediate ROI. Your business stops running on manual processes.`
+
+**Block 2 (charcoal, white text):**
+Badge: `LEVEL 2`
+Title: `Intelligent Automation`
+Description: `AI that reads context and responds accordingly. Personalized follow-up. Smarter decisions.`
+
+**Block 3 (blue, white text):**
+Badge: `LEVEL 3`
+Title: `Autonomous Operations`
+Description: `Your business runs ahead of problems. Dispatch, estimating, reporting — handled without you.`
+
+Below the three blocks, one italic line in dark gray:
+`We start every engagement at Level 1. Levels 2 and 3 are where we go once that trust is built.`
+
+**What does NOT go on this slide:** No pricing for Levels 2 or 3. No pitch for upsell. No timeline. This is a one-slide mention — plant the seed, move on.
+
+---
+
+### SLIDE 13 — THE CLOSE
+
+**What goes on the slide:**
+
+Top left, small spaced caps label in blue:
+`NEXT STEPS`
+
+Large bold black headline, left-aligned:
+`The question isn't`
+`whether you have a leak.`
+
+Blue underline rule beneath headline.
+
+Below underline, one italic line in dark gray:
+`You just told us you do. The question is how much longer you want it to keep draining.`
+
+Below that, blue filled rectangle CTA button:
+`LET'S BUILD YOUR FIRST SYSTEM`
+
+Right side: Three numbered next steps. Each step has a lime green numbered square badge on the left and two lines of text:
+
+**Step 1:**
+Bold: `Say yes today.`
+Regular: `Intake form in your inbox within the hour.`
+
+**Step 2:**
+Bold: `Kickoff this week.`
+Regular: `45 minutes. We map your first system.`
+
+**Step 3:**
+Bold: `Live in 14 days.`
+Regular: `Revenue Recovery System is running.`
+
+Bottom right corner, small text in dark gray:
+`rozeta.ai`
+
+**What does NOT go on this slide:** No summary of the deck. No "thanks for your time." No "any questions?" No re-listing of features or guarantees. The close slide is the quietest slide in the deck. The question is asked once — in the room, not on the slide — and then nothing else is said.
+
+---
+
+**End of build brief.**
+
+Total: 13 slides. Feed this document directly to the LLM building the deck. Every slide specifies exact copy, exact layout, exact color usage, and what to exclude. Nothing is left to interpretation.

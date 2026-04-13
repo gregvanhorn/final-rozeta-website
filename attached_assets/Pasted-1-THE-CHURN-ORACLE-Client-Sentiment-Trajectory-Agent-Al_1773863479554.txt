@@ -1,0 +1,11 @@
+1. THE CHURN ORACLE (Client Sentiment Trajectory Agent)
+Already on your site — but I'd rewrite it harder. This agent doesn't just read emails. It builds a rolling sentiment model per client across every touchpoint — calls, texts, support tickets, invoice delays, response time patterns. It detects behavioral drift before anyone's said a word about leaving. The alert it fires isn't "client seems unhappy" — it's "Client X: sentiment dropped 34% over 19 days, triggered by these 3 interactions, here's the recommended intervention." That's a different product entirely.
+
+2. THE MARGIN AUTOPSY (Job Profitability Forensics Agent)
+Also on your site — but the framing undersells it. This agent builds a profit fingerprint for every job type, crew, lead source, and geography over time. It's not just "what did this job make." It answers: which combinations of variables predict margin erosion before the job starts. Owner gets a pre-job risk score on every estimate above a certain size. That's predictive, not retrospective.
+
+3. THE CONTEXT ENGINE (Institutional Memory Agent)
+Every time a key employee leaves, a business loses years of undocumented knowledge — client quirks, vendor negotiations, why decisions were made. This agent continuously ingests call recordings, emails, SOPs, and CRM notes across the entire business and builds a queryable knowledge base. Anyone on the team can ask "what did we agree with this client last spring?" or "why did we stop using that subcontractor?" and get an answer in seconds. It's the business's brain — finally externalizable.
+
+4. THE DEAL ROOM (Multi-Signal Pipeline Intelligence Agent)
+Your CRM shows deal stage. This agent shows deal health. It cross-references email response latency, meeting attendance, proposal open rates, stakeholder engagement patterns, and competitor mention signals — and builds a real-time probability score for every open opportunity. It flags deals that look active but are actually dying, and surfaces the specific friction point. Sales managers spend half their time on deals that were already lost. This stops that.
