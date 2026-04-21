@@ -1,5 +1,6 @@
 import { Switch, Route, Router as WouterRouter } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import GoogleAnalytics from "@/components/shared/GoogleAnalytics";
 import Home from "@/pages/Home";
 import BookCall from "@/pages/BookCall";
 import ContentPage from "@/pages/ContentPage";
@@ -36,6 +37,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+        <GoogleAnalytics />
         <Router />
       </WouterRouter>
     </QueryClientProvider>
