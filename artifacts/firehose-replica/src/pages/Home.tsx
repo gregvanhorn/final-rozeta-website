@@ -681,12 +681,12 @@ function PricingModel() {
           Pricing
         </div>
         <h2 className="text-5xl font-bold tracking-tighter uppercase sm:text-6xl lg:text-7xl">
-          A Costco Membership
+          Your SMB's Dedicated
           <br />
-          For AI
+          AI Team
         </h2>
         <p className="mt-5 max-w-2xl text-lg font-bold leading-relaxed opacity-60">
-          Costco charges you a flat fee to get in the door. Everything inside is deeply discounted - no agency markups, no retainer games. That's exactly how we work.
+          One monthly rate gives you a full implementation team working inside your business - building automations, deploying agents, and expanding your systems every month. No piecemeal. No gaps. No overhead.
         </p>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-3 items-start">
