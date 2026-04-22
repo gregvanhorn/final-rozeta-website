@@ -2,12 +2,9 @@ import { useState } from "react";
 import { X, Menu } from "lucide-react";
 
 const navLinks = [
-  { label: "How It Works", href: "/how-it-works" },
-  { label: "Industries", href: "/industries" },
-  { label: "Automations", href: "/automations" },
-  { label: "Compare", href: "/compare" },
-  { label: "Guides", href: "/guides" },
-  { label: "Pricing", href: "/pricing" },
+  { label: "How It Works", href: "/#how-it-works" },
+  { label: "Examples", href: "/#use-cases" },
+  { label: "Pricing", href: "/#pricing" },
 ];
 
 export default function Navbar() {
@@ -41,7 +38,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="/contact"
+              href="/get-started"
               className="inline-flex items-center gap-1 border-4 border-black bg-[hsl(47,100%,50%)] px-4 py-2 text-sm font-bold tracking-wide uppercase shadow-neo-sm transition-all duration-100 hover:bg-yellow-400 active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
             >
               Get Started
@@ -70,7 +67,7 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a href="/contact" onClick={() => setOpen(false)} className="mt-3 inline-flex items-center justify-center gap-1 border-4 border-black bg-[hsl(47,100%,50%)] px-4 py-3 text-sm font-bold tracking-wide uppercase shadow-neo-sm">
+            <a href="/get-started" onClick={() => setOpen(false)} className="mt-3 inline-flex items-center justify-center gap-1 border-4 border-black bg-[hsl(47,100%,50%)] px-4 py-3 text-sm font-bold tracking-wide uppercase shadow-neo-sm">
               Get Started
             </a>
           </div>

@@ -2,10 +2,6 @@ import { useState, useEffect, useRef, useCallback, type ReactNode } from "react"
 import { Bot, ArrowRight, Code2, Sparkles, Radio, ChevronRight, Zap, Brain, Crown, TrendingUp, Truck, HardHat, Headphones, Megaphone, DollarSign, Check, Puzzle, Target, Rocket } from "lucide-react";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
-import SeoHead from "@/components/shared/SeoHead";
-import { getPageByPath } from "@/lib/site-manifest";
-
-const homePage = getPageByPath("/");
 
 const ROTATING_WORDS = [
   "Home Service", "Franchise", "Private Equity",
@@ -1083,7 +1079,6 @@ function ValueComparison() {
 export default function Home() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-[hsl(46,100%,96%)] font-sans text-[hsl(0,0%,5%)]">
-      {homePage ? <SeoHead page={homePage} /> : null}
       <FloatingCTA />
       <Navbar />
       <div className="h-16" />
