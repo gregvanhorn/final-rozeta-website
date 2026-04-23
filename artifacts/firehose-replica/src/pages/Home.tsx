@@ -689,7 +689,7 @@ function PricingModel() {
               Level 1 - Foundation
             </div>
             <div className="mt-4 flex items-end gap-2">
-              <span className="text-6xl font-extrabold tracking-tighter leading-none">$997</span>
+              <span className="text-6xl font-extrabold tracking-tighter leading-none">$1,000</span>
               <span className="mb-2 text-lg font-bold uppercase">/month</span>
             </div>
             <p className="mt-1 text-sm font-bold opacity-60">+ $1,500 one-time setup fee</p>
