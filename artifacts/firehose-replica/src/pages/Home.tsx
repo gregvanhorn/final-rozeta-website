@@ -647,14 +647,10 @@ function PricingModel() {
     "Additional Level 3 implementations available at discounted project rate",
   ];
 
-  const tier3 = [
-    "Everything in Level 2, plus...",
-    "Unlimited custom AI agent buildouts (no cap - full embedded team)",
-    "Unlimited Level 1, 2, and 3 automations (including complex multi-system orchestration)",
-    "Full cross-org operations mapping and quarterly re-audit",
-    "Dedicated implementation engineer assigned to the account",
+  const tier3SharedFeatures = [
+    "Dedicated implementation engineer on the account",
     "First-priority SLAs across all active projects",
-    "Custom training and SOPs delivered to client's team",
+    "Custom training and SOPs delivered to your team",
   ];
 
   const checkIcon = (stroke: string) => (
@@ -740,28 +736,38 @@ function PricingModel() {
             </div>
           </div>
 
-          {/* Level 3 — Transformation */}
+          {/* Level 3 — Custom */}
           <div className="relative flex flex-col border-4 border-black bg-black p-8 shadow-neo-lg">
             <div className="mb-2 inline-block border-4 border-[hsl(47,100%,50%)] bg-[hsl(47,100%,50%)] px-3 py-1 text-xs font-bold uppercase tracking-widest text-black">
-              Level 3 - Transformation
+              Level 3 — Custom
             </div>
             <div className="mt-4 flex items-end gap-2">
-              <span className="text-6xl font-extrabold tracking-tighter leading-none text-[hsl(47,100%,50%)]">$4,500</span>
-              <span className="mb-2 text-lg font-bold uppercase text-[hsl(47,100%,50%)]">/month</span>
+              <span className="text-6xl font-extrabold tracking-tighter leading-none text-[hsl(47,100%,50%)]">Custom</span>
+              <span className="mb-2 text-lg font-bold uppercase text-[hsl(47,100%,50%)]">pricing</span>
             </div>
-            <p className="mt-1 text-sm font-bold text-white/40">No setup fee.</p>
-            <p className="mt-3 text-sm font-bold text-white/70">An embedded AI team. Unlimited builds. Full-org leverage.</p>
-            <div className="mt-6 space-y-3 flex-1">
-              {tier3.map((item) => (
+            <p className="mt-3 text-sm font-bold text-white/70">One-off project, short-term contract, or additional custom solutions. We scope it to fit.</p>
+
+            <div className="mt-6 flex-1 space-y-4">
+              <div className="border-2 border-white/20 p-4">
+                <p className="mb-1 text-xs font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">A La Carte Build-Outs</p>
+                <p className="text-sm font-bold leading-snug text-white/70">Individual automation or AI agent builds quoted per project. No ongoing commitment required. Pay for exactly what you need.</p>
+              </div>
+              <div className="border-2 border-white/20 p-4">
+                <p className="mb-1 text-xs font-extrabold uppercase tracking-widest text-[hsl(47,100%,50%)]">Short-Term Contract Engagements</p>
+                <p className="text-sm font-bold leading-snug text-white/70">Fixed-scope work with a defined start and end. Ideal for implementation sprints, system migrations, or one-time infrastructure builds.</p>
+              </div>
+
+              <div className="space-y-3 pt-2">
+                {tier3SharedFeatures.map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   {blackCheck}
                   <span className="text-sm font-bold leading-snug text-white">{item}</span>
                 </div>
               ))}
+              </div>
             </div>
             <div className="mt-8 border-t-4 border-[hsl(47,100%,50%)] pt-5">
-              <p className="text-xs font-bold uppercase tracking-widest text-white/40">Annual option</p>
-              <p className="mt-1 text-sm font-bold text-white">$48,600/year - save ~$5,400. No setup fee.</p>
+              <p className="text-sm font-bold italic text-white/50">Every Level 3 engagement starts with a scoping call. No pressure, no boilerplate quote.</p>
             </div>
           </div>
 
