@@ -12,7 +12,9 @@ export function PrimaryCta({
   className = "",
 }: PrimaryCtaProps) {
   const sizing =
-    size === "sm" ? "px-3 py-2 text-xs sm:px-4 sm:text-sm" : "px-5 py-3 text-sm sm:px-6 sm:text-base";
+    size === "sm"
+      ? "px-3 py-2 text-[10px] leading-tight whitespace-normal text-center sm:px-4 sm:text-sm sm:whitespace-nowrap"
+      : "px-5 py-3 text-sm sm:px-6 sm:text-base";
 
   return (
     <a

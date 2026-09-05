@@ -57,7 +57,7 @@ export function AssessmentForm({ formUrl, utm, variant }: AssessmentFormProps) {
           ) : (
             <div className="px-6 py-16 text-center">
               <p className="text-xs font-bold tracking-widest uppercase">Form slot</p>
-              <p className="mt-3 text-2xl font-bold tracking-tight uppercase">
+              <p className="mt-3 text-2xl font-bold tracking-tight break-all uppercase">
                 Set VITE_JOTFORM_URL
               </p>
               <p className="mx-auto mt-3 max-w-md text-sm font-bold text-ink/70">
