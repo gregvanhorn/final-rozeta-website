@@ -1,0 +1,23 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+
+import App from "./App";
+import { FunnelTracking } from "@/lib/FunnelTracking";
+import "./index.css";
+
+FunnelTracking.install();
+
+const root = document.getElementById("root");
+
+if (!root) {
+  throw new Error("Root element #root was not found.");
+}
+
+createRoot(root).render(
+  <StrictMode>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <App />
+    </BrowserRouter>
+  </StrictMode>,
+);

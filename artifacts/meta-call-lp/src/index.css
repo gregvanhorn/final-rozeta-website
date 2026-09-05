@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", Inter, sans-serif;
+  --color-cream: #fffae8;
+  --color-yellow: #ffca00;
+  --color-tan: #ede8cf;
+  --color-ink: #0d0d0d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fffae8;
+  color: #0d0d0d;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  overflow-x: hidden;
+}
+
+.shadow-neo-sm {
+  box-shadow: 3px 3px 0 0 #000;
+}
+
+.shadow-neo-md {
+  box-shadow: 6px 6px 0 0 #000;
+}
+
+.shadow-neo-lg {
+  box-shadow: 8px 8px 0 0 #000;
+}
+
+.bg-grid-neo {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.bg-halftone {
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.15) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+.bg-dots-neo {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+.rozeta-logo-icon {
+  transition: filter 0.1s;
+}
+
+.rozeta-logo-icon:hover {
+  animation: rozeta-glitch 0.5s steps(3) infinite;
+}
+
+@keyframes rozeta-glitch {
+  0% {
+    filter: none;
+    transform: none;
+  }
+  25% {
+    filter: drop-shadow(2px 0 0 rgba(255, 0, 64, 0.95))
+      drop-shadow(-2px 0 0 rgba(0, 245, 255, 0.95));
+    transform: translateX(-1px);
+  }
+  50% {
+    filter: drop-shadow(-2px 0 0 rgba(255, 0, 64, 0.95))
+      drop-shadow(2px 0 0 rgba(0, 245, 255, 0.95));
+    transform: translateX(1px);
+  }
+  75% {
+    filter: drop-shadow(1px 0 0 rgba(255, 0, 64, 0.5))
+      drop-shadow(-1px 0 0 rgba(0, 245, 255, 0.5));
+    transform: none;
+  }
+  100% {
+    filter: none;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .rozeta-logo-icon:hover {
+    animation: none;
+  }
+}
