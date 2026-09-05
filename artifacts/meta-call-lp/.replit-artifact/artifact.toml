@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/meta-call-lp/"
+title = "Rozeta Meta Call Funnel LP"
+version = "1.0.0"
+id = "artifacts/meta-call-lp"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 19711
+name = "web"
+paths = ["/meta-call-lp/"]
+
+[services.development]
+run = "pnpm --filter @workspace/meta-call-lp run dev"
+
+[services.env]
+PORT = "19711"
+BASE_PATH = "/meta-call-lp/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/meta-call-lp", "run", "build"]
+publicDir = "artifacts/meta-call-lp/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
